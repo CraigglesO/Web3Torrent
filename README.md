@@ -1,12 +1,8 @@
-# Skeleton dapp.
+# Parity WebRTC dapp.
 
 ## Installation
 
 ```sh
-git clone https://github.com/ethcore/skeleton
-cd skeleton
-git remote rm origin
-
 npm install
 ```
 
@@ -18,3 +14,12 @@ npm start # run dev environment
 ```
 
 Files will be build into `dist/`. Just symlink that dir into your dapps path.
+
+
+
+To play with contracts use `truffle`.
+
+`npm install -g truffle`
+`npm install -g testrpc`
+
+Use `testrpc` to test locally. Otherwise parity will pick up `truffle migrate`

@@ -6,7 +6,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {setDefaultTransformBondContext, TransformBond} from 'oo7';
 import {setupBonds, abiPolyfill} from 'oo7-parity';
 
-import {App} from './app.jsx'
+import { App } from './App.jsx'
 
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
