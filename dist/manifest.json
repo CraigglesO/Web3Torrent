@@ -1,0 +1,8 @@
+{
+	"id": "blockWebTorrent",
+	"name": "WebTorrent",
+	"description": "Load movies and files via WebRTC",
+	"version": "0.1.0",
+	"author": "Craig OConnor",
+	"iconUrl": "title.png"
+}
