@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "AsapBold";
+    src: url('../assets/Asap-Bold.otf');
+}
+@font-face {
+    font-family: "AsapMedium";
+    src: url('../assets/Asap-Medium.otf');
+}
+@font-face {
+    font-family: "AsapRegular";
+    src: url('../assets/Asap-Regular.otf');
+}
+
+body {
+	font: 100% "Trebuchet MS", sans-serif;
+	margin: 1em;
+	background-color: #f4f5f6;
+	color: #424242;
+	text-align: center;
+}

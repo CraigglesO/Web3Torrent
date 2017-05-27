@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
   devTool: '#source-map',
   entry: {
-  	app: path.resolve(__dirname, 'src/client/scripts/entry.jsx')
+  	app: path.resolve(__dirname, 'src/entry.jsx')
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
