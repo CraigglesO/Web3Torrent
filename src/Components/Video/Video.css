@@ -18,4 +18,15 @@
   margin-right: 45px;
   width: 500px;
   height: 250px;
+  border-radius: 2px;
+}
+
+#progressbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background-color: #35b44f;
+  transition: width .4s ease-in-out;
 }

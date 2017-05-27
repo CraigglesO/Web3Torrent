@@ -13,8 +13,9 @@
 
 body {
 	font: 100% "Trebuchet MS", sans-serif;
-	margin: 1em;
-	background-color: #f4f5f6;
-	color: #424242;
+	margin: 0;
+  padding: 0;
+	background-color: #ededed;
+	color: #394040;
 	text-align: center;
 }

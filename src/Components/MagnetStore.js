@@ -8,9 +8,9 @@ web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
 const WebTorrent = require('webtorrent');
 
 /** Assets **/
-const ABI_MAGNET              = '../assets/magnet.json';
-const ABI_MAGNET_PRIVATE      = '../assets/magnetPrivate.json';
-const MAGNET_CONTRACT_ADDRESS = '0x58732c7EF2a6404Ab37eC3E4A9A687723A93BE13';
+import ABI_MAGNET          from '../assets/magnet.json';
+import ABI_MAGNET_PRIVATE  from '../assets/magnetPrivate.json';
+const MAGNET_CONTRACT_ADDRESS = '0xb1E257AF427B14a5385c8C138CD13545DA4b7086';
 
 class MagnetStore {
   @observable magnet;
@@ -25,26 +25,35 @@ class MagnetStore {
 
     self.magnetList = [];
 
-    self.client   = new WebTorrent();
-    self.contract = web3.eth.contract(ABI_MAGNET).at(MAGNET_CONTRACT_ADDRESS);
-    // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
-    self.pBlock   = contract.pBlock.call().toNumber();
+    if (!web3.eth.defaultAccount)
+      web3.eth.defaultAccount = web3.eth.accounts[0];
+
+    self.client    = new WebTorrent();
+    self.contract  = web3.eth.contract(ABI_MAGNET).at(MAGNET_CONTRACT_ADDRESS);
+    // // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
+    self.lastBlock = self.contract.lastBlock.call().toNumber();
+    self.lastPage  = self.lastBlock;
+
+    self.createList();
   }
 
   createList() {
     const self = this;
 
-    for (x = 0; x < 20; x++) {
-      if (self.pBlock == 0)
-        break;
-      self.contract.PostedTorrent({}, {fromBlock: self.pBlock, toBlock: self.pBlock}).get((err, res) => {
-        if (err)
-          console.log("err", err);
-        else
-          self.magnetList.push(res);
-      });
-      self.pBlock = contract.pBlock.call().toNumber();
+    if (self.lastBlock == 0) {
+      return;
     }
+
+    console.log("self.lastBlock", self.lastBlock);
+    self.contract.PostedTorrent({}, {fromBlock: self.lastBlock, toBlock: self.lastBlock}).get((err, res) => {
+      if (err) {
+        console.log("err", err);
+      } else {
+        self.magnetList.push(res[0]);
+        self.lastBlock = res[0].args.prev.toNumber();
+        self.createList();
+      }
+    });
   }
 
   addMagnetVideo(magnet, filetype) {

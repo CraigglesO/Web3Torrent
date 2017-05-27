@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { observer }  from "mobx-react";
+
+/** Stylesheets **/
 import styles from "./MagnetList.css";
 
 @observer

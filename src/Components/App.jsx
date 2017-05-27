@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+/** Stylesheets **/
 import styles from "./App.css";
 
 /** Store **/
@@ -13,7 +15,7 @@ export class App extends Component {
 	render() {
 		return (
 			<div>
-				<Header />
+				<Header store={MagnetStore} />
 				<Video store={MagnetStore} />
 				<MagnetList store={MagnetStore} />
 			</div>
