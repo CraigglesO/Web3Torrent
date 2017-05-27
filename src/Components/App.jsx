@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from "./App.css";
 
 /** Store **/
-import MagnetStore from '../MagnetStore';
+import MagnetStore from './MagnetStore';
 
 /** Components **/
 import { Header } from './Header/Header';

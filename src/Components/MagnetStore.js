@@ -17,11 +17,13 @@ class MagnetStore {
   @observable contract;
   @observable contractPrivate;
   @observable page;
-  @observable magnetList = [];
+  @observable magnetList;
   @observable file;
 
   constructor() {
     const self = this;
+
+    self.magnetList = [];
 
     self.client   = new WebTorrent();
     self.contract = web3.eth.contract(ABI_MAGNET).at(MAGNET_CONTRACT_ADDRESS);
