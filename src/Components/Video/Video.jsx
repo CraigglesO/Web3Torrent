@@ -10,7 +10,7 @@ import Magnet from './magnet.json';
 @observer
 export class Video extends Component {
 	componentWillMount() {
-		this.props.store.addMagnetVideo(Magnet);
+		this.props.store.createMagnetVideo(Magnet);
 	}
 
 	render() {
@@ -31,6 +31,3 @@ export class Video extends Component {
 		);
 	}
 }
-
-
-// web3.eth.gasPrice

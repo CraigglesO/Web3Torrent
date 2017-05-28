@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 #add-magnet:active {
-  background-color: #30a247;
+  color: #30a247;
   cursor: pointer;
 }
 
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 #private:active {
-  background-color: #30a247;
+  color: #30a247;
   cursor: pointer;
 }
 
@@ -72,12 +72,88 @@ a {
 
 /** MAGNET MODAL **/
 #magnet-modal-container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#adhd {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
 }
 
 #MagnetModal {
-  
+  position: relative;
+  width: 450px;
+  height: 300px;
+  background-color: #ededed;
+  border-radius: 6px;
+  text-align: left;
 }
+
+#addMagnet {
+  font-weight: bold;
+  font-size: 32px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.labels {
+  padding-left: 25px;
+  color: #adadae;
+}
+
+.mag-inputs {
+  width: calc(100% - 55px);
+  margin: 7px 25px;
+  height: 25px;
+  padding-left: 7px;
+  font-size: 16px;
+  border: none;
+  color: #394040;
+}
+
+#name-input {
+
+}
+
+#magnet-input {
+
+}
+
+#magnet-sumbit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+#magnet-cancel {
+  position: absolute;
+  background-color: #CC5656;
+  left: 0;
+  bottom: 0;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+#magnet-cancel:hover {
+  background-color: #DB8282;
+}
+#magnet-cancel:active {
+  background-color: #C13D3D;
+}
+
+
+/* GREY: #adadae */
+/* RED:  #CC5656 */

@@ -18,4 +18,9 @@ body {
 	background-color: #ededed;
 	color: #394040;
 	text-align: center;
+  user-select: none;
+}
+
+input:focus {
+  outline:none;
 }

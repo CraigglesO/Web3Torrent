@@ -1,10 +1,11 @@
 #Video {
   width: 100vw;
   min-height: 350px;
-  background-color: #2a3749;
+  background-color: #2a3749; /* #35b44f */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: background-color 700ms ease;
 }
 
 #peers {

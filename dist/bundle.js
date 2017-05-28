@@ -25903,7 +25903,7 @@
 
 
 	// module
-	exports.push([module.id, "@font-face {\n    font-family: \"AsapBold\";\n    src: url(" + __webpack_require__(190) + ");\n}\n@font-face {\n    font-family: \"AsapMedium\";\n    src: url(" + __webpack_require__(191) + ");\n}\n@font-face {\n    font-family: \"AsapRegular\";\n    src: url(" + __webpack_require__(192) + ");\n}\n\nbody {\n\tfont: 100% \"Trebuchet MS\", sans-serif;\n\tmargin: 0;\n  padding: 0;\n\tbackground-color: #ededed;\n\tcolor: #394040;\n\ttext-align: center;\n}\n", ""]);
+	exports.push([module.id, "@font-face {\n    font-family: \"AsapBold\";\n    src: url(" + __webpack_require__(190) + ");\n}\n@font-face {\n    font-family: \"AsapMedium\";\n    src: url(" + __webpack_require__(191) + ");\n}\n@font-face {\n    font-family: \"AsapRegular\";\n    src: url(" + __webpack_require__(192) + ");\n}\n\nbody {\n\tfont: 100% \"Trebuchet MS\", sans-serif;\n\tmargin: 0;\n  padding: 0;\n\tbackground-color: #ededed;\n\tcolor: #394040;\n\ttext-align: center;\n  user-select: none;\n}\n\ninput:focus {\n  outline:none;\n}\n", ""]);
 
 	// exports
 
@@ -26284,7 +26284,7 @@
 
 	    self.client = new WebTorrent();
 	    self.contract = web3.eth.contract(_magnet2.default).at(MAGNET_CONTRACT_ADDRESS);
-	    // // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
+	    // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
 	    self.lastBlock = self.contract.lastBlock.call().toNumber();
 	    self.lastPage = self.lastBlock;
 
@@ -26300,7 +26300,6 @@
 	        return;
 	      }
 
-	      console.log("self.lastBlock", self.lastBlock);
 	      self.contract.PostedTorrent({}, { fromBlock: self.lastBlock, toBlock: self.lastBlock }).get(function (err, res) {
 	        if (err) {
 	          console.log("err", err);
@@ -26312,8 +26311,8 @@
 	      });
 	    }
 	  }, {
-	    key: 'addMagnetVideo',
-	    value: function addMagnetVideo(magnet, filetype) {
+	    key: 'createMagnetVideo',
+	    value: function createMagnetVideo(magnet, filetype) {
 	      var self = this;
 
 	      if (!filetype) filetype = '.mp4';
@@ -26327,12 +26326,24 @@
 	      });
 	      return self.file;
 	    }
+	  }, {
+	    key: 'addMagnet',
+	    value: function addMagnet(name, magnet) {
+	      var self = this;
+
+	      self.contract.addTorrent(name, magnet).then(function (err, res) {
+	        console.log("err", err);
+	        console.log("res", res);
+	      });
+	    }
 	  }]);
 
 	  return MagnetStore;
 	}();
 
 	exports.default = new MagnetStore();
+
+	// web3.eth.gasPrice
 
 /***/ }),
 /* 195 */
@@ -67417,8 +67428,8 @@
 	/** Stylesheets **/
 
 
-	var Header = exports.Header = function (_React$Component) {
-		_inherits(Header, _React$Component);
+	var Header = exports.Header = function (_Component) {
+		_inherits(Header, _Component);
 
 		function Header() {
 			_classCallCheck(this, Header);
@@ -67426,6 +67437,7 @@
 			var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
 			_this.state = {
+				adhd: null,
 				magnetModal: null
 			};
 			return _this;
@@ -67434,20 +67446,33 @@
 		_createClass(Header, [{
 			key: "addMagnet",
 			value: function addMagnet() {
-				this.setState({ magnetModal: _react2.default.createElement(MagnetModal, { store: this.props.store }) });
+				var self = this;
+
+				self.setState({
+					adhd: _react2.default.createElement("div", { id: "adhd", onClick: self.cancel.bind(self) }),
+					magnetModal: _react2.default.createElement(MagnetModal, { cancel: self.cancel.bind(self), store: self.props.store })
+				});
 			}
 		}, {
 			key: "onPrivate",
 			value: function onPrivate() {}
 		}, {
+			key: "cancel",
+			value: function cancel() {
+				this.setState({ magnetModal: null, adhd: null });
+			}
+		}, {
 			key: "render",
 			value: function render() {
-				var magnetModal = this.state.magnetModal;
+				var _state = this.state,
+				    magnetModal = _state.magnetModal,
+				    adhd = _state.adhd;
 
 
 				return _react2.default.createElement(
 					"div",
 					{ id: "Header" },
+					adhd,
 					_react2.default.createElement(
 						"div",
 						{ id: "magnet-modal-container" },
@@ -67486,29 +67511,123 @@
 		}]);
 
 		return Header;
-	}(_react2.default.Component);
+	}(_react.Component);
 
-	var MagnetModal = function (_Component) {
-		_inherits(MagnetModal, _Component);
+	var MagnetModal = function (_Component2) {
+		_inherits(MagnetModal, _Component2);
 
 		function MagnetModal() {
 			_classCallCheck(this, MagnetModal);
 
-			return _possibleConstructorReturn(this, (MagnetModal.__proto__ || Object.getPrototypeOf(MagnetModal)).apply(this, arguments));
+			var _this2 = _possibleConstructorReturn(this, (MagnetModal.__proto__ || Object.getPrototypeOf(MagnetModal)).call(this));
+
+			_this2.state = {
+				name: "",
+				magnet: ""
+			};
+
+			_this2.handleNameChange = _this2.handleNameChange.bind(_this2);
+			_this2.handleMagnetChange = _this2.handleMagnetChange.bind(_this2);
+			_this2.handleSubmit = _this2.handleSubmit.bind(_this2);
+			_this2.onCancel = _this2.onCancel.bind(_this2);
+			return _this2;
 		}
 
 		_createClass(MagnetModal, [{
 			key: "onEmploy",
-			value: function onEmploy() {}
+			value: function onEmploy(name, magnet) {
+				this.props.store.addMagnet(name, magnet);
+			}
+		}, {
+			key: "handleNameChange",
+			value: function handleNameChange(event) {
+				this.setState({ name: event.target.value });
+			}
+		}, {
+			key: "handleMagnetChange",
+			value: function handleMagnetChange(event) {
+				this.setState({ magnet: event.target.value });
+			}
+		}, {
+			key: "handleSubmit",
+			value: function handleSubmit(event) {
+				event.preventDefault();
+				this.props.store.addMagnet(this.state.name, this.state.magnet);
+			}
+		}, {
+			key: "onCancel",
+			value: function onCancel() {
+				this.props.cancel();
+			}
 		}, {
 			key: "render",
 			value: function render() {
-				return _react2.default.createElement("div", { id: "MagnetModal" });
+				return _react2.default.createElement(
+					"div",
+					{ id: "MagnetModal" },
+					_react2.default.createElement(
+						"div",
+						{ id: "addMagnet" },
+						"Add Magnet"
+					),
+					_react2.default.createElement(
+						"div",
+						null,
+						_react2.default.createElement(
+							"label",
+							{ className: "labels" },
+							"Name:"
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						null,
+						_react2.default.createElement("input", {
+							className: "mag-inputs",
+							id: "name-input",
+							type: "text",
+							placeholder: "name of file",
+							value: this.state.name,
+							onChange: this.handleNameChange
+						})
+					),
+					_react2.default.createElement(
+						"div",
+						null,
+						_react2.default.createElement(
+							"label",
+							{ className: "labels" },
+							"Magnet:"
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						null,
+						_react2.default.createElement("input", {
+							className: "mag-inputs",
+							id: "magnet-input",
+							type: "text",
+							placeholder: "e.g. 'magnet:?...''",
+							value: this.state.magnet,
+							onChange: this.handleMagnetChange
+						})
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "button", id: "magnet-sumbit", onClick: this.handleSubmit },
+						"Submit"
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "button", id: "magnet-cancel", onClick: this.onCancel },
+						"Cancel"
+					)
+				);
 			}
 		}]);
 
 		return MagnetModal;
-	}(Component);
+	}(_react.Component);
 
 /***/ }),
 /* 422 */
@@ -67545,7 +67664,7 @@
 
 
 	// module
-	exports.push([module.id, "#Header {\n  width: 100vw;\n  height: 60px;\n  background-color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n#web3 {\n  padding-left: 15px;\n  font-size: 27.5px;\n  font-weight: bold;\n}\n\n#header-buttons {\n  padding-right: 0px;\n}\n\n.links {\n  padding: 10px 5px;\n  margin: 0 10px;\n  font-size: 18px;\n  font-weight: bold;\n}\n\n.button {\n  background-color: #35b44f;\n  border-radius: 4px;\n  color: white;\n  padding: 10px 12.5px;\n  margin: 0 10px;\n  font-size: 18px;\n}\n.button:hover {\n  background-color: #54CD6D;\n}\n.button:active {\n  background-color: #30a247;\n}\n\n#add-magnet {\n\n}\n#add-magnet:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#add-magnet:active {\n  background-color: #30a247;\n  cursor: pointer;\n}\n\n#private {\n\n}\n#private:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#private:active {\n  background-color: #30a247;\n  cursor: pointer;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\n\n\n/** MAGNET MODAL **/\n#magnet-modal-container {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n\n#MagnetModal {\n  \n}\n", ""]);
+	exports.push([module.id, "#Header {\n  width: 100vw;\n  height: 60px;\n  background-color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n#web3 {\n  padding-left: 15px;\n  font-size: 27.5px;\n  font-weight: bold;\n}\n\n#header-buttons {\n  padding-right: 0px;\n}\n\n.links {\n  padding: 10px 5px;\n  margin: 0 10px;\n  font-size: 18px;\n  font-weight: bold;\n}\n\n.button {\n  background-color: #35b44f;\n  border-radius: 4px;\n  color: white;\n  padding: 10px 12.5px;\n  margin: 0 10px;\n  font-size: 18px;\n}\n.button:hover {\n  background-color: #54CD6D;\n}\n.button:active {\n  background-color: #30a247;\n}\n\n#add-magnet {\n\n}\n#add-magnet:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#add-magnet:active {\n  color: #30a247;\n  cursor: pointer;\n}\n\n#private {\n\n}\n#private:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#private:active {\n  color: #30a247;\n  cursor: pointer;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\n\n\n/** MAGNET MODAL **/\n#magnet-modal-container {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 1000;\n}\n\n#adhd {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100vw;\n  height: 100vh;\n  background-color: rgba(0, 0, 0, 0.35);\n  z-index: 1000;\n}\n\n#MagnetModal {\n  position: relative;\n  width: 450px;\n  height: 300px;\n  background-color: #ededed;\n  border-radius: 6px;\n  text-align: left;\n}\n\n#addMagnet {\n  font-weight: bold;\n  font-size: 32px;\n  padding: 15px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n\n.labels {\n  padding-left: 25px;\n  color: #adadae;\n}\n\n.mag-inputs {\n  width: calc(100% - 55px);\n  margin: 7px 25px;\n  height: 25px;\n  padding-left: 7px;\n  font-size: 16px;\n  border: none;\n  color: #394040;\n}\n\n#name-input {\n\n}\n\n#magnet-input {\n\n}\n\n#magnet-sumbit {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  margin-right: 25px;\n  margin-bottom: 25px;\n  border: none;\n}\n\n#magnet-cancel {\n  position: absolute;\n  background-color: #CC5656;\n  left: 0;\n  bottom: 0;\n  margin-left: 25px;\n  margin-bottom: 25px;\n  cursor: pointer;\n}\n#magnet-cancel:hover {\n  background-color: #DB8282;\n}\n#magnet-cancel:active {\n  background-color: #C13D3D;\n}\n\n\n/* GREY: #adadae */\n/* RED:  #CC5656 */\n", ""]);
 
 	// exports
 
@@ -67603,7 +67722,7 @@
 		_createClass(Video, [{
 			key: "componentWillMount",
 			value: function componentWillMount() {
-				this.props.store.addMagnetVideo(_magnet2.default);
+				this.props.store.createMagnetVideo(_magnet2.default);
 			}
 		}, {
 			key: "render",
@@ -67628,8 +67747,6 @@
 
 		return Video;
 	}(_react.Component);
-
-	// web3.eth.gasPrice
 
 /***/ }),
 /* 425 */
@@ -68777,7 +68894,7 @@
 
 
 	// module
-	exports.push([module.id, "#Video {\n  width: 100vw;\n  min-height: 350px;\n  background-color: #2a3749;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n#peers {\n  width: 300px;\n  height: 300px;\n  margin-left: 25px;\n}\n\n#vid {\n  background-color: #adadae;\n  margin-right: 45px;\n  width: 500px;\n  height: 250px;\n  border-radius: 2px;\n}\n\n#progressbar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 5px;\n  width: 0%;\n  background-color: #35b44f;\n  transition: width .4s ease-in-out;\n}\n", ""]);
+	exports.push([module.id, "#Video {\n  width: 100vw;\n  min-height: 350px;\n  background-color: #2a3749; /* #35b44f */\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  transition: background-color 700ms ease;\n}\n\n#peers {\n  width: 300px;\n  height: 300px;\n  margin-left: 25px;\n}\n\n#vid {\n  background-color: #adadae;\n  margin-right: 45px;\n  width: 500px;\n  height: 250px;\n  border-radius: 2px;\n}\n\n#progressbar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 5px;\n  width: 0%;\n  background-color: #35b44f;\n  transition: width .4s ease-in-out;\n}\n", ""]);
 
 	// exports
 
@@ -68892,7 +69009,7 @@
 
 
 	// module
-	exports.push([module.id, "#MagnetList {\n  position: relative;\n  margin: 25px;\n  width: 100%;\n  min-height: 300px; \n  border-radius: 5px;\n  border: 1px solid #adadae;\n}\n", ""]);
+	exports.push([module.id, "#MagnetList {\n  position: relative;\n  margin: 55px;\n  width: auto;\n  min-height: 300px;\n  border-radius: 5px;\n  border: 1px solid #adadae;\n}\n", ""]);
 
 	// exports
 

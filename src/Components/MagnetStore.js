@@ -1,7 +1,7 @@
 /** WEB3 **/
 import { observable }  from "mobx";
-const Web3      = require('web3');
-const web3      = new Web3();
+const Web3                = require('web3');
+const web3                = new Web3();
 web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
 
 /** WebTorrent **/
@@ -14,8 +14,6 @@ const MAGNET_CONTRACT_ADDRESS = '0xb1E257AF427B14a5385c8C138CD13545DA4b7086';
 
 class MagnetStore {
   @observable magnet;
-  @observable contract;
-  @observable contractPrivate;
   @observable page;
   @observable magnetList;
   @observable file;
@@ -30,7 +28,7 @@ class MagnetStore {
 
     self.client    = new WebTorrent();
     self.contract  = web3.eth.contract(ABI_MAGNET).at(MAGNET_CONTRACT_ADDRESS);
-    // // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
+    // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
     self.lastBlock = self.contract.lastBlock.call().toNumber();
     self.lastPage  = self.lastBlock;
 
@@ -44,7 +42,6 @@ class MagnetStore {
       return;
     }
 
-    console.log("self.lastBlock", self.lastBlock);
     self.contract.PostedTorrent({}, {fromBlock: self.lastBlock, toBlock: self.lastBlock}).get((err, res) => {
       if (err) {
         console.log("err", err);
@@ -56,7 +53,7 @@ class MagnetStore {
     });
   }
 
-  addMagnetVideo(magnet, filetype) {
+  createMagnetVideo(magnet, filetype) {
     const self = this;
 
     if (!filetype)
@@ -71,6 +68,17 @@ class MagnetStore {
     });
     return self.file;
   }
+
+  addMagnet(name, magnet) {
+    const self = this;
+
+    self.contract.addTorrent(name, magnet).then((err, res) => {
+      console.log("err", err);
+      console.log("res", res);
+    });
+  }
 }
 
 export default new MagnetStore();
+
+// web3.eth.gasPrice
