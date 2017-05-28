@@ -33,6 +33,7 @@ export class Header extends Component {
 
 	render() {
 		const { magnetModal, adhd } = this.state;
+		const { file } = this.props.store;
 
 		return (
 			<div id="Header">
@@ -118,7 +119,7 @@ class MagnetModal extends Component {
 						className="mag-inputs"
 						id="magnet-input"
 						type="text"
-						placeholder="e.g. 'magnet:?...''"
+						placeholder="e.g. 'magnet:?...'"
 						value={this.state.magnet}
 						onChange={this.handleMagnetChange}
 						/>

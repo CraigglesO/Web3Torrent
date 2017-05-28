@@ -1,5 +1,5 @@
 /** WEB3 **/
-import { observable }  from "mobx";
+import { observable }  from 'mobx';
 const Web3                = require('web3');
 const web3                = new Web3();
 web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
@@ -8,14 +8,15 @@ web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
 const WebTorrent = require('webtorrent');
 
 /** Assets **/
-import ABI_MAGNET          from '../assets/magnet.json';
-import ABI_MAGNET_PRIVATE  from '../assets/magnetPrivate.json';
-const MAGNET_CONTRACT_ADDRESS = '0xb1E257AF427B14a5385c8C138CD13545DA4b7086';
+import MAGNET               from '../assets/magnet.json';
+import MAGNET_PRIVATE       from '../assets/magnetPrivate.json';
+const  MAGNET_ADDRESS          = '0x78De662aC7f39ae4D1f08818f95F3AdCFc5B3fDb';
+const  MAGNET_PRIVATE_ADDRESS  = '0x0';
 
 class MagnetStore {
   @observable magnet;
-  @observable page;
   @observable magnetList;
+  @observable torrent;
   @observable file;
 
   constructor() {
@@ -26,11 +27,10 @@ class MagnetStore {
     if (!web3.eth.defaultAccount)
       web3.eth.defaultAccount = web3.eth.accounts[0];
 
-    self.client    = new WebTorrent();
-    self.contract  = web3.eth.contract(ABI_MAGNET).at(MAGNET_CONTRACT_ADDRESS);
+    self.client     = new WebTorrent();
+    self.contract   = web3.eth.contract(MAGNET.abi).at(MAGNET_ADDRESS);
     // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
-    self.lastBlock = self.contract.lastBlock.call().toNumber();
-    self.lastPage  = self.lastBlock;
+    self.magnetSize = self.contract.getMagnetSize.call().toNumber();
 
     self.createList();
   }
@@ -38,19 +38,21 @@ class MagnetStore {
   createList() {
     const self = this;
 
-    if (self.lastBlock == 0) {
+    if (self.magnetSize == 0) {
       return;
     }
 
-    self.contract.PostedTorrent({}, {fromBlock: self.lastBlock, toBlock: self.lastBlock}).get((err, res) => {
-      if (err) {
-        console.log("err", err);
-      } else {
-        self.magnetList.push(res[0]);
-        self.lastBlock = res[0].args.prev.toNumber();
-        self.createList();
-      }
+    let payload = self.contract.magnets(self.magneSize - 1);
+    console.log("payload", payload);
+    console.log("size", self.magnetSize);
+    self.magnetList.push({
+      name: payload[0],
+      magnet: payload[1],
+      timestamp: payload[2].toNumber(),
+      author: payload[3]
     });
+    self.magnetSize--;
+    self.createList();
   }
 
   createMagnetVideo(magnet, filetype) {
@@ -58,9 +60,9 @@ class MagnetStore {
 
     if (!filetype)
       filetype = '.mp4';
-    console.log("client", self.client);
     let vid = self.client.add(magnet, (torrent) => {
-      const file = torrent.files.find(function (file) {
+      self.torrent = torrent;
+      const file = torrent.files.find((file) => {
         return file.name.endsWith(filetype);
       });
 
@@ -72,7 +74,7 @@ class MagnetStore {
   addMagnet(name, magnet) {
     const self = this;
 
-    self.contract.addTorrent(name, magnet).then((err, res) => {
+    self.contract.addMagnet(name, magnet, { data: MAGNET.data }).then((err, res) => {
       console.log("err", err);
       console.log("res", res);
     });
