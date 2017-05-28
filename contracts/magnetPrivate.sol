@@ -1,41 +1,46 @@
 pragma solidity ^0.4.11;
 
-contract Magnet {
+contract MagnetPrivate {
 
-  event PostedTorrent(string n, string mag, uint time, uint prev);
+  event PostedTorrent(string n, string mag);
 
-  struct Torrent {
-    string name;        // Name of the torrent file/folder
-    string magnet;      // magnet string size
-    uint   timestamp;   // Block timestamp of submittal
-    uint   prevBlock;   // Block of the last magnet saved
+  struct Mag {
+    string  name;        // Name of the torrent file/folder
+    string  magnet;      // magnet string size
+    uint    timestamp;   // Block timestamp of submittal
+    address author;      // User who submitted
   }
 
-  uint public lastBlock;
-
+  /// Set the owner of the contract
   address public chairperson;
 
   /// A dynamically-sized array of `torrent` structs.
-  Torrent[] public torrents;
+  Mag[] public magnets;
 
   /// Instantiate the contract creator as the chairperson
-  function Magnet() {
+  function MagnetPrivate() {
     chairperson = msg.sender;
   }
 
+  function getMagnet(uint index) public constant returns(string, string, uint, address) {
+    return (magnets[index].name, magnets[index].magnet, magnets[index].timestamp, magnets[index].author);
+  }
+
+  function getMagnetSize() public constant returns(uint) {
+    return magnets.length;
+  }
+
   /// Add a new torrent magnet file and fire an event
-  function addTorrent(string _name, string _magnet) {
+  function addMagnet(string _name, string _magnet) {
     require(msg.sender == chairperson);
     // add the magnet
-    torrents.push(Torrent({
+    magnets.push(Mag({
       name: _name,
       magnet: _magnet,
       timestamp: block.timestamp,
-      prevBlock: lastBlock
+      author: msg.sender
     }));
-    // Set a new prevBlock # to track our items
-    lastBlock = block.number;
     // Fire a new Event
-    PostedTorrent(_name, _magnet, block.timestamp, block.number);
+    PostedTorrent(_name, _magnet);
   }
 }

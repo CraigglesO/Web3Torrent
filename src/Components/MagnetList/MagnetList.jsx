@@ -28,7 +28,8 @@ export class MagnetList extends Component {
 									</div>
 								</div>
 								<div className="magnet-right">
-									<span className="magnet-video"></span>
+									<span className="magnet-video">
+									</span>
 									<span className="magnet-magnet">
 										<a href={magnet.magnet}>
 											SVG HERE
