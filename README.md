@@ -1,5 +1,7 @@
 # Parity WebRTC dapp.
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CraigglesO/Web3Torrent.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 ```sh
