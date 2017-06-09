@@ -9,30 +9,39 @@ import Magnet from './magnet.json';
 
 @observer
 export class Video extends Component {
+	constructor() {
+			super();
+			this.state = {
+				vid: null
+			};
+	}
+
 	componentWillMount() {
 		this.props.store.createMagnetVideo(Magnet);
 	}
 
-	// componentWillReceiveProps(nextProps) {
-	// 	console.log("next", nextProps);
-	// 	if (nextProps.store.file)
-	// 		this.ref.vid.append(nextProps.store.file);
-	// }
+	componentWillReceiveProps(nextProps) {
+		if (nextProps.store.file !== this.state.vid) {
+			this.state.vid = nextProps.store.file;
+			this.refs.vid.appendChild(this.state.vid);
+		}
+	}
 
 	render() {
-		const { file } = this.props.store;
+		const { file, publicPrivate, progress } = this.props.store;
+
 		return (
 			<div id="Video">
+				<div id="public-private">
+					{(publicPrivate) ? "Public Channel" : "Private Channel"}
+				</div>
 				<div id="peers">
 
 				</div>
 				<div id="up-down">
 				</div>
 				<div ref="vid" id="vid">
-					<div id="progressbar" />
-					<video width="500" height="250" controls>
-						<source src="movie.mp4" type="video/mp4" />
-					</video>
+					<div id="progressbar" style={{width: `${progress}%`}} />
 				</div>
 			</div>
 		);

@@ -1,4 +1,6 @@
 #Video {
+  position: relative;
+  padding-top: 20px;
   width: 100vw;
   min-height: 350px;
   background-color: #2a3749; /* #35b44f */
@@ -6,6 +8,15 @@
   align-items: center;
   justify-content: space-between;
   transition: background-color 700ms ease;
+}
+
+#public-private {
+  position: absolute;
+  font-size: 35px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
 }
 
 #peers {

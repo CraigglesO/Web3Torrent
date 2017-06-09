@@ -14,6 +14,10 @@ const  MAGNET_ADDRESS          = '0x78De662aC7f39ae4D1f08818f95F3AdCFc5B3fDb';
 const  MAGNET_PRIVATE_ADDRESS  = '0x0';
 
 class MagnetStore {
+  @observable upSpeed = 0;
+  @observable downSpeed = 0;
+  @observable progress = 0;
+  @observable publicPrivate = true;
   @observable magnet;
   @observable magnetList;
   @observable torrent;
@@ -32,7 +36,28 @@ class MagnetStore {
     // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
     self.magnetSize = self.contract.getMagnetSize.call().toNumber();
 
+    self.contract.PostedTorrent().watch((err, res) => {
+      let magSize = self.contract.getMagnetSize.call().toNumber();
+      let payload = self.contract.magnets(self.magSize - 1);
+      self.magnetList.push({
+        name: payload[0],
+        magnet: payload[1],
+        timestamp: payload[2].toNumber(),
+        author: payload[3]
+      });
+    });
+
     self.createList();
+  }
+
+  setChannel() {
+    const self = this;
+
+    if (self.publicPrivate) {
+      self.publicPrivate = false;
+    } else {
+      self.publicPrivate = true;
+    }
   }
 
   createList() {
@@ -42,9 +67,7 @@ class MagnetStore {
       return;
     }
 
-    let payload = self.contract.magnets(self.magneSize - 1);
-    console.log("payload", payload);
-    console.log("size", self.magnetSize);
+    let payload = self.contract.magnets(self.magnetSize - 1);
     self.magnetList.push({
       name: payload[0],
       magnet: payload[1],
@@ -67,16 +90,25 @@ class MagnetStore {
       });
 
       self.file = file;
+
+      setInterval(onProgress, 500);
+      onProgress();
+
+      function onProgress() {
+        self.progress = Math.round(self.torrent.progress * 100 * 100) / 100;
+        self.downSpeed = self.torrent.downloadSpeed;
+        self.upSpeed   = self.torrent.uploadSpeed;
+      }
     });
-    return self.file;
   }
 
   addMagnet(name, magnet) {
     const self = this;
 
-    self.contract.addMagnet(name, magnet, { data: MAGNET.data }).then((err, res) => {
-      console.log("err", err);
-      console.log("res", res);
+    self.contract.addMagnet.sendTransaction(name, magnet, (err, res) => {
+      if (err)
+        console.log("ERROR:", err);
+      console.log("Success:", res);
     });
   }
 }

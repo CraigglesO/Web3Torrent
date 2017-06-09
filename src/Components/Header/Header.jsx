@@ -24,7 +24,7 @@ export class Header extends Component {
 	}
 
 	onPrivate() {
-
+		this.props.store.setChannel();
 	}
 
 	cancel() {
@@ -33,7 +33,7 @@ export class Header extends Component {
 
 	render() {
 		const { magnetModal, adhd } = this.state;
-		const { file } = this.props.store;
+		const { file, publicPrivate } = this.props.store;
 
 		return (
 			<div id="Header">
@@ -47,7 +47,7 @@ export class Header extends Component {
 						Add Magnet
 					</span>
 					<span className="links" id="private" onClick={this.onPrivate.bind(this)}>
-						Private
+						{(publicPrivate) ? "Private" : "Public"}
 					</span>
 					<a target="_blank" href="https://github.com/CraigglesO/Web3Torrent">
 						<span className="button" id="github">Github</span>
@@ -88,6 +88,7 @@ class MagnetModal extends Component {
 	handleSubmit(event) {
 		event.preventDefault();
     this.props.store.addMagnet(this.state.name, this.state.magnet);
+		this.onCancel();
   }
 
 	onCancel() {
@@ -106,7 +107,7 @@ class MagnetModal extends Component {
 						className="mag-inputs"
 						id="name-input"
 						type="text"
-						placeholder="name of file"
+						placeholder="name of project"
 						value={this.state.name}
 						onChange={this.handleNameChange}
 					/>

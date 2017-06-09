@@ -33,9 +33,11 @@
   font-size: 18px;
 }
 .button:hover {
+  cursor: pointer;
   background-color: #54CD6D;
 }
 .button:active {
+  cursor: pointer;
   background-color: #30a247;
 }
 
@@ -52,7 +54,7 @@
 }
 
 #private {
-
+  padding-right: 12px;
 }
 #private:hover {
   color: #35b44f;

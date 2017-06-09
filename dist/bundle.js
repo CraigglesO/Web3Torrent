@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 172);
+/******/ 	return __webpack_require__(__webpack_require__.s = 171);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -406,7 +406,7 @@ module.exports = warning;
 
 
 
-var base64 = __webpack_require__(173)
+var base64 = __webpack_require__(172)
 var ieee754 = __webpack_require__(235)
 var isArray = __webpack_require__(114)
 
@@ -3143,7 +3143,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var _prodInvariant = __webpack_require__(5);
 
 var DOMProperty = __webpack_require__(26);
-var ReactDOMComponentFlags = __webpack_require__(127);
+var ReactDOMComponentFlags = __webpack_require__(126);
 
 var invariant = __webpack_require__(1);
 
@@ -4287,7 +4287,7 @@ module.exports = ExecutionEnvironment;
 
 var BigNumber = __webpack_require__(54);
 var sha3 = __webpack_require__(53);
-var utf8 = __webpack_require__(376);
+var utf8 = __webpack_require__(373);
 
 var unitMap = {
     'noether':      '0',
@@ -4884,13 +4884,13 @@ module.exports = {
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(149);
+exports = module.exports = __webpack_require__(148);
 exports.Stream = exports;
 exports.Readable = exports;
-exports.Writable = __webpack_require__(151);
+exports.Writable = __webpack_require__(150);
 exports.Duplex = __webpack_require__(41);
-exports.Transform = __webpack_require__(150);
-exports.PassThrough = __webpack_require__(353);
+exports.Transform = __webpack_require__(149);
+exports.PassThrough = __webpack_require__(350);
 
 
 /***/ }),
@@ -5475,7 +5475,7 @@ module.exports = ReactComponentTreeHook;
 var debugTool = null;
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactDebugTool = __webpack_require__(298);
+  var ReactDebugTool = __webpack_require__(295);
   debugTool = ReactDebugTool;
 }
 
@@ -6112,9 +6112,9 @@ function isUndefined(arg) {
 var _prodInvariant = __webpack_require__(5),
     _assign = __webpack_require__(7);
 
-var CallbackQueue = __webpack_require__(125);
+var CallbackQueue = __webpack_require__(124);
 var PooledClass = __webpack_require__(29);
-var ReactFeatureFlags = __webpack_require__(130);
+var ReactFeatureFlags = __webpack_require__(129);
 var ReactReconciler = __webpack_require__(39);
 var Transaction = __webpack_require__(64);
 
@@ -7481,7 +7481,7 @@ module.exports = __webpack_require__(3)
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var wrappy = __webpack_require__(417)
+var wrappy = __webpack_require__(414)
 module.exports = wrappy(once)
 module.exports.strict = wrappy(onceStrict)
 
@@ -7668,7 +7668,7 @@ var warning = __webpack_require__(2);
 var canDefineProperty = __webpack_require__(67);
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-var REACT_ELEMENT_TYPE = __webpack_require__(145);
+var REACT_ELEMENT_TYPE = __webpack_require__(144);
 
 var RESERVED_PROPS = {
   key: true,
@@ -9016,7 +9016,7 @@ var DOMNamespaces = __webpack_require__(82);
 var setInnerHTML = __webpack_require__(66);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(89);
-var setTextContent = __webpack_require__(143);
+var setTextContent = __webpack_require__(142);
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -9135,7 +9135,7 @@ module.exports = DOMLazyTree;
 
 
 
-var ReactRef = __webpack_require__(312);
+var ReactRef = __webpack_require__(309);
 var ReactInstrumentation = __webpack_require__(16);
 
 var warning = __webpack_require__(2);
@@ -9311,16 +9311,16 @@ module.exports = ReactReconciler;
 
 var _assign = __webpack_require__(7);
 
-var ReactChildren = __webpack_require__(342);
+var ReactChildren = __webpack_require__(339);
 var ReactComponent = __webpack_require__(96);
-var ReactPureComponent = __webpack_require__(347);
-var ReactClass = __webpack_require__(343);
-var ReactDOMFactories = __webpack_require__(344);
+var ReactPureComponent = __webpack_require__(344);
+var ReactClass = __webpack_require__(340);
+var ReactDOMFactories = __webpack_require__(341);
 var ReactElement = __webpack_require__(30);
-var ReactPropTypes = __webpack_require__(345);
-var ReactVersion = __webpack_require__(348);
+var ReactPropTypes = __webpack_require__(342);
+var ReactVersion = __webpack_require__(345);
 
-var onlyChild = __webpack_require__(351);
+var onlyChild = __webpack_require__(348);
 var warning = __webpack_require__(2);
 
 var createElement = ReactElement.createElement;
@@ -9329,7 +9329,7 @@ var cloneElement = ReactElement.cloneElement;
 
 if (process.env.NODE_ENV !== 'production') {
   var canDefineProperty = __webpack_require__(67);
-  var ReactElementValidator = __webpack_require__(146);
+  var ReactElementValidator = __webpack_require__(145);
   var didWarnPropTypesDeprecated = false;
   createElement = ReactElementValidator.createElement;
   createFactory = ReactElementValidator.createFactory;
@@ -9435,8 +9435,8 @@ var util = __webpack_require__(44);
 util.inherits = __webpack_require__(6);
 /*</replacement>*/
 
-var Readable = __webpack_require__(149);
-var Writable = __webpack_require__(151);
+var Readable = __webpack_require__(148);
+var Writable = __webpack_require__(150);
 
 util.inherits(Duplex, Readable);
 
@@ -9889,8 +9889,8 @@ var EventPluginRegistry = __webpack_require__(61);
 var EventPluginUtils = __webpack_require__(83);
 var ReactErrorUtils = __webpack_require__(87);
 
-var accumulateInto = __webpack_require__(137);
-var forEachAccumulated = __webpack_require__(138);
+var accumulateInto = __webpack_require__(136);
+var forEachAccumulated = __webpack_require__(137);
 var invariant = __webpack_require__(1);
 
 /**
@@ -10170,8 +10170,8 @@ module.exports = EventPluginHub;
 var EventPluginHub = __webpack_require__(47);
 var EventPluginUtils = __webpack_require__(83);
 
-var accumulateInto = __webpack_require__(137);
-var forEachAccumulated = __webpack_require__(138);
+var accumulateInto = __webpack_require__(136);
+var forEachAccumulated = __webpack_require__(137);
 var warning = __webpack_require__(2);
 
 var getListener = EventPluginHub.getListener;
@@ -10464,7 +10464,7 @@ module.exports = SyntheticUIEvent;
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Rusha = __webpack_require__(357)
+var Rusha = __webpack_require__(354)
 
 var rusha = new Rusha
 var scope = typeof window !== 'undefined' ? window : self
@@ -13267,8 +13267,8 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! bignumber.js v2.0.7 https://github.com/Mik
 
 var bencode = module.exports
 
-bencode.encode = __webpack_require__(175)
-bencode.decode = __webpack_require__(174)
+bencode.encode = __webpack_require__(174)
+bencode.decode = __webpack_require__(173)
 
 /**
  * Determines the amount of bytes
@@ -13719,7 +13719,7 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {// var assert = require('assert')
-var uint64be = __webpack_require__(373)
+var uint64be = __webpack_require__(370)
 
 var boxes = __webpack_require__(251)
 
@@ -14233,10 +14233,10 @@ module.exports = EventPluginRegistry;
 var _assign = __webpack_require__(7);
 
 var EventPluginRegistry = __webpack_require__(61);
-var ReactEventEmitterMixin = __webpack_require__(302);
-var ViewportMetrics = __webpack_require__(136);
+var ReactEventEmitterMixin = __webpack_require__(299);
+var ViewportMetrics = __webpack_require__(135);
 
-var getVendorPrefixedEventName = __webpack_require__(337);
+var getVendorPrefixedEventName = __webpack_require__(334);
 var isEventSupported = __webpack_require__(93);
 
 /**
@@ -14564,7 +14564,7 @@ module.exports = ReactBrowserEventEmitter;
 
 
 var SyntheticUIEvent = __webpack_require__(50);
-var ViewportMetrics = __webpack_require__(136);
+var ViewportMetrics = __webpack_require__(135);
 
 var getEventModifierState = __webpack_require__(91);
 
@@ -16611,52 +16611,9 @@ module.exports = shallowEqual;
 /***/ (function(module, exports) {
 
 module.exports = {
-	"_args": [
-		[
-			{
-				"raw": "webtorrent@^0.98.18",
-				"scope": null,
-				"escapedName": "webtorrent",
-				"name": "webtorrent",
-				"rawSpec": "^0.98.18",
-				"spec": ">=0.98.18 <0.99.0",
-				"type": "range"
-			},
-			"/Users/craigoconnor/Desktop/Programming/Parity/DAPPS/ParityWebTorrent"
-		]
-	],
-	"_from": "webtorrent@>=0.98.18 <0.99.0",
-	"_id": "webtorrent@0.98.18",
-	"_inCache": true,
-	"_location": "/webtorrent",
-	"_nodeVersion": "7.8.0",
-	"_npmOperationalInternal": {
-		"host": "packages-18-east.internal.npmjs.com",
-		"tmp": "tmp/webtorrent-0.98.18.tgz_1492206160560_0.39563035732135177"
-	},
-	"_npmUser": {
-		"name": "feross",
-		"email": "feross@feross.org"
-	},
-	"_npmVersion": "4.5.0",
-	"_phantomChildren": {},
-	"_requested": {
-		"raw": "webtorrent@^0.98.18",
-		"scope": null,
-		"escapedName": "webtorrent",
-		"name": "webtorrent",
-		"rawSpec": "^0.98.18",
-		"spec": ">=0.98.18 <0.99.0",
-		"type": "range"
-	},
-	"_requiredBy": [
-		"/"
-	],
-	"_resolved": "https://registry.npmjs.org/webtorrent/-/webtorrent-0.98.18.tgz",
-	"_shasum": "d8e0e04a52af884e9cffa361cbe8c159a4cb6f98",
-	"_shrinkwrap": null,
-	"_spec": "webtorrent@^0.98.18",
-	"_where": "/Users/craigoconnor/Desktop/Programming/Parity/DAPPS/ParityWebTorrent",
+	"name": "webtorrent",
+	"description": "Streaming torrent client",
+	"version": "0.98.18",
 	"author": {
 		"name": "WebTorrent, LLC",
 		"email": "feross@webtorrent.io",
@@ -16724,7 +16681,6 @@ module.exports = {
 		"xtend": "^4.0.1",
 		"zero-fill": "^2.2.3"
 	},
-	"description": "Streaming torrent client",
 	"devDependencies": {
 		"bittorrent-tracker": "^9.0.0",
 		"brfs": "^1.4.3",
@@ -16741,15 +16697,9 @@ module.exports = {
 		"webtorrent-fixtures": "^1.5.0",
 		"zuul": "^3.10.1"
 	},
-	"directories": {},
-	"dist": {
-		"shasum": "d8e0e04a52af884e9cffa361cbe8c159a4cb6f98",
-		"tarball": "https://registry.npmjs.org/webtorrent/-/webtorrent-0.98.18.tgz"
-	},
 	"engines": {
 		"node": ">=4"
 	},
-	"gitHead": "eb7ef40d80ebf7fa29188efe0580f2b0c5f3c95c",
 	"homepage": "https://webtorrent.io",
 	"keywords": [
 		"bittorrent",
@@ -16769,15 +16719,6 @@ module.exports = {
 	],
 	"license": "MIT",
 	"main": "index.js",
-	"maintainers": [
-		{
-			"name": "feross",
-			"email": "feross@feross.org"
-		}
-	],
-	"name": "webtorrent",
-	"optionalDependencies": {},
-	"readme": "ERROR: No README data found!",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/webtorrent/webtorrent.git"
@@ -16792,107 +16733,135 @@ module.exports = {
 		"test-browser-local": "zuul --local -- test/*.js test/browser/*.js",
 		"test-node": "tape test/*.js test/node/*.js",
 		"update-authors": "./bin/update-authors.sh"
-	},
-	"version": "0.98.18"
+	}
 };
 
 /***/ }),
 /* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory(__webpack_require__(33), __webpack_require__(116), __webpack_require__(103));
-	else if(typeof define === 'function' && define.amd)
-		define(["react", "mobx", "react-dom"], factory);
-	else if(typeof exports === 'object')
-		exports["mobxReact"] = factory(require("react"), require("mobx"), require("react-dom"));
-	else
-		root["mobxReact"] = factory(root["React"], root["mobx"], root["ReactDOM"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__, __WEBPACK_EXTERNAL_MODULE_5__) {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
-/******/
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+(function (global, factory) {
+	 true ? factory(exports, __webpack_require__(116), __webpack_require__(33), __webpack_require__(103)) :
+	typeof define === 'function' && define.amd ? define(['exports', 'mobx', 'react', 'react-dom'], factory) :
+	(factory((global.mobxReact = global.mobxReact || {}),global.mobx,global.React,global.ReactDOM));
+}(this, (function (exports,mobx,React,ReactDOM) { 'use strict';
 
-"use strict";
+var React__default = 'default' in React ? React['default'] : React;
+var ReactDOM__default = 'default' in ReactDOM ? ReactDOM['default'] : ReactDOM;
+
+var empty = {};
+
+var empty_1 = empty.unstable_batchedUpdates;
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.objectOrObservableObject = exports.arrayOrObservableArrayOf = exports.arrayOrObservableArray = exports.observableObject = exports.observableMap = exports.observableArrayOf = exports.observableArray = undefined;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _mobx = __webpack_require__(2);
+
+
+
+
+
+
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+
+
+
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+
+
+
+
+
+
+
+
+
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+var EventEmitter = function () {
+  function EventEmitter() {
+    classCallCheck(this, EventEmitter);
+    this.listeners = [];
+  }
+
+  createClass(EventEmitter, [{
+    key: "on",
+    value: function on(cb) {
+      var _this = this;
+
+      this.listeners.push(cb);
+      return function () {
+        var index = _this.listeners.indexOf(cb);
+        if (index !== -1) _this.listeners.splice(index, 1);
+      };
+    }
+  }, {
+    key: "emit",
+    value: function emit(data) {
+      this.listeners.forEach(function (fn) {
+        return fn(data);
+      });
+    }
+  }]);
+  return EventEmitter;
+}();
 
 // Copied from React.PropTypes
 function createChainableTypeChecker(validate) {
@@ -16901,7 +16870,7 @@ function createChainableTypeChecker(validate) {
       rest[_key - 6] = arguments[_key];
     }
 
-    return (0, _mobx.untracked)(function () {
+    return mobx.untracked(function () {
       componentName = componentName || '<<anonymous>>';
       propFullName = propFullName || propName;
       if (props[propName] == null) {
@@ -16975,18 +16944,18 @@ function getPreciseType(propValue) {
 
 function createObservableTypeCheckerCreator(allowNativeType, mobxType) {
   return createChainableTypeChecker(function (props, propName, componentName, location, propFullName) {
-    return (0, _mobx.untracked)(function () {
+    return mobx.untracked(function () {
       if (allowNativeType) {
         if (getPropType(props[propName]) === mobxType.toLowerCase()) return null;
       }
       var mobxChecker = void 0;
       switch (mobxType) {
         case 'Array':
-          mobxChecker = _mobx.isObservableArray;break;
+          mobxChecker = mobx.isObservableArray;break;
         case 'Object':
-          mobxChecker = _mobx.isObservableObject;break;
+          mobxChecker = mobx.isObservableObject;break;
         case 'Map':
-          mobxChecker = _mobx.isObservableMap;break;
+          mobxChecker = mobx.isObservableMap;break;
         default:
           throw new Error('Unexpected mobxType: ' + mobxType);
       }
@@ -17007,7 +16976,7 @@ function createObservableArrayOfTypeChecker(allowNativeType, typeChecker) {
       rest[_key2 - 5] = arguments[_key2];
     }
 
-    return (0, _mobx.untracked)(function () {
+    return mobx.untracked(function () {
       if (typeof typeChecker !== 'function') {
         return new Error('Property `' + propFullName + '` of component `' + componentName + '` has ' + 'invalid PropType notation.');
       }
@@ -17023,76 +16992,90 @@ function createObservableArrayOfTypeChecker(allowNativeType, typeChecker) {
   });
 }
 
-var observableArray = exports.observableArray = createObservableTypeCheckerCreator(false, 'Array');
-var observableArrayOf = exports.observableArrayOf = createObservableArrayOfTypeChecker.bind(null, false);
-var observableMap = exports.observableMap = createObservableTypeCheckerCreator(false, 'Map');
-var observableObject = exports.observableObject = createObservableTypeCheckerCreator(false, 'Object');
-var arrayOrObservableArray = exports.arrayOrObservableArray = createObservableTypeCheckerCreator(true, 'Array');
-var arrayOrObservableArrayOf = exports.arrayOrObservableArrayOf = createObservableArrayOfTypeChecker.bind(null, true);
-var objectOrObservableObject = exports.objectOrObservableObject = createObservableTypeCheckerCreator(true, 'Object');
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_2__;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
+var observableArray = createObservableTypeCheckerCreator(false, 'Array');
+var observableArrayOf = createObservableArrayOfTypeChecker.bind(null, false);
+var observableMap = createObservableTypeCheckerCreator(false, 'Map');
+var observableObject = createObservableTypeCheckerCreator(false, 'Object');
+var arrayOrObservableArray = createObservableTypeCheckerCreator(true, 'Array');
+var arrayOrObservableArrayOf = createObservableArrayOfTypeChecker.bind(null, true);
+var objectOrObservableObject = createObservableTypeCheckerCreator(true, 'Object');
 
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+
+var propTypes = Object.freeze({
+	observableArray: observableArray,
+	observableArrayOf: observableArrayOf,
+	observableMap: observableMap,
+	observableObject: observableObject,
+	arrayOrObservableArray: arrayOrObservableArray,
+	arrayOrObservableArrayOf: arrayOrObservableArrayOf,
+	objectOrObservableObject: objectOrObservableObject
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
 
-exports.default = inject;
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    arguments: true,
+    arity: true
+};
 
-var _react = __webpack_require__(1);
+var isGetOwnPropertySymbolsAvailable = typeof Object.getOwnPropertySymbols === 'function';
 
-var _react2 = _interopRequireDefault(_react);
+var index = function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
+    if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
+        var keys = Object.getOwnPropertyNames(sourceComponent);
 
-var _hoistNonReactStatics = __webpack_require__(10);
+        /* istanbul ignore else */
+        if (isGetOwnPropertySymbolsAvailable) {
+            keys = keys.concat(Object.getOwnPropertySymbols(sourceComponent));
+        }
 
-var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
+        for (var i = 0; i < keys.length; ++i) {
+            if (!REACT_STATICS[keys[i]] && !KNOWN_STATICS[keys[i]] && (!customStatics || !customStatics[keys[i]])) {
+                try {
+                    targetComponent[keys[i]] = sourceComponent[keys[i]];
+                } catch (error) {
 
-var _propTypes = __webpack_require__(0);
+                }
+            }
+        }
+    }
 
-var PropTypes = _interopRequireWildcard(_propTypes);
+    return targetComponent;
+};
 
-var _observer = __webpack_require__(4);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function isStateless(component) {
+  return !component.prototype.render;
+}
 
 var injectorContextTypes = {
-  mobxStores: PropTypes.objectOrObservableObject
+  mobxStores: objectOrObservableObject
 };
 Object.seal(injectorContextTypes);
 
 var proxiedInjectorProps = {
   contextTypes: {
-    get: function get() {
+    get: function get$$1() {
       return injectorContextTypes;
     },
-    set: function set(_) {
+    set: function set$$1(_) {
       console.warn("Mobx Injector: you are trying to attach `contextTypes` on an component decorated with `inject` (or `observer`) HOC. Please specify the contextTypes on the wrapped component instead. It is accessible through the `wrappedComponent`");
     },
     configurable: true,
@@ -17116,25 +17099,25 @@ function createStoreInjector(grabStoresFn, component, injectNames) {
   if (injectNames) displayName += "-with-" + injectNames;
 
   var Injector = (_temp2 = _class = function (_Component) {
-    _inherits(Injector, _Component);
+    inherits(Injector, _Component);
 
     function Injector() {
       var _ref;
 
       var _temp, _this, _ret;
 
-      _classCallCheck(this, Injector);
+      classCallCheck(this, Injector);
 
       for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
         args[_key] = arguments[_key];
       }
 
-      return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Injector.__proto__ || Object.getPrototypeOf(Injector)).call.apply(_ref, [this].concat(args))), _this), _this.storeRef = function (instance) {
+      return _ret = (_temp = (_this = possibleConstructorReturn(this, (_ref = Injector.__proto__ || Object.getPrototypeOf(Injector)).call.apply(_ref, [this].concat(args))), _this), _this.storeRef = function (instance) {
         _this.wrappedInstance = instance;
-      }, _temp), _possibleConstructorReturn(_this, _ret);
+      }, _temp), possibleConstructorReturn(_this, _ret);
     }
 
-    _createClass(Injector, [{
+    createClass(Injector, [{
       key: 'render',
       value: function render() {
         // Optimization: it might be more efficient to apply the mapper function *outside* the render method
@@ -17149,18 +17132,20 @@ function createStoreInjector(grabStoresFn, component, injectNames) {
         for (var _key2 in additionalProps) {
           newProps[_key2] = additionalProps[_key2];
         }
-        newProps.ref = this.storeRef;
 
-        return _react2.default.createElement(component, newProps);
+        if (!isStateless(component)) {
+          newProps.ref = this.storeRef;
+        }
+
+        return React__default.createElement(component, newProps);
       }
     }]);
-
     return Injector;
-  }(_react.Component), _class.displayName = displayName, _temp2);
+  }(React.Component), _class.displayName = displayName, _temp2);
 
   // Static fields from component should be visible on the generated Injector
 
-  (0, _hoistNonReactStatics2.default)(Injector, component);
+  index(Injector, component);
 
   Injector.wrappedComponent = component;
   Object.defineProperties(Injector, proxiedInjectorProps);
@@ -17173,7 +17158,7 @@ function grabStoresByName(storeNames) {
     storeNames.forEach(function (storeName) {
       if (storeName in nextProps) // prefer props over stores
         return;
-      if (!(storeName in baseStores)) throw new Error("MobX observer: Store '" + storeName + "' is not available! Make sure it is provided by some Provider");
+      if (!(storeName in baseStores)) throw new Error("MobX injector: Store '" + storeName + "' is not available! Make sure it is provided by some Provider");
       nextProps[storeName] = baseStores[storeName];
     });
     return nextProps;
@@ -17195,7 +17180,7 @@ function inject() /* fn(stores, nextProps) or ...storeNames */{
       injected.isMobxInjector = false; // supress warning
       // mark the Injector as observer, to make it react to expressions in `grabStoresFn`,
       // see #111
-      injected = (0, _observer.observer)(injected);
+      injected = observer(injected);
       injected.isMobxInjector = true; // restore warning
       return injected;
     };
@@ -17210,58 +17195,6 @@ function inject() /* fn(stores, nextProps) or ...storeNames */{
   }
 }
 
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Observer = exports.renderReporter = exports.componentByNodeRegistery = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-exports.trackComponents = trackComponents;
-exports.useStaticRendering = useStaticRendering;
-exports.observer = observer;
-
-var _mobx = __webpack_require__(2);
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(5);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _EventEmitter = __webpack_require__(9);
-
-var _EventEmitter2 = _interopRequireDefault(_EventEmitter);
-
-var _propTypes = __webpack_require__(0);
-
-var PropTypes = _interopRequireWildcard(_propTypes);
-
-var _inject = __webpack_require__(3);
-
-var _inject2 = _interopRequireDefault(_inject);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 /**
  * dev tool support
  */
@@ -17272,13 +17205,13 @@ var isUsingStaticRendering = false;
 var warnedAboutObserverInjectDeprecation = false;
 
 // WeakMap<Node, Object>;
-var componentByNodeRegistery = exports.componentByNodeRegistery = typeof WeakMap !== "undefined" ? new WeakMap() : undefined;
-var renderReporter = exports.renderReporter = new _EventEmitter2.default();
+var componentByNodeRegistery = typeof WeakMap !== "undefined" ? new WeakMap() : undefined;
+var renderReporter = new EventEmitter();
 
 function findDOMNode(component) {
-  if (_reactDom2.default) {
+  if (ReactDOM__default) {
     try {
-      return _reactDom2.default.findDOMNode(component);
+      return ReactDOM__default.findDOMNode(component);
     } catch (e) {
       // findDOMNode will throw in react-test-renderer, see:
       // See https://github.com/mobxjs/mobx-react/issues/216
@@ -17310,6 +17243,12 @@ function trackComponents() {
 function useStaticRendering(useStaticRendering) {
   isUsingStaticRendering = useStaticRendering;
 }
+
+/**
+ * Errors reporter
+ */
+
+var errorsReporter = new EventEmitter();
 
 /**
  * Utilities
@@ -17375,14 +17314,14 @@ var reactiveMixin = {
 
     function makePropertyObservableReference(propName) {
       var valueHolder = this[propName];
-      var atom = new _mobx.Atom("reactive " + propName);
+      var atom = new mobx.Atom("reactive " + propName);
       Object.defineProperty(this, propName, {
         configurable: true, enumerable: true,
-        get: function get() {
+        get: function get$$1() {
           atom.reportObserved();
           return valueHolder;
         },
-        set: function set(v) {
+        set: function set$$1(v) {
           if (!isForcingUpdate && isObjectShallowModified(valueHolder, v)) {
             valueHolder = v;
             skipRender = true;
@@ -17406,7 +17345,7 @@ var reactiveMixin = {
     var isRenderingPending = false;
 
     var initialRender = function initialRender() {
-      reaction = new _mobx.Reaction(initialName + '#' + rootNodeID + '.render()', function () {
+      reaction = new mobx.Reaction(initialName + '#' + rootNodeID + '.render()', function () {
         if (!isRenderingPending) {
           // N.B. Getting here *before mounting* means that a component constructor has side effects (see the relevant test in misc.js)
           // This unidiomatic React usage but React will correctly warn about this so we continue as usual
@@ -17420,7 +17359,7 @@ var reactiveMixin = {
             var hasError = true;
             try {
               isForcingUpdate = true;
-              if (!skipRender) _react2.default.Component.prototype.forceUpdate.call(_this);
+              if (!skipRender) React__default.Component.prototype.forceUpdate.call(_this);
               hasError = false;
             } finally {
               isForcingUpdate = false;
@@ -17443,7 +17382,7 @@ var reactiveMixin = {
           _this.__$mobRenderStart = Date.now();
         }
         try {
-          rendering = _mobx.extras.allowStateChanges(false, baseRender);
+          rendering = mobx.extras.allowStateChanges(false, baseRender);
         } catch (e) {
           exception = e;
         }
@@ -17451,7 +17390,10 @@ var reactiveMixin = {
           _this.__$mobRenderEnd = Date.now();
         }
       });
-      if (exception) throw exception;
+      if (exception) {
+        errorsReporter.emit(exception);
+        throw exception;
+      }
       return rendering;
     };
 
@@ -17522,7 +17464,7 @@ function observer(arg1, arg2) {
         return observer(arg1, componentClass);
       };
     } else {
-      return _inject2.default.apply(null, arg1)(observer(arg2));
+      return inject.apply(null, arg1)(observer(arg2));
     }
   }
   var componentClass = arg1;
@@ -17534,27 +17476,25 @@ function observer(arg1, arg2) {
   // Stateless function component:
   // If it is function but doesn't seem to be a react class constructor,
   // wrap it to a react class automatically
-  if (typeof componentClass === "function" && (!componentClass.prototype || !componentClass.prototype.render) && !componentClass.isReactClass && !_react2.default.Component.isPrototypeOf(componentClass)) {
+  if (typeof componentClass === "function" && (!componentClass.prototype || !componentClass.prototype.render) && !componentClass.isReactClass && !React__default.Component.isPrototypeOf(componentClass)) {
     var _class, _temp;
 
     return observer((_temp = _class = function (_Component) {
-      _inherits(_class, _Component);
+      inherits(_class, _Component);
 
       function _class() {
-        _classCallCheck(this, _class);
-
-        return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+        classCallCheck(this, _class);
+        return possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
       }
 
-      _createClass(_class, [{
+      createClass(_class, [{
         key: 'render',
         value: function render() {
           return componentClass.call(this, this.props, this.context);
         }
       }]);
-
       return _class;
-    }(_react.Component), _class.displayName = componentClass.displayName || componentClass.name, _class.contextTypes = componentClass.contextTypes, _class.propTypes = componentClass.propTypes, _class.defaultProps = componentClass.defaultProps, _temp));
+    }(React.Component), _class.displayName = componentClass.displayName || componentClass.name, _class.contextTypes = componentClass.contextTypes, _class.propTypes = componentClass.propTypes, _class.defaultProps = componentClass.defaultProps, _temp));
   }
 
   if (!componentClass) {
@@ -17578,7 +17518,7 @@ function mixinLifecycleEvents(target) {
 }
 
 // TODO: support injection somehow as well?
-var Observer = exports.Observer = observer(function (_ref) {
+var Observer = observer(function (_ref) {
   var children = _ref.children;
   return children();
 });
@@ -17589,61 +17529,23 @@ Observer.propTypes = {
   }
 };
 
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_5__;
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _class, _temp;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(0);
-
-var PropTypes = _interopRequireWildcard(_propTypes);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _class;
+var _temp;
 
 var specialReactKeys = { children: true, key: true, ref: true };
 
 var Provider = (_temp = _class = function (_Component) {
-  _inherits(Provider, _Component);
+  inherits(Provider, _Component);
 
   function Provider() {
-    _classCallCheck(this, Provider);
-
-    return _possibleConstructorReturn(this, (Provider.__proto__ || Object.getPrototypeOf(Provider)).apply(this, arguments));
+    classCallCheck(this, Provider);
+    return possibleConstructorReturn(this, (Provider.__proto__ || Object.getPrototypeOf(Provider)).apply(this, arguments));
   }
 
-  _createClass(Provider, [{
+  createClass(Provider, [{
     key: 'render',
     value: function render() {
-      return _react2.default.Children.only(this.props.children);
+      return React__default.Children.only(this.props.children);
     }
   }, {
     key: 'getChildContext',
@@ -17671,241 +17573,47 @@ var Provider = (_temp = _class = function (_Component) {
       }
     }
   }]);
-
   return Provider;
-}(_react.Component), _class.contextTypes = {
-  mobxStores: PropTypes.objectOrObservableObject
+}(React.Component), _class.contextTypes = {
+  mobxStores: objectOrObservableObject
 }, _class.childContextTypes = {
-  mobxStores: PropTypes.objectOrObservableObject.isRequired
+  mobxStores: objectOrObservableObject.isRequired
 }, _temp);
-exports.default = Provider;
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = null
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.PropTypes = exports.propTypes = exports.inject = exports.Provider = exports.useStaticRendering = exports.trackComponents = exports.componentByNodeRegistery = exports.renderReporter = exports.Observer = exports.observer = undefined;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _observer = __webpack_require__(4);
-
-Object.defineProperty(exports, 'observer', {
-  enumerable: true,
-  get: function get() {
-    return _observer.observer;
-  }
-});
-Object.defineProperty(exports, 'Observer', {
-  enumerable: true,
-  get: function get() {
-    return _observer.Observer;
-  }
-});
-Object.defineProperty(exports, 'renderReporter', {
-  enumerable: true,
-  get: function get() {
-    return _observer.renderReporter;
-  }
-});
-Object.defineProperty(exports, 'componentByNodeRegistery', {
-  enumerable: true,
-  get: function get() {
-    return _observer.componentByNodeRegistery;
-  }
-});
-Object.defineProperty(exports, 'trackComponents', {
-  enumerable: true,
-  get: function get() {
-    return _observer.trackComponents;
-  }
-});
-Object.defineProperty(exports, 'useStaticRendering', {
-  enumerable: true,
-  get: function get() {
-    return _observer.useStaticRendering;
-  }
-});
-
-var _Provider = __webpack_require__(6);
-
-Object.defineProperty(exports, 'Provider', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_Provider).default;
-  }
-});
-
-var _inject = __webpack_require__(3);
-
-Object.defineProperty(exports, 'inject', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_inject).default;
-  }
-});
-
-var _mobx = __webpack_require__(2);
-
-var mobx = _interopRequireWildcard(_mobx);
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(5);
-
-var _reactNative = __webpack_require__(7);
-
-var _propTypes = __webpack_require__(0);
-
-var propTypes = _interopRequireWildcard(_propTypes);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var TARGET_LIB_NAME = void 0;
-if (true) TARGET_LIB_NAME = 'mobx-react';
-if (false) TARGET_LIB_NAME = 'mobx-react/native';
-if (false) TARGET_LIB_NAME = 'mobx-react/custom';
-
+TARGET_LIB_NAME = 'mobx-react';
 if (!mobx) throw new Error(TARGET_LIB_NAME + ' requires the MobX package');
-if (!_react2.default) throw new Error(TARGET_LIB_NAME + ' requires React to be available');
+if (!React__default) throw new Error(TARGET_LIB_NAME + ' requires React to be available');
 
-if ("browser" === 'browser' && typeof _reactDom.unstable_batchedUpdates === "function") mobx.extras.setReactionScheduler(_reactDom.unstable_batchedUpdates);
-if (false) mobx.extras.setReactionScheduler(_reactNative.unstable_batchedUpdates);
+if ("browser" === 'browser' && typeof ReactDOM.unstable_batchedUpdates === "function") mobx.extras.setReactionScheduler(ReactDOM.unstable_batchedUpdates);
+if (false) mobx.extras.setReactionScheduler(empty_1);
+
+var onError = function onError(fn) {
+  return errorsReporter.on(fn);
+};
+
+/* DevTool support */
+if ((typeof __MOBX_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ? 'undefined' : _typeof(__MOBX_DEVTOOLS_GLOBAL_HOOK__)) === 'object') {
+  __MOBX_DEVTOOLS_GLOBAL_HOOK__.injectMobxReact(exports, mobx);
+}
 
 exports.propTypes = propTypes;
 exports.PropTypes = propTypes;
-exports.default = module.exports;
+exports.onError = onError;
+exports['default'] = exports;
+exports.observer = observer;
+exports.Observer = Observer;
+exports.renderReporter = renderReporter;
+exports.componentByNodeRegistery = componentByNodeRegistery;
+exports.trackComponents = trackComponents;
+exports.useStaticRendering = useStaticRendering;
+exports.Provider = Provider;
+exports.inject = inject;
 
-/* DevTool support */
+Object.defineProperty(exports, '__esModule', { value: true });
 
-if ((typeof __MOBX_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' ? 'undefined' : _typeof(__MOBX_DEVTOOLS_GLOBAL_HOOK__)) === 'object') {
-  __MOBX_DEVTOOLS_GLOBAL_HOOK__.injectMobxReact(module.exports, mobx);
-}
+})));
 
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var EventEmitter = function () {
-  function EventEmitter() {
-    _classCallCheck(this, EventEmitter);
-
-    this.listeners = [];
-  }
-
-  _createClass(EventEmitter, [{
-    key: "on",
-    value: function on(cb) {
-      var _this = this;
-
-      this.listeners.push(cb);
-      return function () {
-        var index = _this.listeners.indexOf(cb);
-        if (index !== -1) _this.listeners.splice(index, 1);
-      };
-    }
-  }, {
-    key: "emit",
-    value: function emit(data) {
-      this.listeners.forEach(function (fn) {
-        return fn(data);
-      });
-    }
-  }]);
-
-  return EventEmitter;
-}();
-
-exports.default = EventEmitter;
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright 2015, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
-
-
-var REACT_STATICS = {
-    childContextTypes: true,
-    contextTypes: true,
-    defaultProps: true,
-    displayName: true,
-    getDefaultProps: true,
-    mixins: true,
-    propTypes: true,
-    type: true
-};
-
-var KNOWN_STATICS = {
-    name: true,
-    length: true,
-    prototype: true,
-    caller: true,
-    arguments: true,
-    arity: true
-};
-
-var isGetOwnPropertySymbolsAvailable = typeof Object.getOwnPropertySymbols === 'function';
-
-module.exports = function hoistNonReactStatics(targetComponent, sourceComponent, customStatics) {
-    if (typeof sourceComponent !== 'string') { // don't hoist over string (html) components
-        var keys = Object.getOwnPropertyNames(sourceComponent);
-
-        /* istanbul ignore else */
-        if (isGetOwnPropertySymbolsAvailable) {
-            keys = keys.concat(Object.getOwnPropertySymbols(sourceComponent));
-        }
-
-        for (var i = 0; i < keys.length; ++i) {
-            if (!REACT_STATICS[keys[i]] && !KNOWN_STATICS[keys[i]] && (!customStatics || !customStatics[keys[i]])) {
-                try {
-                    targetComponent[keys[i]] = sourceComponent[keys[i]];
-                } catch (error) {
-
-                }
-            }
-        }
-    }
-
-    return targetComponent;
-};
-
-
-/***/ })
-/******/ ]);
-});
 
 /***/ }),
 /* 80 */
@@ -17976,13 +17684,13 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 var DOMLazyTree = __webpack_require__(38);
-var Danger = __webpack_require__(275);
+var Danger = __webpack_require__(272);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstrumentation = __webpack_require__(16);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(89);
 var setInnerHTML = __webpack_require__(66);
-var setTextContent = __webpack_require__(143);
+var setTextContent = __webpack_require__(142);
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -18529,8 +18237,8 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactPropTypesSecret = __webpack_require__(135);
-var propTypesFactory = __webpack_require__(120);
+var ReactPropTypesSecret = __webpack_require__(134);
+var propTypesFactory = __webpack_require__(119);
 
 var React = __webpack_require__(40);
 var PropTypes = propTypesFactory(React.isValidElement);
@@ -19937,12 +19645,12 @@ module.exports = ReactNoopUpdateQueue;
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {module.exports = simpleGet
 
-var concat = __webpack_require__(153)
-var http = __webpack_require__(154)
+var concat = __webpack_require__(152)
+var http = __webpack_require__(153)
 var https = __webpack_require__(234)
 var once = __webpack_require__(28)
-var querystring = __webpack_require__(123)
-var unzipResponse = __webpack_require__(425) // excluded from browser build
+var querystring = __webpack_require__(122)
+var unzipResponse = __webpack_require__(422) // excluded from browser build
 var url = __webpack_require__(101)
 
 function simpleGet (opts, cb) {
@@ -20911,8 +20619,8 @@ module.exports = function (seconds) {
 
 
 
-var punycode = __webpack_require__(265);
-var util = __webpack_require__(374);
+var punycode = __webpack_require__(262);
+var util = __webpack_require__(371);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -20987,7 +20695,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(123);
+    querystring = __webpack_require__(122);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -21650,15 +21358,15 @@ Url.prototype.parseHost = function() {
 
 var f = __webpack_require__(18);
 
-var SolidityTypeAddress = __webpack_require__(381);
-var SolidityTypeBool = __webpack_require__(382);
-var SolidityTypeInt = __webpack_require__(385);
-var SolidityTypeUInt = __webpack_require__(388);
-var SolidityTypeDynamicBytes = __webpack_require__(384);
-var SolidityTypeString = __webpack_require__(387);
-var SolidityTypeReal = __webpack_require__(386);
-var SolidityTypeUReal = __webpack_require__(389);
-var SolidityTypeBytes = __webpack_require__(383);
+var SolidityTypeAddress = __webpack_require__(378);
+var SolidityTypeBool = __webpack_require__(379);
+var SolidityTypeInt = __webpack_require__(382);
+var SolidityTypeUInt = __webpack_require__(385);
+var SolidityTypeDynamicBytes = __webpack_require__(381);
+var SolidityTypeString = __webpack_require__(384);
+var SolidityTypeReal = __webpack_require__(383);
+var SolidityTypeUReal = __webpack_require__(386);
+var SolidityTypeBytes = __webpack_require__(380);
 
 var isDynamic = function (solidityType, type) {
    return solidityType.isDynamicType(type) ||
@@ -21898,7 +21606,7 @@ module.exports = coder;
 "use strict";
 
 
-module.exports = __webpack_require__(283);
+module.exports = __webpack_require__(280);
 
 
 /***/ }),
@@ -22679,7 +22387,7 @@ exports.hexToBinary = function (str) {
   return Buffer.from(str, 'hex').toString('binary')
 }
 
-var config = __webpack_require__(422)
+var config = __webpack_require__(419)
 extend(exports, config)
 
 
@@ -27207,243 +26915,16 @@ function toStreams2 (s) {
 /* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-var Buffer = __webpack_require__(3).Buffer;
-
-var isBufferEncoding = Buffer.isEncoding
-  || function(encoding) {
-       switch (encoding && encoding.toLowerCase()) {
-         case 'hex': case 'utf8': case 'utf-8': case 'ascii': case 'binary': case 'base64': case 'ucs2': case 'ucs-2': case 'utf16le': case 'utf-16le': case 'raw': return true;
-         default: return false;
-       }
-     }
-
-
-function assertEncoding(encoding) {
-  if (encoding && !isBufferEncoding(encoding)) {
-    throw new Error('Unknown encoding: ' + encoding);
-  }
-}
-
-// StringDecoder provides an interface for efficiently splitting a series of
-// buffers into a series of JS strings without breaking apart multi-byte
-// characters. CESU-8 is handled as part of the UTF-8 encoding.
-//
-// @TODO Handling all encodings inside a single object makes it very difficult
-// to reason about this code, so it should be split up in the future.
-// @TODO There should be a utf8-strict encoding that rejects invalid UTF-8 code
-// points as used by CESU-8.
-var StringDecoder = exports.StringDecoder = function(encoding) {
-  this.encoding = (encoding || 'utf8').toLowerCase().replace(/[-_]/, '');
-  assertEncoding(encoding);
-  switch (this.encoding) {
-    case 'utf8':
-      // CESU-8 represents each of Surrogate Pair by 3-bytes
-      this.surrogateSize = 3;
-      break;
-    case 'ucs2':
-    case 'utf16le':
-      // UTF-16 represents each of Surrogate Pair by 2-bytes
-      this.surrogateSize = 2;
-      this.detectIncompleteChar = utf16DetectIncompleteChar;
-      break;
-    case 'base64':
-      // Base-64 stores 3 bytes in 4 chars, and pads the remainder.
-      this.surrogateSize = 3;
-      this.detectIncompleteChar = base64DetectIncompleteChar;
-      break;
-    default:
-      this.write = passThroughWrite;
-      return;
-  }
-
-  // Enough space to store all bytes of a single character. UTF-8 needs 4
-  // bytes, but CESU-8 may require up to 6 (3 bytes per surrogate).
-  this.charBuffer = new Buffer(6);
-  // Number of bytes received for the current incomplete multi-byte character.
-  this.charReceived = 0;
-  // Number of bytes expected for the current incomplete multi-byte character.
-  this.charLength = 0;
-};
-
-
-// write decodes the given buffer and returns it as JS string that is
-// guaranteed to not contain any partial multi-byte characters. Any partial
-// character found at the end of the buffer is buffered up, and will be
-// returned when calling write again with the remaining bytes.
-//
-// Note: Converting a Buffer containing an orphan surrogate to a String
-// currently works, but converting a String to a Buffer (via `new Buffer`, or
-// Buffer#write) will replace incomplete surrogates with the unicode
-// replacement character. See https://codereview.chromium.org/121173009/ .
-StringDecoder.prototype.write = function(buffer) {
-  var charStr = '';
-  // if our last write ended with an incomplete multibyte character
-  while (this.charLength) {
-    // determine how many remaining bytes this buffer has to offer for this char
-    var available = (buffer.length >= this.charLength - this.charReceived) ?
-        this.charLength - this.charReceived :
-        buffer.length;
-
-    // add the new bytes to the char buffer
-    buffer.copy(this.charBuffer, this.charReceived, 0, available);
-    this.charReceived += available;
-
-    if (this.charReceived < this.charLength) {
-      // still not enough chars in this buffer? wait for more ...
-      return '';
-    }
-
-    // remove bytes belonging to the current character from the buffer
-    buffer = buffer.slice(available, buffer.length);
-
-    // get the character that was split
-    charStr = this.charBuffer.slice(0, this.charLength).toString(this.encoding);
-
-    // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
-    var charCode = charStr.charCodeAt(charStr.length - 1);
-    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
-      this.charLength += this.surrogateSize;
-      charStr = '';
-      continue;
-    }
-    this.charReceived = this.charLength = 0;
-
-    // if there are no more bytes in this buffer, just emit our char
-    if (buffer.length === 0) {
-      return charStr;
-    }
-    break;
-  }
-
-  // determine and set charLength / charReceived
-  this.detectIncompleteChar(buffer);
-
-  var end = buffer.length;
-  if (this.charLength) {
-    // buffer the incomplete character bytes we got
-    buffer.copy(this.charBuffer, 0, buffer.length - this.charReceived, end);
-    end -= this.charReceived;
-  }
-
-  charStr += buffer.toString(this.encoding, 0, end);
-
-  var end = charStr.length - 1;
-  var charCode = charStr.charCodeAt(end);
-  // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
-  if (charCode >= 0xD800 && charCode <= 0xDBFF) {
-    var size = this.surrogateSize;
-    this.charLength += size;
-    this.charReceived += size;
-    this.charBuffer.copy(this.charBuffer, size, 0, size);
-    buffer.copy(this.charBuffer, 0, 0, size);
-    return charStr.substring(0, end);
-  }
-
-  // or just emit the charStr
-  return charStr;
-};
-
-// detectIncompleteChar determines if there is an incomplete UTF-8 character at
-// the end of the given buffer. If so, it sets this.charLength to the byte
-// length that character, and sets this.charReceived to the number of bytes
-// that are available for this character.
-StringDecoder.prototype.detectIncompleteChar = function(buffer) {
-  // determine how many bytes we have to check at the end of this buffer
-  var i = (buffer.length >= 3) ? 3 : buffer.length;
-
-  // Figure out if one of the last i bytes of our buffer announces an
-  // incomplete char.
-  for (; i > 0; i--) {
-    var c = buffer[buffer.length - i];
-
-    // See http://en.wikipedia.org/wiki/UTF-8#Description
-
-    // 110XXXXX
-    if (i == 1 && c >> 5 == 0x06) {
-      this.charLength = 2;
-      break;
-    }
-
-    // 1110XXXX
-    if (i <= 2 && c >> 4 == 0x0E) {
-      this.charLength = 3;
-      break;
-    }
-
-    // 11110XXX
-    if (i <= 3 && c >> 3 == 0x1E) {
-      this.charLength = 4;
-      break;
-    }
-  }
-  this.charReceived = i;
-};
-
-StringDecoder.prototype.end = function(buffer) {
-  var res = '';
-  if (buffer && buffer.length)
-    res = this.write(buffer);
-
-  if (this.charReceived) {
-    var cr = this.charReceived;
-    var buf = this.charBuffer;
-    var enc = this.encoding;
-    res += buf.slice(0, cr).toString(enc);
-  }
-
-  return res;
-};
-
-function passThroughWrite(buffer) {
-  return buffer.toString(this.encoding);
-}
-
-function utf16DetectIncompleteChar(buffer) {
-  this.charReceived = buffer.length % 2;
-  this.charLength = this.charReceived ? 2 : 0;
-}
-
-function base64DetectIncompleteChar(buffer) {
-  this.charReceived = buffer.length % 3;
-  this.charLength = this.charReceived ? 3 : 0;
-}
-
-
-/***/ }),
-/* 119 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /* WEBPACK VAR INJECTION */(function(Buffer, process) {/* global Blob */
 
 module.exports = parseTorrent
 module.exports.remote = parseTorrentRemote
 
-var blobToBuffer = __webpack_require__(180)
+var blobToBuffer = __webpack_require__(179)
 var fs = __webpack_require__(60) // browser exclude
 var get = __webpack_require__(98)
 var magnet = __webpack_require__(249)
-var parseTorrentFile = __webpack_require__(261)
+var parseTorrentFile = __webpack_require__(258)
 
 module.exports.toMagnetURI = magnet.encode
 module.exports.toTorrentFile = parseTorrentFile.encode
@@ -27548,7 +27029,7 @@ function isBlob (obj) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer, __webpack_require__(0)))
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27567,7 +27048,7 @@ function isBlob (obj) {
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(264);
+var factory = __webpack_require__(261);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -27576,7 +27057,7 @@ module.exports = function(isValidElement) {
 
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27597,12 +27078,12 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var once = __webpack_require__(28)
 var eos = __webpack_require__(110)
-var fs = __webpack_require__(423) // we only need fs to get the ReadStream and WriteStream prototypes
+var fs = __webpack_require__(420) // we only need fs to get the ReadStream and WriteStream prototypes
 
 var noop = function () {}
 
@@ -27683,18 +27164,18 @@ module.exports = pump
 
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(266);
-exports.encode = exports.stringify = __webpack_require__(267);
+exports.decode = exports.parse = __webpack_require__(263);
+exports.encode = exports.stringify = __webpack_require__(264);
 
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27847,7 +27328,7 @@ var CSSProperty = {
 module.exports = CSSProperty;
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27972,7 +27453,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27992,7 +27473,7 @@ var DOMProperty = __webpack_require__(26);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstrumentation = __webpack_require__(16);
 
-var quoteAttributeValueForBrowser = __webpack_require__(338);
+var quoteAttributeValueForBrowser = __webpack_require__(335);
 var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -28215,7 +27696,7 @@ module.exports = DOMPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28238,7 +27719,7 @@ var ReactDOMComponentFlags = {
 module.exports = ReactDOMComponentFlags;
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28444,7 +27925,7 @@ module.exports = ReactDOMSelect;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28479,7 +27960,7 @@ ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 module.exports = ReactEmptyComponent;
 
 /***/ }),
-/* 130 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28506,7 +27987,7 @@ var ReactFeatureFlags = {
 module.exports = ReactFeatureFlags;
 
 /***/ }),
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28580,7 +28061,7 @@ module.exports = ReactHostComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 132 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28596,7 +28077,7 @@ module.exports = ReactHostComponent;
 
 
 
-var ReactDOMSelection = __webpack_require__(293);
+var ReactDOMSelection = __webpack_require__(290);
 
 var containsNode = __webpack_require__(216);
 var focusNode = __webpack_require__(112);
@@ -28709,7 +28190,7 @@ var ReactInputSelection = {
 module.exports = ReactInputSelection;
 
 /***/ }),
-/* 133 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28733,18 +28214,18 @@ var React = __webpack_require__(40);
 var ReactBrowserEventEmitter = __webpack_require__(62);
 var ReactCurrentOwner = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMContainerInfo = __webpack_require__(285);
-var ReactDOMFeatureFlags = __webpack_require__(287);
-var ReactFeatureFlags = __webpack_require__(130);
+var ReactDOMContainerInfo = __webpack_require__(282);
+var ReactDOMFeatureFlags = __webpack_require__(284);
+var ReactFeatureFlags = __webpack_require__(129);
 var ReactInstanceMap = __webpack_require__(49);
 var ReactInstrumentation = __webpack_require__(16);
-var ReactMarkupChecksum = __webpack_require__(307);
+var ReactMarkupChecksum = __webpack_require__(304);
 var ReactReconciler = __webpack_require__(39);
 var ReactUpdateQueue = __webpack_require__(88);
 var ReactUpdates = __webpack_require__(20);
 
 var emptyObject = __webpack_require__(45);
-var instantiateReactComponent = __webpack_require__(141);
+var instantiateReactComponent = __webpack_require__(140);
 var invariant = __webpack_require__(1);
 var setInnerHTML = __webpack_require__(66);
 var shouldUpdateReactComponent = __webpack_require__(94);
@@ -29253,7 +28734,7 @@ module.exports = ReactMount;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 134 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29299,7 +28780,7 @@ module.exports = ReactNodeTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 135 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29321,7 +28802,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29353,7 +28834,7 @@ var ViewportMetrics = {
 module.exports = ViewportMetrics;
 
 /***/ }),
-/* 137 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29417,7 +28898,7 @@ module.exports = accumulateInto;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 138 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29453,7 +28934,7 @@ function forEachAccumulated(arr, cb, scope) {
 module.exports = forEachAccumulated;
 
 /***/ }),
-/* 139 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29469,7 +28950,7 @@ module.exports = forEachAccumulated;
 
 
 
-var ReactNodeTypes = __webpack_require__(134);
+var ReactNodeTypes = __webpack_require__(133);
 
 function getHostComponentFromComposite(inst) {
   var type;
@@ -29488,7 +28969,7 @@ function getHostComponentFromComposite(inst) {
 module.exports = getHostComponentFromComposite;
 
 /***/ }),
-/* 140 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29526,7 +29007,7 @@ function getTextContentAccessor() {
 module.exports = getTextContentAccessor;
 
 /***/ }),
-/* 141 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29545,11 +29026,11 @@ module.exports = getTextContentAccessor;
 var _prodInvariant = __webpack_require__(5),
     _assign = __webpack_require__(7);
 
-var ReactCompositeComponent = __webpack_require__(282);
-var ReactEmptyComponent = __webpack_require__(129);
-var ReactHostComponent = __webpack_require__(131);
+var ReactCompositeComponent = __webpack_require__(279);
+var ReactEmptyComponent = __webpack_require__(128);
+var ReactHostComponent = __webpack_require__(130);
 
-var getNextDebugID = __webpack_require__(350);
+var getNextDebugID = __webpack_require__(347);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -29661,7 +29142,7 @@ module.exports = instantiateReactComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 142 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29717,7 +29198,7 @@ function isTextInputElement(elem) {
 module.exports = isTextInputElement;
 
 /***/ }),
-/* 143 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29774,7 +29255,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setTextContent;
 
 /***/ }),
-/* 144 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29793,9 +29274,9 @@ module.exports = setTextContent;
 var _prodInvariant = __webpack_require__(5);
 
 var ReactCurrentOwner = __webpack_require__(21);
-var REACT_ELEMENT_TYPE = __webpack_require__(301);
+var REACT_ELEMENT_TYPE = __webpack_require__(298);
 
-var getIteratorFn = __webpack_require__(335);
+var getIteratorFn = __webpack_require__(332);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(84);
 var warning = __webpack_require__(2);
@@ -29956,7 +29437,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 145 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29981,7 +29462,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 146 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30008,10 +29489,10 @@ var ReactCurrentOwner = __webpack_require__(21);
 var ReactComponentTreeHook = __webpack_require__(15);
 var ReactElement = __webpack_require__(30);
 
-var checkReactTypeSpec = __webpack_require__(349);
+var checkReactTypeSpec = __webpack_require__(346);
 
 var canDefineProperty = __webpack_require__(67);
-var getIteratorFn = __webpack_require__(148);
+var getIteratorFn = __webpack_require__(147);
 var warning = __webpack_require__(2);
 
 function getDeclarationErrorAddendum() {
@@ -30240,7 +29721,7 @@ module.exports = ReactElementValidator;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 147 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30271,7 +29752,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 148 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30317,7 +29798,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 149 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30348,7 +29829,7 @@ var EElistenerCount = function (emitter, type) {
 /*</replacement>*/
 
 /*<replacement>*/
-var Stream = __webpack_require__(152);
+var Stream = __webpack_require__(151);
 /*</replacement>*/
 
 var Buffer = __webpack_require__(3).Buffer;
@@ -30362,7 +29843,7 @@ util.inherits = __webpack_require__(6);
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(424);
+var debugUtil = __webpack_require__(421);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -30371,7 +29852,7 @@ if (debugUtil && debugUtil.debuglog) {
 }
 /*</replacement>*/
 
-var BufferList = __webpack_require__(354);
+var BufferList = __webpack_require__(351);
 var StringDecoder;
 
 util.inherits(Readable, Stream);
@@ -30455,7 +29936,7 @@ function ReadableState(options, stream) {
   this.decoder = null;
   this.encoding = null;
   if (options.encoding) {
-    if (!StringDecoder) StringDecoder = __webpack_require__(118).StringDecoder;
+    if (!StringDecoder) StringDecoder = __webpack_require__(157).StringDecoder;
     this.decoder = new StringDecoder(options.encoding);
     this.encoding = options.encoding;
   }
@@ -30565,7 +30046,7 @@ function needMoreData(state) {
 
 // backwards compatibility.
 Readable.prototype.setEncoding = function (enc) {
-  if (!StringDecoder) StringDecoder = __webpack_require__(118).StringDecoder;
+  if (!StringDecoder) StringDecoder = __webpack_require__(157).StringDecoder;
   this._readableState.decoder = new StringDecoder(enc);
   this._readableState.encoding = enc;
   return this;
@@ -31259,7 +30740,7 @@ function indexOf(xs, x) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 150 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31447,7 +30928,7 @@ function done(stream, er, data) {
 }
 
 /***/ }),
-/* 151 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31480,12 +30961,12 @@ util.inherits = __webpack_require__(6);
 
 /*<replacement>*/
 var internalUtil = {
-  deprecate: __webpack_require__(377)
+  deprecate: __webpack_require__(374)
 };
 /*</replacement>*/
 
 /*<replacement>*/
-var Stream = __webpack_require__(152);
+var Stream = __webpack_require__(151);
 /*</replacement>*/
 
 var Buffer = __webpack_require__(3).Buffer;
@@ -31995,17 +31476,17 @@ function CorkedRequest(state) {
     }
   };
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(369).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(366).setImmediate))
 
 /***/ }),
-/* 152 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(19).EventEmitter;
 
 
 /***/ }),
-/* 153 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {module.exports = function (stream, cb) {
@@ -32026,10 +31507,10 @@ module.exports = __webpack_require__(19).EventEmitter;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 154 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var ClientRequest = __webpack_require__(360)
+/* WEBPACK VAR INJECTION */(function(global) {var ClientRequest = __webpack_require__(357)
 var extend = __webpack_require__(25)
 var statusCodes = __webpack_require__(181)
 var url = __webpack_require__(101)
@@ -32111,7 +31592,7 @@ http.METHODS = [
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 155 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {exports.fetch = isFunction(global.fetch) && isFunction(global.ReadableStream)
@@ -32187,12 +31668,12 @@ xhr = null // Help gc
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 156 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* global URL */
 
-var getBlob = __webpack_require__(157)
+var getBlob = __webpack_require__(156)
 
 module.exports = function getBlobURL (stream, mimeType, cb) {
   if (typeof mimeType === 'function') return getBlobURL(stream, null, mimeType)
@@ -32205,7 +31686,7 @@ module.exports = function getBlobURL (stream, mimeType, cb) {
 
 
 /***/ }),
-/* 157 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* global Blob */
@@ -32227,6 +31708,233 @@ module.exports = function getBlob (stream, mimeType, cb) {
       cb(null, blob)
     })
     .on('error', cb)
+}
+
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var Buffer = __webpack_require__(3).Buffer;
+
+var isBufferEncoding = Buffer.isEncoding
+  || function(encoding) {
+       switch (encoding && encoding.toLowerCase()) {
+         case 'hex': case 'utf8': case 'utf-8': case 'ascii': case 'binary': case 'base64': case 'ucs2': case 'ucs-2': case 'utf16le': case 'utf-16le': case 'raw': return true;
+         default: return false;
+       }
+     }
+
+
+function assertEncoding(encoding) {
+  if (encoding && !isBufferEncoding(encoding)) {
+    throw new Error('Unknown encoding: ' + encoding);
+  }
+}
+
+// StringDecoder provides an interface for efficiently splitting a series of
+// buffers into a series of JS strings without breaking apart multi-byte
+// characters. CESU-8 is handled as part of the UTF-8 encoding.
+//
+// @TODO Handling all encodings inside a single object makes it very difficult
+// to reason about this code, so it should be split up in the future.
+// @TODO There should be a utf8-strict encoding that rejects invalid UTF-8 code
+// points as used by CESU-8.
+var StringDecoder = exports.StringDecoder = function(encoding) {
+  this.encoding = (encoding || 'utf8').toLowerCase().replace(/[-_]/, '');
+  assertEncoding(encoding);
+  switch (this.encoding) {
+    case 'utf8':
+      // CESU-8 represents each of Surrogate Pair by 3-bytes
+      this.surrogateSize = 3;
+      break;
+    case 'ucs2':
+    case 'utf16le':
+      // UTF-16 represents each of Surrogate Pair by 2-bytes
+      this.surrogateSize = 2;
+      this.detectIncompleteChar = utf16DetectIncompleteChar;
+      break;
+    case 'base64':
+      // Base-64 stores 3 bytes in 4 chars, and pads the remainder.
+      this.surrogateSize = 3;
+      this.detectIncompleteChar = base64DetectIncompleteChar;
+      break;
+    default:
+      this.write = passThroughWrite;
+      return;
+  }
+
+  // Enough space to store all bytes of a single character. UTF-8 needs 4
+  // bytes, but CESU-8 may require up to 6 (3 bytes per surrogate).
+  this.charBuffer = new Buffer(6);
+  // Number of bytes received for the current incomplete multi-byte character.
+  this.charReceived = 0;
+  // Number of bytes expected for the current incomplete multi-byte character.
+  this.charLength = 0;
+};
+
+
+// write decodes the given buffer and returns it as JS string that is
+// guaranteed to not contain any partial multi-byte characters. Any partial
+// character found at the end of the buffer is buffered up, and will be
+// returned when calling write again with the remaining bytes.
+//
+// Note: Converting a Buffer containing an orphan surrogate to a String
+// currently works, but converting a String to a Buffer (via `new Buffer`, or
+// Buffer#write) will replace incomplete surrogates with the unicode
+// replacement character. See https://codereview.chromium.org/121173009/ .
+StringDecoder.prototype.write = function(buffer) {
+  var charStr = '';
+  // if our last write ended with an incomplete multibyte character
+  while (this.charLength) {
+    // determine how many remaining bytes this buffer has to offer for this char
+    var available = (buffer.length >= this.charLength - this.charReceived) ?
+        this.charLength - this.charReceived :
+        buffer.length;
+
+    // add the new bytes to the char buffer
+    buffer.copy(this.charBuffer, this.charReceived, 0, available);
+    this.charReceived += available;
+
+    if (this.charReceived < this.charLength) {
+      // still not enough chars in this buffer? wait for more ...
+      return '';
+    }
+
+    // remove bytes belonging to the current character from the buffer
+    buffer = buffer.slice(available, buffer.length);
+
+    // get the character that was split
+    charStr = this.charBuffer.slice(0, this.charLength).toString(this.encoding);
+
+    // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
+    var charCode = charStr.charCodeAt(charStr.length - 1);
+    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+      this.charLength += this.surrogateSize;
+      charStr = '';
+      continue;
+    }
+    this.charReceived = this.charLength = 0;
+
+    // if there are no more bytes in this buffer, just emit our char
+    if (buffer.length === 0) {
+      return charStr;
+    }
+    break;
+  }
+
+  // determine and set charLength / charReceived
+  this.detectIncompleteChar(buffer);
+
+  var end = buffer.length;
+  if (this.charLength) {
+    // buffer the incomplete character bytes we got
+    buffer.copy(this.charBuffer, 0, buffer.length - this.charReceived, end);
+    end -= this.charReceived;
+  }
+
+  charStr += buffer.toString(this.encoding, 0, end);
+
+  var end = charStr.length - 1;
+  var charCode = charStr.charCodeAt(end);
+  // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
+  if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+    var size = this.surrogateSize;
+    this.charLength += size;
+    this.charReceived += size;
+    this.charBuffer.copy(this.charBuffer, size, 0, size);
+    buffer.copy(this.charBuffer, 0, 0, size);
+    return charStr.substring(0, end);
+  }
+
+  // or just emit the charStr
+  return charStr;
+};
+
+// detectIncompleteChar determines if there is an incomplete UTF-8 character at
+// the end of the given buffer. If so, it sets this.charLength to the byte
+// length that character, and sets this.charReceived to the number of bytes
+// that are available for this character.
+StringDecoder.prototype.detectIncompleteChar = function(buffer) {
+  // determine how many bytes we have to check at the end of this buffer
+  var i = (buffer.length >= 3) ? 3 : buffer.length;
+
+  // Figure out if one of the last i bytes of our buffer announces an
+  // incomplete char.
+  for (; i > 0; i--) {
+    var c = buffer[buffer.length - i];
+
+    // See http://en.wikipedia.org/wiki/UTF-8#Description
+
+    // 110XXXXX
+    if (i == 1 && c >> 5 == 0x06) {
+      this.charLength = 2;
+      break;
+    }
+
+    // 1110XXXX
+    if (i <= 2 && c >> 4 == 0x0E) {
+      this.charLength = 3;
+      break;
+    }
+
+    // 11110XXX
+    if (i <= 3 && c >> 3 == 0x1E) {
+      this.charLength = 4;
+      break;
+    }
+  }
+  this.charReceived = i;
+};
+
+StringDecoder.prototype.end = function(buffer) {
+  var res = '';
+  if (buffer && buffer.length)
+    res = this.write(buffer);
+
+  if (this.charReceived) {
+    var cr = this.charReceived;
+    var buf = this.charBuffer;
+    var enc = this.encoding;
+    res += buf.slice(0, cr).toString(enc);
+  }
+
+  return res;
+};
+
+function passThroughWrite(buffer) {
+  return buffer.toString(this.encoding);
+}
+
+function utf16DetectIncompleteChar(buffer) {
+  this.charReceived = buffer.length % 2;
+  this.charLength = this.charReceived ? 2 : 0;
+}
+
+function base64DetectIncompleteChar(buffer) {
+  this.charReceived = buffer.length % 3;
+  this.charLength = this.charReceived ? 3 : 0;
 }
 
 
@@ -32813,19 +32521,19 @@ var _react = __webpack_require__(33);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _App = __webpack_require__(363);
+var _App = __webpack_require__(360);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _MagnetStore = __webpack_require__(170);
+var _MagnetStore = __webpack_require__(169);
 
 var _MagnetStore2 = _interopRequireDefault(_MagnetStore);
 
-var _Header = __webpack_require__(168);
+var _Header = __webpack_require__(167);
 
-var _Video = __webpack_require__(171);
+var _Video = __webpack_require__(170);
 
-var _MagnetList = __webpack_require__(169);
+var _MagnetList = __webpack_require__(168);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32873,664 +32581,6 @@ var App = exports.App = function (_Component) {
 
 /***/ }),
 /* 166 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.abiPolyfill = exports.denominations = undefined;
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-exports.setupBonds = setupBonds;
-exports.capitalizeFirstLetter = capitalizeFirstLetter;
-exports.singleton = singleton;
-exports.denominationMultiplier = denominationMultiplier;
-exports.interpretQuantity = interpretQuantity;
-exports.splitValue = splitValue;
-exports.formatBalance = formatBalance;
-exports.formatBlockNumber = formatBlockNumber;
-exports.isNullData = isNullData;
-
-var _oo = __webpack_require__(260);
-
-var _bignumber = __webpack_require__(259);
-
-var _bignumber2 = _interopRequireDefault(_bignumber);
-
-var _abis = __webpack_require__(258);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function setupBonds() {
-	var _api = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : parity.api;
-
-	console.log("setupBonds...");
-	_api.parity.netChain().then(function (c) {
-		return console.log('setupBonds: on chain ' + c);
-	});
-
-	var api = _api;
-	var bonds = {};
-
-	api.util.abiSig = function (name, inputs) {
-		return api.util.sha3(name + '(' + inputs.join() + ')');
-	};
-
-	api.util.cleanup = function (value, type) {
-		// TODO: make work with arbitrary depth arrays
-		if (value instanceof Array && type.match(/bytes[0-9]+/)) {
-			// figure out if it's an ASCII string hiding in there:
-			var ascii = '';
-			for (var i = 0, ended = false; i < value.length && ascii !== null; ++i) {
-				if (value[i] === 0) {
-					ended = true;
-				} else {
-					ascii += String.fromCharCode(value[i]);
-				}
-				if (ended && value[i] !== 0 || !ended && (value[i] < 32 || value[i] >= 128)) {
-					ascii = null;
-				}
-			}
-			value = ascii === null ? api.util.bytesToHex(value) : ascii;
-		}
-		if (type.substr(0, 4) == 'uint' && +type.substr(4) <= 48) {
-			value = +value;
-		}
-		return value;
-	};
-
-	// returns [functionName, argsByName]
-	api.util.abiUnencode = function (abi, data) {
-		var s = data.substr(2, 8);
-		var op = abi.find(function (f) {
-			return f.type == 'function' && api.util.abiSig(f.name, f.inputs.map(function (i) {
-				return i.type;
-			})).substr(2, 8) === s;
-		});
-		if (!op) {
-			console.warn('Unknown function ID: ' + s);
-			return null;
-		}
-		var argsByIndex = api.util.abiDecode(op.inputs.map(function (f) {
-			return f.type;
-		}), '0x' + data.substr(10)).map(function (v, i) {
-			return api.util.cleanup(v, op.inputs[i].type);
-		});
-		var argsByName = {};
-		op.inputs.forEach(function (f, i) {
-			argsByName[f.name] = argsByIndex[i];
-		});
-		return [op.name, argsByName, argsByIndex];
-	};
-
-	var TransformBond = function (_oo7TransformBond) {
-		_inherits(TransformBond, _oo7TransformBond);
-
-		function TransformBond(f) {
-			var a = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
-			var d = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-			var latched = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
-			var mayBeNull = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-
-			_classCallCheck(this, TransformBond);
-
-			return _possibleConstructorReturn(this, (TransformBond.__proto__ || Object.getPrototypeOf(TransformBond)).call(this, f, a, d, latched, mayBeNull, api));
-		}
-
-		_createClass(TransformBond, [{
-			key: 'map',
-			value: function map(f) {
-				return new TransformBond(f, [this]);
-			}
-		}, {
-			key: 'sub',
-			value: function sub(name) {
-				return new TransformBond(function (r, n) {
-					return r[n];
-				}, [this, name]);
-			}
-		}], [{
-			key: 'all',
-			value: function all(list) {
-				return new TransformBond(function () {
-					for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-						args[_key] = arguments[_key];
-					}
-
-					return args;
-				}, list);
-			}
-		}]);
-
-		return TransformBond;
-	}(_oo.TransformBond);
-
-	// TODO: Use more generic means to check on number, ideally push notification.
-
-
-	var SubscriptionBond = function (_Bond) {
-		_inherits(SubscriptionBond, _Bond);
-
-		function SubscriptionBond(rpc) {
-			_classCallCheck(this, SubscriptionBond);
-
-			var _this2 = _possibleConstructorReturn(this, (SubscriptionBond.__proto__ || Object.getPrototypeOf(SubscriptionBond)).call(this));
-
-			api.subscribe(rpc, function (e, n) {
-				//			console.log(`Subscription ${rpc} firing ${+n}`)
-				_this2.trigger(n);
-			}).then(function (id) {
-				return _this2.subscription = id;
-			});
-			return _this2;
-		}
-
-		_createClass(SubscriptionBond, [{
-			key: 'drop',
-			value: function drop() {
-				api.unsubscribe(this.subscription);
-			}
-		}, {
-			key: 'map',
-			value: function map(f) {
-				return new TransformBond(f, [this]);
-			}
-		}, {
-			key: 'sub',
-			value: function sub(name) {
-				return new TransformBond(function (r, n) {
-					return r[n];
-				}, [this, name]);
-			}
-		}], [{
-			key: 'all',
-			value: function all(list) {
-				return new TransformBond(function () {
-					for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-						args[_key2] = arguments[_key2];
-					}
-
-					return args;
-				}, list);
-			}
-		}]);
-
-		return SubscriptionBond;
-	}(_oo.Bond);
-
-	var Signature = function (_ReactivePromise) {
-		_inherits(Signature, _ReactivePromise);
-
-		function Signature(from, message) {
-			var _this3;
-
-			_classCallCheck(this, Signature);
-
-			return _this3 = _possibleConstructorReturn(this, (Signature.__proto__ || Object.getPrototypeOf(Signature)).call(this, [from, message], [], function (_ref) {
-				var _ref2 = _slicedToArray(_ref, 2),
-				    from = _ref2[0],
-				    message = _ref2[1];
-
-				api.parity.postSign(from, api.util.asciiToHex(message)).then(function (signerRequestId) {
-					_this3.trigger({ requested: signerRequestId });
-					return api.pollMethod('parity_checkRequest', signerRequestId);
-				}).then(function (signature) {
-					_this3.trigger({ signed: signature });
-				}).catch(function (error) {
-					_this3.trigger({ failed: error });
-				});
-			}));
-		}
-
-		return Signature;
-	}(_oo.ReactivePromise);
-
-	var Transaction = function (_ReactivePromise2) {
-		_inherits(Transaction, _ReactivePromise2);
-
-		function Transaction(tx) {
-			var _this4;
-
-			_classCallCheck(this, Transaction);
-
-			return _this4 = _possibleConstructorReturn(this, (Transaction.__proto__ || Object.getPrototypeOf(Transaction)).call(this, [tx], [], function (_ref3) {
-				var _ref4 = _slicedToArray(_ref3, 1),
-				    tx = _ref4[0];
-
-				var progress = _this4.trigger.bind(_this4);
-				progress({ estimating: null });
-				var from = tx.from || bonds.defaultAccount;
-				var gasPrice = tx.gasPrice || bonds.gasPrice;
-				var gas = tx.gas || bonds.estimateGas({
-					value: tx.value,
-					from: tx.from || bonds.defaultAccount,
-					to: tx.to,
-					gasPrice: tx.gasPrice || bonds.gasPrice,
-					data: tx.data
-				});
-				new _oo.ReactivePromise([from, gasPrice, gas], [], function (_ref5) {
-					var _ref6 = _slicedToArray(_ref5, 3),
-					    from = _ref6[0],
-					    gasPrice = _ref6[1],
-					    gas = _ref6[2];
-
-					console.log('Finally posting ' + JSON.stringify(tx) + ' with gas: ' + gas + ', gasPrice: ' + gasPrice + ', from: ' + from);
-					tx.gas = gas;
-					tx.gasPrice = gasPrice;
-					tx.from = from;
-					api.parity.postTransaction(tx).then(function (signerRequestId) {
-						progress({ requested: signerRequestId });
-						return api.pollMethod('parity_checkRequest', signerRequestId);
-					}).then(function (transactionHash) {
-						progress({ signed: transactionHash });
-						return api.pollMethod('eth_getTransactionReceipt', transactionHash, function (receipt) {
-							return receipt && receipt.blockNumber && !receipt.blockNumber.eq(0);
-						});
-					}).then(function (receipt) {
-						progress({ confirmed: receipt });
-					}).catch(function (error) {
-						progress({ failed: error });
-					});
-				});
-			}));
-		}
-
-		return Transaction;
-	}(_oo.ReactivePromise);
-
-	function overlay(base, top) {
-		Object.keys(top).forEach(function (k) {
-			base[k] = top[k];
-		});
-		return base;
-	}
-
-	function call(addr, method, args, options) {
-		var data = api.util.abiEncode(method.name, method.inputs.map(function (f) {
-			return f.type;
-		}), args);
-		var decode = function decode(d) {
-			return api.util.abiDecode(method.outputs.map(function (f) {
-				return f.type;
-			}), d);
-		};
-		return api.eth.call(overlay({ to: addr, data: data }, options)).then(decode);
-	};
-
-	function post(addr, method, args, options) {
-		var toOptions = function toOptions(addr, method, options) {
-			for (var _len3 = arguments.length, args = Array(_len3 > 3 ? _len3 - 3 : 0), _key3 = 3; _key3 < _len3; _key3++) {
-				args[_key3 - 3] = arguments[_key3];
-			}
-
-			return overlay({ to: addr, data: api.util.abiEncode(method.name, method.inputs.map(function (f) {
-					return f.type;
-				}), args) }, options);
-		};
-		return new bonds.Transaction(toOptions.bond.apply(toOptions, [addr, method, options].concat(_toConsumableArray(args))));
-	};
-
-	bonds.Transaction = Transaction;
-	bonds.Signature = Signature;
-	bonds.Subscription = SubscriptionBond;
-	bonds.Transform = TransformBond;
-	bonds.time = new _oo.TimeBond();
-	bonds.blockNumber = new TransformBond(function (_) {
-		return +_;
-	}, [new SubscriptionBond('eth_blockNumber')]);
-	//	bonds.accounts = new SubscriptionBond('eth_accounts').subscriptable();
-	//	bonds.accountsInfo = new SubscriptionBond('parity_accountsInfo').subscriptable();
-	//	bonds.defaultAccount = new SubscriptionBond('parity_defaultAccount').subscriptable();
-	//	bonds.allAccountsInfo = new SubscriptionBond('parity_allAccountsInfo');
-	//	bonds.requestsToConfirm = new SubscriptionBond('signer_requestsToConfirm');
-
-	Function.__proto__.bond = function () {
-		for (var _len4 = arguments.length, args = Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
-			args[_key4] = arguments[_key4];
-		}
-
-		return new TransformBond(this, args);
-	};
-	Function.__proto__.unlatchedBond = function () {
-		for (var _len5 = arguments.length, args = Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-			args[_key5] = arguments[_key5];
-		}
-
-		return new TransformBond(this, args, [], false, undefined);
-	};
-	Function.__proto__.timeBond = function () {
-		for (var _len6 = arguments.length, args = Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
-			args[_key6] = arguments[_key6];
-		}
-
-		return new TransformBond(this, args, [bonds.time]);
-	};
-	Function.__proto__.blockBond = function () {
-		for (var _len7 = arguments.length, args = Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
-			args[_key7] = arguments[_key7];
-		}
-
-		return new TransformBond(this, args, [bonds.blockNumber]);
-	};
-
-	var presub = function presub(f) {
-		return new Proxy(f, {
-			get: function get(receiver, name) {
-				if (typeof name === 'string' || typeof name === 'number') {
-					return typeof receiver[name] !== 'undefined' ? receiver[name] : receiver(name);
-				} else if ((typeof name === 'undefined' ? 'undefined' : _typeof(name)) === 'symbol' && _oo.Bond.knowSymbol(name)) {
-					return receiver(_oo.Bond.fromSymbol(name));
-				} else {
-					throw 'Weird value type to be subscripted by: ' + (typeof name === 'undefined' ? 'undefined' : _typeof(name)) + ': ' + JSON.stringify(name);
-				}
-			}
-		});
-	};
-
-	// eth_
-	bonds.blockByNumber = function (x) {
-		return new TransformBond(api.eth.getBlockByNumber, [x], [/* TODO: chain reorg that includes number x */]).subscriptable();
-	};
-	bonds.blockByHash = function (x) {
-		return new TransformBond(api.eth.getBlockByHash, [x]).subscriptable();
-	};
-	bonds.blockByX = function (x) {
-		return new TransformBond(function (n) {
-			return typeof n === 'number' || typeof n === 'string' && n.match(/^[0-9]+$/) ? api.eth.getBlockByNumber(x) : api.eth.getBlockByHash(x);
-		}, [x], [/* TODO: chain reorg that includes number x, if x is a number */]).subscriptable();
-	};
-	bonds.blocks = presub(bonds.blockByX);
-	bonds.block = bonds.blockByNumber(bonds.blockNumber);
-	bonds.coinbase = new TransformBond(api.eth.coinbase, [], [bonds.time]);
-	bonds.accounts = new TransformBond(function (a) {
-		return a.map(api.util.toChecksumAddress);
-	}, [new TransformBond(api.eth.accounts, [], [bonds.time])]).subscriptable();
-	bonds.defaultAccount = bonds.accounts[0]; // TODO: make this use its subscription
-
-	bonds.balance = function (x) {
-		return new TransformBond(api.eth.getBalance, [x], [bonds.blockNumber]);
-	};
-	bonds.code = function (x) {
-		return new TransformBond(api.eth.getCode, [x], [bonds.blockNumber]);
-	};
-	bonds.transactionCount = function (x) {
-		return new TransformBond(api.eth.getTransactionCount, [x], [bonds.blockNumber]);
-	};
-	bonds.storageAt = function (x, y) {
-		return new TransformBond(api.eth.getStorageAt, [x, y], [bonds.blockNumber]);
-	};
-
-	bonds.syncing = new TransformBond(api.eth.syncing, [], [bonds.time]);
-	bonds.hashrate = new TransformBond(api.eth.hashrate, [], [bonds.time]);
-	bonds.mining = new TransformBond(api.eth.mining, [], [bonds.time]);
-	bonds.protocolVersion = new TransformBond(api.eth.protocolVersion, [], [bonds.time]);
-	bonds.gasPrice = new TransformBond(api.eth.gasPrice, [], [bonds.time]);
-	bonds.estimateGas = function (x) {
-		return new TransformBond(api.eth.estimateGas, [x], [bonds.blockNumber]);
-	};
-
-	// Weird compound
-
-	// net_
-	bonds.peerCount = new TransformBond(api.net.peerCount, [], [bonds.time]);
-
-	// parity_
-	bonds.hashContent = function (u) {
-		return new TransformBond(api.parity.hashContent, [u], [], false);
-	};
-	bonds.netChain = new TransformBond(api.parity.netChain, [], [bonds.time]);
-	bonds.accountsInfo = new TransformBond(api.parity.accountsInfo, [], [bonds.time]).subscriptable(2); //new SubscriptionBond('parity_accountsInfo');
-
-	bonds.makeContract = function (address, abi) {
-		var extras = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-
-		var r = { address: address };
-		var unwrapIfOne = function unwrapIfOne(a) {
-			return a.length == 1 ? a[0] : a;
-		};
-		abi.forEach(function (i) {
-			if (i.type == 'function' && i.constant) {
-				var f = function f() {
-					for (var _len8 = arguments.length, args = Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
-						args[_key8] = arguments[_key8];
-					}
-
-					var options = args.length === i.inputs.length + 1 ? args.unshift() : {};
-					if (args.length != i.inputs.length) throw 'Invalid number of arguments to ' + i.name + '. Expected ' + i.inputs.length + ', got ' + args.length + '.';
-					var f = function f(addr) {
-						for (var _len9 = arguments.length, fargs = Array(_len9 > 1 ? _len9 - 1 : 0), _key9 = 1; _key9 < _len9; _key9++) {
-							fargs[_key9 - 1] = arguments[_key9];
-						}
-
-						return call(addr, i, fargs, options).then(unwrapIfOne);
-					};
-					return new TransformBond(f, [address].concat(args), [bonds.blockNumber]).subscriptable(); // TODO: should be subscription on contract events
-				};
-				r[i.name] = i.inputs.length === 1 ? presub(f) : f;
-			}
-		});
-		extras.forEach(function (i) {
-			var f = function f() {
-				for (var _len10 = arguments.length, args = Array(_len10), _key10 = 0; _key10 < _len10; _key10++) {
-					args[_key10] = arguments[_key10];
-				}
-
-				var expectedInputs = i.numInputs || i.args.length;
-				var options = args.length === expectedInputs + 1 ? args.unshift() : {};
-				if (args.length != expectedInputs) throw 'Invalid number of arguments to ' + i.name + '. Expected ' + expectedInputs + ', got ' + args.length + '.';
-				var c = abi.find(function (j) {
-					return j.name == i.method;
-				});
-				var f = function f(addr) {
-					for (var _len11 = arguments.length, fargs = Array(_len11 > 1 ? _len11 - 1 : 0), _key11 = 1; _key11 < _len11; _key11++) {
-						fargs[_key11 - 1] = arguments[_key11];
-					}
-
-					var args = i.args.map(function (v, index) {
-						return v === null ? fargs[index] : typeof v === 'function' ? v(fargs[index]) : v;
-					});
-					return call(addr, c, args, options).then(unwrapIfOne);
-				};
-				return new TransformBond(f, [address].concat(args), [bonds.blockNumber]).subscriptable(); // TODO: should be subscription on contract events
-			};
-			r[i.name] = i.args.length === 1 ? presub(f) : f;
-		});
-		abi.forEach(function (i) {
-			if (i.type == 'function' && !i.constant) {
-				r[i.name] = function () {
-					for (var _len12 = arguments.length, args = Array(_len12), _key12 = 0; _key12 < _len12; _key12++) {
-						args[_key12] = arguments[_key12];
-					}
-
-					var options = args.length === i.inputs.length + 1 ? args.pop() : {};
-					if (args.length !== i.inputs.length) throw 'Invalid number of arguments to ' + i.name + '. Expected ' + i.inputs.length + ', got ' + args.length + '.';
-					return post(address, i, args, options).subscriptable();
-				};
-			}
-		});
-		var eventLookup = {};
-		abi.filter(function (i) {
-			return i.type == 'event';
-		}).forEach(function (i) {
-			eventLookup[api.util.abiSig(i.name, i.inputs.map(function (f) {
-				return f.type;
-			}))] = i.name;
-		});
-
-		abi.forEach(function (i) {
-			if (i.type == 'event') {
-				r[i.name] = function () {
-					var indexed = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-					var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-					return new TransformBond(function (addr, indexed) {
-						var topics = [api.util.abiSig(i.name, i.inputs.map(function (f) {
-							return f.type;
-						}))];
-						i.inputs.filter(function (f) {
-							return f.indexed;
-						}).forEach(function (f) {
-							var val = null;
-							if (indexed[f.name]) {
-								if (f.type == 'string' || f.type == 'bytes') {
-									val = api.util.sha3(indexed[f.name]);
-								} else {
-									val = api.util.abiEncode(null, [f.type], [indexed[f.name]]);
-								}
-								if (val.length != 66) {
-									console.warn('Couldn\'t encode indexed parameter ' + f.name + ' of type ' + f.type + ' with value ' + indexed[f.name]);
-									val = null;
-								}
-							}
-							topics.push(val);
-						});
-						return api.eth.getLogs({
-							address: addr,
-							fromBlock: params.fromBlock || 0,
-							toBlock: params.toBlock || 'pending',
-							limit: params.limit || 10,
-							topics: topics
-						}).then(function (logs) {
-							return logs.map(function (l) {
-								l.blockNumber = +l.blockNumber;
-								l.transactionIndex = +l.transactionIndex;
-								l.logIndex = +l.logIndex;
-								l.transactionLogIndex = +l.transactionLogIndex;
-								var e = {};
-								var unins = i.inputs.filter(function (f) {
-									return !f.indexed;
-								});
-								api.util.abiDecode(unins.map(function (f) {
-									return f.type;
-								}), l.data).forEach(function (v, j) {
-									var f = unins[j];
-									if (v instanceof Array && !f.type.endsWith(']')) {
-										v = api.util.bytesToHex(v);
-									}
-									if (f.type.substr(0, 4) == 'uint' && +f.type.substr(4) <= 48) {
-										v = +v;
-									}
-									e[f.name] = v;
-								});
-								i.inputs.filter(function (f) {
-									return f.indexed;
-								}).forEach(function (f, j) {
-									if (f.type == 'string' || f.type == 'bytes') {
-										l.args[f.name] = l.topics[1 + j];
-									} else {
-										var v = api.util.abiDecode([f.type], l.topics[1 + j])[0];
-										if (v instanceof Array) {
-											v = api.util.bytesToHex(v);
-										}
-										if (f.type.substr(0, 4) == 'uint' && +f.type.substr(4) <= 48) {
-											v = +v;
-										}
-										e[f.name] = v;
-									}
-								});
-								e.event = eventLookup[l.topics[0]];
-								e.log = l;
-								return e;
-							});
-						});
-					}, [address, indexed], [bonds.blockNumber]).subscriptable();
-				};
-			}
-		});
-		return r;
-	};
-
-	bonds.registry = bonds.makeContract(new TransformBond(api.parity.registryAddress, [], [bonds.time]), api.abi.registry, api.abi.registryExtras); // TODO should be subscription.
-	bonds.githubhint = bonds.makeContract(bonds.registry.lookupAddress('githubhint', 'A'), api.abi.githubhint);
-	bonds.operations = bonds.makeContract(bonds.registry.lookupAddress('operations', 'A'), api.abi.operations);
-
-	return bonds;
-}
-
-////
-// Parity Utilities
-
-// TODO: move to parity.js, repackage or repot.
-
-function capitalizeFirstLetter(s) {
-	return s.charAt(0).toUpperCase() + s.slice(1);
-}
-
-function singleton(f) {
-	var instance = null;
-	return function () {
-		if (instance === null) instance = f();
-		return instance;
-	};
-}
-
-var denominations = exports.denominations = ["wei", "Kwei", "Mwei", "Gwei", "szabo", "finney", "ether", "grand", "Mether", "Gether", "Tether", "Pether", "Eether", "Zether", "Yether", "Nether", "Dether", "Vether", "Uether"];
-
-function denominationMultiplier(s) {
-	var i = denominations.indexOf(s);
-	if (i < 0) throw "Invalid denomination";
-	return new _bignumber2.default(1000).pow(i);
-}
-
-function interpretQuantity(s) {
-	try {
-		var m = s.toLowerCase().match('([0-9,.]+) *([a-zA-Z]+)?');
-		var d = denominationMultiplier(m[2] || 'ether');
-		var n = +m[1].replace(',', '');
-		while (n !== Math.round(n)) {
-			n *= 10;
-			d = d.div(10);
-		}
-		return new _bignumber2.default(n).mul(d);
-	} catch (e) {
-		return null;
-	}
-}
-
-function splitValue(a) {
-	var i = 0;
-	var a = new _bignumber2.default('' + a);
-	if (a.gte(new _bignumber2.default("10000000000000000")) && a.lt(new _bignumber2.default("100000000000000000000000")) || a.eq(0)) i = 6;else for (var aa = a; aa.gte(1000) && i < denominations.length - 1; aa = aa.div(1000)) {
-		i++;
-	}for (var j = 0; j < i; ++j) {
-		a = a.div(1000);
-	}return { base: a, denom: i };
-}
-
-function formatBalance(n) {
-	var a = splitValue(n);
-	var b = Math.floor(a.base * 1000) / 1000;
-	return b + ' ' + denominations[a.denom];
-}
-
-function formatBlockNumber(n) {
-	return '#' + ('' + n).replace(/(\d)(?=(\d{3})+$)/g, "$1,");
-}
-
-function isNullData(a) {
-	return !a || typeof a !== 'string' || a.match(/^(0x)?0+$/) !== null;
-}
-
-exports.abiPolyfill = _abis.abiPolyfill;
-
-/***/ }),
-/* 167 */
 /***/ (function(module, exports) {
 
 var ADDR_RE = /^\[?([^\]]+)\]?:(\d+)$/ // ipv4/ipv6/hostname + port
@@ -33559,7 +32609,7 @@ module.exports.reset = function reset () {
 
 
 /***/ }),
-/* 168 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33583,7 +32633,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _mobxReact = __webpack_require__(79);
 
-var _Header = __webpack_require__(364);
+var _Header = __webpack_require__(361);
 
 var _Header2 = _interopRequireDefault(_Header);
 
@@ -33622,7 +32672,9 @@ var Header = exports.Header = (0, _mobxReact.observer)(_class = function (_Compo
 		}
 	}, {
 		key: "onPrivate",
-		value: function onPrivate() {}
+		value: function onPrivate() {
+			this.props.store.setChannel();
+		}
 	}, {
 		key: "cancel",
 		value: function cancel() {
@@ -33634,7 +32686,9 @@ var Header = exports.Header = (0, _mobxReact.observer)(_class = function (_Compo
 			var _state = this.state,
 			    magnetModal = _state.magnetModal,
 			    adhd = _state.adhd;
-			var file = this.props.store.file;
+			var _props$store = this.props.store,
+			    file = _props$store.file,
+			    publicPrivate = _props$store.publicPrivate;
 
 
 			return _react2.default.createElement(
@@ -33662,7 +32716,7 @@ var Header = exports.Header = (0, _mobxReact.observer)(_class = function (_Compo
 					_react2.default.createElement(
 						"span",
 						{ className: "links", id: "private", onClick: this.onPrivate.bind(this) },
-						"Private"
+						publicPrivate ? "Private" : "Public"
 					),
 					_react2.default.createElement(
 						"a",
@@ -33721,6 +32775,7 @@ var MagnetModal = (0, _mobxReact.observer)(_class2 = function (_Component2) {
 		value: function handleSubmit(event) {
 			event.preventDefault();
 			this.props.store.addMagnet(this.state.name, this.state.magnet);
+			this.onCancel();
 		}
 	}, {
 		key: "onCancel",
@@ -33754,7 +32809,7 @@ var MagnetModal = (0, _mobxReact.observer)(_class2 = function (_Component2) {
 						className: "mag-inputs",
 						id: "name-input",
 						type: "text",
-						placeholder: "name of file",
+						placeholder: "name of project",
 						value: this.state.name,
 						onChange: this.handleNameChange
 					})
@@ -33798,7 +32853,7 @@ var MagnetModal = (0, _mobxReact.observer)(_class2 = function (_Component2) {
 }(_react.Component)) || _class2;
 
 /***/ }),
-/* 169 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33822,11 +32877,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _mobxReact = __webpack_require__(79);
 
-var _MagnetList = __webpack_require__(365);
+var _MagnetList = __webpack_require__(362);
 
 var _MagnetList2 = _interopRequireDefault(_MagnetList);
 
-var _blockies = __webpack_require__(435);
+var _blockies = __webpack_require__(180);
 
 var _blockies2 = _interopRequireDefault(_blockies);
 
@@ -33848,11 +32903,17 @@ var MagnetList = exports.MagnetList = (0, _mobxReact.observer)(_class = function
 	}
 
 	_createClass(MagnetList, [{
+		key: "videoClick",
+		value: function videoClick(magnet) {
+			this.props.store.createMagnetVideo(magnet);
+		}
+	}, {
 		key: "render",
 		value: function render() {
+			var _this2 = this;
+
 			var magnetList = this.props.store.magnetList;
 
-			console.log("magnetList", magnetList);
 
 			return _react2.default.createElement(
 				"div",
@@ -33860,7 +32921,7 @@ var MagnetList = exports.MagnetList = (0, _mobxReact.observer)(_class = function
 				magnetList.map(function (magnet, index) {
 					return _react2.default.createElement(
 						"div",
-						{ key: index, className: "magnet-item" },
+						{ key: index, className: index % 2 === 0 ? "magnet-item" : "magnet-item-dark" },
 						_react2.default.createElement(
 							"div",
 							{ className: "magnet-left" },
@@ -33887,14 +32948,33 @@ var MagnetList = exports.MagnetList = (0, _mobxReact.observer)(_class = function
 						_react2.default.createElement(
 							"div",
 							{ className: "magnet-right" },
-							_react2.default.createElement("span", { className: "magnet-video" }),
+							_react2.default.createElement(
+								"span",
+								{ className: "magnet-video", onClick: _this2.videoClick.bind(_this2, magnet.magnet) },
+								_react2.default.createElement(
+									"svg",
+									{ viewBox: "0 0 400.2 400" },
+									_react2.default.createElement("path", { className: "st0", d: "M384.2,122.1c-21.1-49.2-56.9-85-106.1-106.1C253.3,5.3,227.6,0,200.4,0c-27.1,0-53.1,5.4-77.9,16 C72.9,37.1,36.9,72.8,15.8,122.1C5.2,146.8,0,172.6,0,199.8c0,27.1,5.2,53.2,15.8,77.9c21.1,49.3,57.2,85.2,106.8,106.4 c24.8,10.5,50.8,16,77.9,16c27.1,0,52.9-5.4,77.7-16c49.2-21.1,85-57.2,106.1-106.4c10.6-24.8,16-50.8,16-77.9 C400.2,172.6,394.9,146.9,384.2,122.1z M361.9,268.3c-9.3,21.6-21.7,40.5-37.4,56.3c-15.5,15.5-34.4,28-56,37.4 c-21.7,9.4-44.2,14-68.1,14c-31.7,0-61.3-7.8-88.4-23.6c-26.9-15.7-48.4-37.2-64.1-64.1c-15.8-27.1-23.6-56.7-23.6-88.4 s7.9-61,23.6-88C63.7,84.9,85.1,63.4,112,47.7c27.1-15.8,56.7-23.6,88.4-23.6s61,7.9,88,23.6c26.9,15.8,48.3,37.2,63.9,64.1 c15.7,27,23.6,56.2,23.6,88C375.9,223.6,371.2,246.6,361.9,268.3z" }),
+									_react2.default.createElement("polygon", { className: "st1", points: "297,198.2 146,282.5 146,114 297,198.2 \t\t" }),
+									_react2.default.createElement("path", { className: "st0", d: "M298.9,181.4c-5.1-2.9-27.2-15.9-66.3-38.5l-65.9-38.1c-7.5-4.4-14.8-4-21.9,0c-6.7,3.7-11.4,11.2-11.4,18.8 v89.5v63.2c0,8.3,3.7,14.7,10.9,18.8c4.2,2.4,8.7,3.1,13.8,2.8c2.4-0.1,5.2-1,8.1-2.8c4.1-2.5,26.5-15,67-38.5l65.6-38.1 c3.3-1.9,5.6-4.4,7.7-7.7c1.9-2.9,3.1-6.6,3.1-11.2c0-5.3-1.6-9.5-4.4-12.9C303.2,184.3,301,182.6,298.9,181.4z M274.4,204.8 l-10.5,6.1c-45.3,26.4-80.7,46.6-105.7,61.5v-85.1V128l46.6,26.9c26.1,15.1,44.6,25.6,55.6,31.9l13.1,7.7l9.2,5.3L274.4,204.8z" })
+								)
+							),
 							_react2.default.createElement(
 								"span",
 								{ className: "magnet-magnet" },
 								_react2.default.createElement(
 									"a",
 									{ href: magnet.magnet },
-									"SVG HERE"
+									_react2.default.createElement(
+										"svg",
+										{ className: "magnet-svg", viewBox: "0 0 315.79 400" },
+										_react2.default.createElement("path", { className: "cls-1", d: "M289.28,356.38H235.15a26.53,26.53,0,0,1-26.5-26.5v-171c0-28.08-22.41-51.27-50-51.69a50.82,50.82,0,0,0-51.54,50.75v52.63a11.28,11.28,0,0,1-22.56,0V157.89A73.38,73.38,0,0,1,159,84.59c39.8.61,72.17,33.91,72.17,74.24v171a4,4,0,0,0,3.95,3.95h54.14a4,4,0,0,0,3.95-3.95V284.21a11.28,11.28,0,1,1,22.56,0v45.67A26.54,26.54,0,0,1,289.28,356.38Zm-208.64,0H26.5A26.53,26.53,0,0,1,0,329.88v-172C0,70.83,70.83,0,157.89,0S315.78,70.83,315.78,157.89v52.25a11.28,11.28,0,0,1-22.56,0V157.89c0-74.62-60.71-135.34-135.34-135.34S22.56,83.27,22.56,157.89v172a4,4,0,0,0,3.95,3.95H80.64a4,4,0,0,0,3.95-3.95V273.69a11.28,11.28,0,1,1,22.56,0v56.19A26.54,26.54,0,0,1,80.64,356.38Z" }),
+										_react2.default.createElement("path", { className: "cls-2", d: "M304.51,263.9v66a15.22,15.22,0,0,1-15.22,15.23H235.15a15.22,15.22,0,0,1-15.22-15.23v-66Z" }),
+										_react2.default.createElement("path", { className: "cls-1", d: "M289.28,356.38H235.15a26.53,26.53,0,0,1-26.5-26.5v-66a11.28,11.28,0,0,1,11.28-11.28h84.59a11.28,11.28,0,0,1,11.28,11.28v66A26.53,26.53,0,0,1,289.28,356.38Zm-58.08-81.2v54.7a4,4,0,0,0,3.95,3.95h54.14a4,4,0,0,0,3.95-3.95v-54.7Z" }),
+										_react2.default.createElement("path", { className: "cls-2", d: "M95.86,263.9v66a15.22,15.22,0,0,1-15.22,15.23H26.5a15.22,15.22,0,0,1-15.22-15.23v-66Z" }),
+										_react2.default.createElement("path", { className: "cls-1", d: "M80.64,356.38H26.5A26.53,26.53,0,0,1,0,329.88v-66a11.28,11.28,0,0,1,11.28-11.28H95.86a11.28,11.28,0,0,1,11.28,11.28v66A26.53,26.53,0,0,1,80.64,356.38Zm-58.08-81.2v54.7a4,4,0,0,0,3.95,3.95H80.64a4,4,0,0,0,3.95-3.95v-54.7Z" }),
+										_react2.default.createElement("path", { className: "cls-1", d: "M164.1,400a11.29,11.29,0,0,1-10.79-14.57l10.06-33-24.84,5.94a11.28,11.28,0,0,1-12.75-15.94l22.55-45.86a11.28,11.28,0,1,1,20.24,10l-12,24.33,20.65-4.94a11.28,11.28,0,0,1,13.41,14.25L174.88,392A11.28,11.28,0,0,1,164.1,400Z" })
+									)
 								)
 							)
 						)
@@ -33909,12 +32989,13 @@ var MagnetList = exports.MagnetList = (0, _mobxReact.observer)(_class = function
 
 function formatDate(date) {
 	var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	var dayNames = ["st", "nd", "rd", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th", "th", "st"];
 
 	var day = date.getDate();
 	var monthIndex = date.getMonth();
 	var year = date.getFullYear();
 
-	return day + '-' + monthNames[monthIndex] + '-' + year;
+	return day + dayNames[day] + ', ' + monthNames[monthIndex] + ' ' + year;
 }
 
 function createIdentity(address) {
@@ -33926,7 +33007,7 @@ function createIdentity(address) {
 }
 
 /***/ }),
-/* 170 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33938,7 +33019,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4; /** WEB3 **/
+var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8; /** WEB3 **/
 
 
 var _mobx = __webpack_require__(116);
@@ -33998,12 +33079,12 @@ function _initializerWarningHelper(descriptor, context) {
   throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
 }
 
-var Web3 = __webpack_require__(380);
+var Web3 = __webpack_require__(377);
 var web3 = new Web3();
 web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
 
 /** WebTorrent **/
-var WebTorrent = __webpack_require__(410);
+var WebTorrent = __webpack_require__(407);
 
 /** Assets **/
 
@@ -34014,13 +33095,21 @@ var MagnetStore = (_class = function () {
   function MagnetStore() {
     _classCallCheck(this, MagnetStore);
 
-    _initDefineProp(this, 'magnet', _descriptor, this);
+    _initDefineProp(this, 'upSpeed', _descriptor, this);
 
-    _initDefineProp(this, 'magnetList', _descriptor2, this);
+    _initDefineProp(this, 'downSpeed', _descriptor2, this);
 
-    _initDefineProp(this, 'torrent', _descriptor3, this);
+    _initDefineProp(this, 'progress', _descriptor3, this);
 
-    _initDefineProp(this, 'file', _descriptor4, this);
+    _initDefineProp(this, 'publicPrivate', _descriptor4, this);
+
+    _initDefineProp(this, 'magnet', _descriptor5, this);
+
+    _initDefineProp(this, 'magnetList', _descriptor6, this);
+
+    _initDefineProp(this, 'torrent', _descriptor7, this);
+
+    _initDefineProp(this, 'file', _descriptor8, this);
 
     var self = this;
 
@@ -34033,10 +33122,32 @@ var MagnetStore = (_class = function () {
     // self.contractPrivate = web3.eth.contract(ABI_MAGNET_PRIVATE).at(contract_address);
     self.magnetSize = self.contract.getMagnetSize.call().toNumber();
 
+    self.contract.PostedTorrent().watch(function (err, res) {
+      var magSize = self.contract.getMagnetSize.call().toNumber();
+      var payload = self.contract.magnets(self.magSize - 1);
+      self.magnetList.push({
+        name: payload[0],
+        magnet: payload[1],
+        timestamp: payload[2].toNumber(),
+        author: payload[3]
+      });
+    });
+
     self.createList();
   }
 
   _createClass(MagnetStore, [{
+    key: 'setChannel',
+    value: function setChannel() {
+      var self = this;
+
+      if (self.publicPrivate) {
+        self.publicPrivate = false;
+      } else {
+        self.publicPrivate = true;
+      }
+    }
+  }, {
     key: 'createList',
     value: function createList() {
       var self = this;
@@ -34045,9 +33156,7 @@ var MagnetStore = (_class = function () {
         return;
       }
 
-      var payload = self.contract.magnets(self.magneSize - 1);
-      console.log("payload", payload);
-      console.log("size", self.magnetSize);
+      var payload = self.contract.magnets(self.magnetSize - 1);
       self.magnetList.push({
         name: payload[0],
         magnet: payload[1],
@@ -34070,32 +33179,60 @@ var MagnetStore = (_class = function () {
         });
 
         self.file = file;
+
+        setInterval(onProgress, 500);
+        onProgress();
+
+        function onProgress() {
+          self.progress = Math.round(self.torrent.progress * 100 * 100) / 100;
+          self.downSpeed = self.torrent.downloadSpeed;
+          self.upSpeed = self.torrent.uploadSpeed;
+        }
       });
-      return self.file;
     }
   }, {
     key: 'addMagnet',
     value: function addMagnet(name, magnet) {
       var self = this;
 
-      self.contract.addMagnet(name, magnet, { data: _magnet2.default.data }).then(function (err, res) {
-        console.log("err", err);
-        console.log("res", res);
+      self.contract.addMagnet.sendTransaction(name, magnet, function (err, res) {
+        if (err) console.log("ERROR:", err);
+        console.log("Success:", res);
       });
     }
   }]);
 
   return MagnetStore;
-}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'magnet', [_mobx.observable], {
+}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'upSpeed', [_mobx.observable], {
+  enumerable: true,
+  initializer: function initializer() {
+    return 0;
+  }
+}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'downSpeed', [_mobx.observable], {
+  enumerable: true,
+  initializer: function initializer() {
+    return 0;
+  }
+}), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'progress', [_mobx.observable], {
+  enumerable: true,
+  initializer: function initializer() {
+    return 0;
+  }
+}), _descriptor4 = _applyDecoratedDescriptor(_class.prototype, 'publicPrivate', [_mobx.observable], {
+  enumerable: true,
+  initializer: function initializer() {
+    return true;
+  }
+}), _descriptor5 = _applyDecoratedDescriptor(_class.prototype, 'magnet', [_mobx.observable], {
   enumerable: true,
   initializer: null
-}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'magnetList', [_mobx.observable], {
+}), _descriptor6 = _applyDecoratedDescriptor(_class.prototype, 'magnetList', [_mobx.observable], {
   enumerable: true,
   initializer: null
-}), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'torrent', [_mobx.observable], {
+}), _descriptor7 = _applyDecoratedDescriptor(_class.prototype, 'torrent', [_mobx.observable], {
   enumerable: true,
   initializer: null
-}), _descriptor4 = _applyDecoratedDescriptor(_class.prototype, 'file', [_mobx.observable], {
+}), _descriptor8 = _applyDecoratedDescriptor(_class.prototype, 'file', [_mobx.observable], {
   enumerable: true,
   initializer: null
 })), _class);
@@ -34104,7 +33241,7 @@ exports.default = new MagnetStore();
 // web3.eth.gasPrice
 
 /***/ }),
-/* 171 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34131,7 +33268,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _mobxReact = __webpack_require__(79);
 
-var _Video = __webpack_require__(366);
+var _Video = __webpack_require__(363);
 
 var _Video2 = _interopRequireDefault(_Video);
 
@@ -34153,7 +33290,12 @@ var Video = exports.Video = (0, _mobxReact.observer)(_class = function (_Compone
 	function Video() {
 		_classCallCheck(this, Video);
 
-		return _possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).call(this));
+
+		_this.state = {
+			vid: null
+		};
+		return _this;
 	}
 
 	_createClass(Video, [{
@@ -34161,32 +33303,37 @@ var Video = exports.Video = (0, _mobxReact.observer)(_class = function (_Compone
 		value: function componentWillMount() {
 			this.props.store.createMagnetVideo(_magnet2.default);
 		}
-
-		// componentWillReceiveProps(nextProps) {
-		// 	console.log("next", nextProps);
-		// 	if (nextProps.store.file)
-		// 		this.ref.vid.append(nextProps.store.file);
-		// }
-
+	}, {
+		key: "componentWillReceiveProps",
+		value: function componentWillReceiveProps(nextProps) {
+			if (nextProps.store.file !== this.state.vid) {
+				this.state.vid = nextProps.store.file;
+				this.refs.vid.appendChild(this.state.vid);
+			}
+		}
 	}, {
 		key: "render",
 		value: function render() {
-			var file = this.props.store.file;
+			var _props$store = this.props.store,
+			    file = _props$store.file,
+			    publicPrivate = _props$store.publicPrivate,
+			    progress = _props$store.progress;
+
 
 			return _react2.default.createElement(
 				"div",
 				{ id: "Video" },
+				_react2.default.createElement(
+					"div",
+					{ id: "public-private" },
+					publicPrivate ? "Public Channel" : "Private Channel"
+				),
 				_react2.default.createElement("div", { id: "peers" }),
 				_react2.default.createElement("div", { id: "up-down" }),
 				_react2.default.createElement(
 					"div",
 					{ ref: "vid", id: "vid" },
-					_react2.default.createElement("div", { id: "progressbar" }),
-					_react2.default.createElement(
-						"video",
-						{ width: "500", height: "250", controls: true },
-						_react2.default.createElement("source", { src: "movie.mp4", type: "video/mp4" })
-					)
+					_react2.default.createElement("div", { id: "progressbar", style: { width: progress + "%" } })
 				)
 			);
 		}
@@ -34196,7 +33343,7 @@ var Video = exports.Video = (0, _mobxReact.observer)(_class = function (_Compone
 }(_react.Component)) || _class;
 
 /***/ }),
-/* 172 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34208,19 +33355,14 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(103);
 
-var _oo7Parity = __webpack_require__(166);
-
 var _App = __webpack_require__(165);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// We use and dirty up the global namespace here.
-// parity.bonds = setupBonds(parity.api);
-
 (0, _reactDom.render)(_react2.default.createElement(_App.App, null), document.getElementById('app'));
 
 /***/ }),
-/* 173 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34341,7 +33483,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 174 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/**
@@ -34510,7 +33652,7 @@ module.exports = decode
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 175 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/**
@@ -34628,7 +33770,7 @@ module.exports = encode
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 176 */
+/* 175 */
 /***/ (function(module, exports) {
 
 module.exports = function(haystack, needle, comparator, low, high) {
@@ -34677,7 +33819,7 @@ module.exports = function(haystack, needle, comparator, low, high) {
 
 
 /***/ }),
-/* 177 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {module.exports = Client
@@ -34694,9 +33836,9 @@ var uniq = __webpack_require__(69)
 var url = __webpack_require__(101)
 
 var common = __webpack_require__(105)
-var HTTPTracker = __webpack_require__(420) // empty object in browser
-var UDPTracker = __webpack_require__(421) // empty object in browser
-var WebSocketTracker = __webpack_require__(179)
+var HTTPTracker = __webpack_require__(417) // empty object in browser
+var UDPTracker = __webpack_require__(418) // empty object in browser
+var WebSocketTracker = __webpack_require__(178)
 
 inherits(Client, EventEmitter)
 
@@ -34980,7 +34122,7 @@ Client.prototype._defaultAnnounceOpts = function (opts) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 178 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = Tracker
@@ -35016,7 +34158,7 @@ Tracker.prototype.setInterval = function (intervalMs) {
 
 
 /***/ }),
-/* 179 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = WebSocketTracker
@@ -35026,10 +34168,10 @@ var extend = __webpack_require__(25)
 var inherits = __webpack_require__(6)
 var Peer = __webpack_require__(99)
 var randombytes = __webpack_require__(46)
-var Socket = __webpack_require__(359)
+var Socket = __webpack_require__(356)
 
 var common = __webpack_require__(105)
-var Tracker = __webpack_require__(178)
+var Tracker = __webpack_require__(177)
 
 // Use a socket pool, so tracker clients share WebSocket objects for the same server.
 // In practice, WebSockets are pretty slow to establish, so this gives a nice performance
@@ -35466,7 +34608,7 @@ function noop () {}
 
 
 /***/ }),
-/* 180 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/* global Blob, FileReader */
@@ -35492,6 +34634,12 @@ module.exports = function blobToBuffer (blob, cb) {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports) {
+
+module.exports=function(){function r(r){for(var t=0;t<l.length;t++)l[t]=0;for(var t=0;t<r.length;t++)l[t%4]=(l[t%4]<<5)-l[t%4]+r.charCodeAt(t)}function t(){var r=l[0]^l[0]<<11;return l[0]=l[1],l[1]=l[2],l[2]=l[3],l[3]=l[3]^l[3]>>19^r^r>>8,(l[3]>>>0)/(1<<31>>>0)}function e(){var r=Math.floor(360*t()),e=60*t()+40+"%",o=25*(t()+t()+t()+t())+"%",n="hsl("+r+","+e+","+o+")";return n}function o(r){for(var e=r,o=r,n=Math.ceil(e/2),a=e-n,l=[],f=0;o>f;f++){for(var h=[],c=0;n>c;c++)h[c]=Math.floor(2.3*t());var i=h.slice(0,a);i.reverse(),h=h.concat(i);for(var v=0;v<h.length;v++)l.push(h[v])}return l}function n(r,t,e,o,n){var a=document.createElement("canvas"),l=Math.sqrt(r.length);a.width=a.height=l*e;var f=a.getContext("2d");f.fillStyle=o,f.fillRect(0,0,a.width,a.height),f.fillStyle=t;for(var h=0;h<r.length;h++){var c=Math.floor(h/l),i=h%l;f.fillStyle=1==r[h]?t:n,r[h]&&f.fillRect(i*e,c*e,e,e)}return a}function a(t){t=t||{};var a=t.size||8,l=t.scale||4,f=t.seed||Math.floor(Math.random()*Math.pow(10,16)).toString(16);r(f);var h=t.color||e(),c=t.bgcolor||e(),i=t.spotcolor||e(),v=o(a),u=n(v,h,l,c,i);return u}var l=Array(4);return a}();
 
 /***/ }),
 /* 181 */
@@ -35662,7 +34810,7 @@ module.exports.announceList = [
 
 var bencode = __webpack_require__(55)
 var BlockStream = __webpack_require__(106)
-var calcPieceLength = __webpack_require__(262)
+var calcPieceLength = __webpack_require__(259)
 var corePath = __webpack_require__(37)
 var extend = __webpack_require__(25)
 var FileReadStream = __webpack_require__(231)
@@ -39239,7 +38387,7 @@ exports = module.exports = __webpack_require__(58)();
 
 
 // module
-exports.push([module.i, "#Header {\n  width: 100vw;\n  height: 60px;\n  background-color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n#web3 {\n  padding-left: 15px;\n  font-size: 27.5px;\n  font-weight: bold;\n}\n\n#header-buttons {\n  padding-right: 0px;\n}\n\n.links {\n  padding: 10px 5px;\n  margin: 0 10px;\n  font-size: 18px;\n  font-weight: bold;\n}\n\n.button {\n  background-color: #35b44f;\n  border-radius: 4px;\n  color: white;\n  padding: 10px 12.5px;\n  margin: 0 10px;\n  font-size: 18px;\n}\n.button:hover {\n  background-color: #54CD6D;\n}\n.button:active {\n  background-color: #30a247;\n}\n\n#add-magnet {\n\n}\n#add-magnet:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#add-magnet:active {\n  color: #30a247;\n  cursor: pointer;\n}\n\n#private {\n\n}\n#private:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#private:active {\n  color: #30a247;\n  cursor: pointer;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\n\n\n/** MAGNET MODAL **/\n#magnet-modal-container {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 1000;\n}\n\n#adhd {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100vw;\n  height: 100vh;\n  background-color: rgba(0, 0, 0, 0.35);\n  z-index: 1000;\n}\n\n#MagnetModal {\n  position: relative;\n  width: 450px;\n  height: 300px;\n  background-color: #ededed;\n  border-radius: 6px;\n  text-align: left;\n}\n\n#addMagnet {\n  font-weight: bold;\n  font-size: 32px;\n  padding: 15px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n\n.labels {\n  padding-left: 25px;\n  color: #adadae;\n}\n\n.mag-inputs {\n  width: calc(100% - 55px);\n  margin: 7px 25px;\n  height: 25px;\n  padding-left: 7px;\n  font-size: 16px;\n  border: none;\n  color: #394040;\n}\n\n#name-input {\n\n}\n\n#magnet-input {\n\n}\n\n#magnet-sumbit {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  margin-right: 25px;\n  margin-bottom: 25px;\n  border: none;\n}\n\n#magnet-cancel {\n  position: absolute;\n  background-color: #CC5656;\n  left: 0;\n  bottom: 0;\n  margin-left: 25px;\n  margin-bottom: 25px;\n  cursor: pointer;\n}\n#magnet-cancel:hover {\n  background-color: #DB8282;\n}\n#magnet-cancel:active {\n  background-color: #C13D3D;\n}\n\n\n/* GREY: #adadae */\n/* RED:  #CC5656 */\n", ""]);
+exports.push([module.i, "#Header {\n  width: 100vw;\n  height: 60px;\n  background-color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n#web3 {\n  padding-left: 15px;\n  font-size: 27.5px;\n  font-weight: bold;\n}\n\n#header-buttons {\n  padding-right: 0px;\n}\n\n.links {\n  padding: 10px 5px;\n  margin: 0 10px;\n  font-size: 18px;\n  font-weight: bold;\n}\n\n.button {\n  background-color: #35b44f;\n  border-radius: 4px;\n  color: white;\n  padding: 10px 12.5px;\n  margin: 0 10px;\n  font-size: 18px;\n}\n.button:hover {\n  cursor: pointer;\n  background-color: #54CD6D;\n}\n.button:active {\n  cursor: pointer;\n  background-color: #30a247;\n}\n\n#add-magnet {\n\n}\n#add-magnet:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#add-magnet:active {\n  color: #30a247;\n  cursor: pointer;\n}\n\n#private {\n  padding-right: 12px;\n}\n#private:hover {\n  color: #35b44f;\n  cursor: pointer;\n}\n#private:active {\n  color: #30a247;\n  cursor: pointer;\n}\n\na {\n  color: inherit;\n  text-decoration: none;\n}\n\n\n\n/** MAGNET MODAL **/\n#magnet-modal-container {\n  position: fixed;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 1000;\n}\n\n#adhd {\n  position: fixed;\n  left: 0;\n  top: 0;\n  width: 100vw;\n  height: 100vh;\n  background-color: rgba(0, 0, 0, 0.35);\n  z-index: 1000;\n}\n\n#MagnetModal {\n  position: relative;\n  width: 450px;\n  height: 300px;\n  background-color: #ededed;\n  border-radius: 6px;\n  text-align: left;\n}\n\n#addMagnet {\n  font-weight: bold;\n  font-size: 32px;\n  padding: 15px;\n  text-align: center;\n  margin-bottom: 10px;\n}\n\n.labels {\n  padding-left: 25px;\n  color: #adadae;\n}\n\n.mag-inputs {\n  width: calc(100% - 55px);\n  margin: 7px 25px;\n  height: 25px;\n  padding-left: 7px;\n  font-size: 16px;\n  border: none;\n  color: #394040;\n}\n\n#name-input {\n\n}\n\n#magnet-input {\n\n}\n\n#magnet-sumbit {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  margin-right: 25px;\n  margin-bottom: 25px;\n  border: none;\n}\n\n#magnet-cancel {\n  position: absolute;\n  background-color: #CC5656;\n  left: 0;\n  bottom: 0;\n  margin-left: 25px;\n  margin-bottom: 25px;\n  cursor: pointer;\n}\n#magnet-cancel:hover {\n  background-color: #DB8282;\n}\n#magnet-cancel:active {\n  background-color: #C13D3D;\n}\n\n\n/* GREY: #adadae */\n/* RED:  #CC5656 */\n", ""]);
 
 // exports
 
@@ -39253,7 +38401,7 @@ exports = module.exports = __webpack_require__(58)();
 
 
 // module
-exports.push([module.i, "#MagnetList {\n  position: relative;\n  margin: 55px;\n  width: auto;\n  min-height: 300px;\n  border-radius: 5px;\n  border: 1px solid #adadae;\n}\n", ""]);
+exports.push([module.i, "#MagnetList {\n  position: relative;\n  margin: 55px 150px;\n  width: auto;\n  min-height: 300px;\n  border-radius: 5px;\n  border: 1px solid #adadae;\n  overflow: hidden;\n}\n\n.magnet-item {\n  width: 100%;\n  height: 80px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.magnet-item-dark {\n  width: 100%;\n  height: 80px;\n  background-color: #DFDEDE;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.magnet-left {\n  text-align: left;\n  margin-left: 15px;\n}\n\n.magnet-name {\n  font-size: 22px;\n  padding-bottom: 8px;\n}\n\n.magnet-details {\n  display: flex;\n  align-items: center;\n}\n\n.magnet-author {\n  margin-right: 5px;\n  padding: 0px;\n}\n\n.magnet-author img {\n  overflow: hidden;\n  border-radius: 4px;\n}\n\n.magnet-time {\n  padding-left: 5px;\n  color: #8B8B8B;\n}\n\n.magnet-right {\n  margin-right: 15px;\n}\n\n.magnet-video {\n  cursor: pointer;\n  margin-right: 15px;\n}\n.magnet-video svg {\n  padding-top: 5px;\n  width: 50px;\n  height: 50px;\n}\n\n.magnet-magnet {\n\n}\n.magnet-magnet svg {\n  padding-top: 5px;\n  width: 50px;\n  height: 50px;\n}\n\n.cls-1 {\n  fill:#cc5656;\n}\n\n.cls-2 {\n  fill:#db8282;\n}\n\n.st0 {\n  fill:#35B44F;\n}\n\n.st1 {\n  fill:#54CD6D;\n}\n", ""]);
 
 // exports
 
@@ -39267,7 +38415,7 @@ exports = module.exports = __webpack_require__(58)();
 
 
 // module
-exports.push([module.i, "#Video {\n  width: 100vw;\n  min-height: 350px;\n  background-color: #2a3749; /* #35b44f */\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  transition: background-color 700ms ease;\n}\n\n#peers {\n  width: 300px;\n  height: 300px;\n  margin-left: 25px;\n}\n\n#vid {\n  background-color: #1F2B3A;\n  margin-right: 45px;\n  width: 500px;\n  height: 250px;\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n#progressbar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 5px;\n  width: 0%;\n  background-color: #35b44f;\n  transition: width .4s ease-in-out;\n}\n", ""]);
+exports.push([module.i, "#Video {\n  position: relative;\n  padding-top: 20px;\n  width: 100vw;\n  min-height: 350px;\n  background-color: #2a3749; /* #35b44f */\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  transition: background-color 700ms ease;\n}\n\n#public-private {\n  position: absolute;\n  font-size: 35px;\n  top: 10px;\n  left: 50%;\n  transform: translateX(-50%);\n  color: white;\n}\n\n#peers {\n  width: 300px;\n  height: 300px;\n  margin-left: 25px;\n}\n\n#vid {\n  background-color: #1F2B3A;\n  margin-right: 45px;\n  width: 500px;\n  height: 250px;\n  border-radius: 5px;\n  overflow: hidden;\n}\n\n#progressbar {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 5px;\n  width: 0%;\n  background-color: #35b44f;\n  transition: width .4s ease-in-out;\n}\n", ""]);
 
 // exports
 
@@ -40255,7 +39403,7 @@ module.exports = __webpack_require__.p + "fonts/Asap-Regular.otf";
 var Readable = __webpack_require__(12).Readable;
 var inherits = __webpack_require__(6);
 var reExtension = /^.*\.(\w+)$/;
-var toBuffer = __webpack_require__(372);
+var toBuffer = __webpack_require__(369);
 
 function FileReadStream(file, opts) {
   var readStream = this;
@@ -40400,7 +39548,7 @@ module.exports = function getBrowserRTC () {
 /* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var http = __webpack_require__(154);
+var http = __webpack_require__(153);
 
 var https = module.exports;
 
@@ -41559,7 +40707,7 @@ module.exports = magnetURIDecode
 module.exports.decode = magnetURIDecode
 module.exports.encode = magnetURIEncode
 
-var base32 = __webpack_require__(367)
+var base32 = __webpack_require__(364)
 var Buffer = __webpack_require__(27).Buffer
 var extend = __webpack_require__(25)
 var uniq = __webpack_require__(69)
@@ -43291,3318 +42439,6 @@ function nextEvent (emitter, name) {
 /* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.abiPolyfill = abiPolyfill;
-function abiPolyfill() {
-	var api = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : parity.api;
-
-	var RegistryABI = [{ "constant": false, "inputs": [{ "name": "_new", "type": "address" }], "name": "setOwner", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "string" }], "name": "confirmReverse", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "bytes32" }], "name": "reserve", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_key", "type": "string" }, { "name": "_value", "type": "bytes32" }], "name": "set", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "bytes32" }], "name": "drop", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_key", "type": "string" }], "name": "getAddress", "outputs": [{ "name": "", "type": "address" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_amount", "type": "uint256" }], "name": "setFee", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_to", "type": "address" }], "name": "transfer", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [], "name": "owner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_name", "type": "bytes32" }], "name": "reserved", "outputs": [{ "name": "reserved", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [], "name": "drain", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "string" }, { "name": "_who", "type": "address" }], "name": "proposeReverse", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_key", "type": "string" }], "name": "getUint", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_key", "type": "string" }], "name": "get", "outputs": [{ "name": "", "type": "bytes32" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [], "name": "fee", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_name", "type": "bytes32" }], "name": "getOwner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "reverse", "outputs": [{ "name": "", "type": "string" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_key", "type": "string" }, { "name": "_value", "type": "uint256" }], "name": "setUint", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [], "name": "removeReverse", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_name", "type": "bytes32" }, { "name": "_key", "type": "string" }, { "name": "_value", "type": "address" }], "name": "setAddress", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }], "name": "Drained", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "amount", "type": "uint256" }], "name": "FeeChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "bytes32" }, { "indexed": true, "name": "owner", "type": "address" }], "name": "Reserved", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "bytes32" }, { "indexed": true, "name": "oldOwner", "type": "address" }, { "indexed": true, "name": "newOwner", "type": "address" }], "name": "Transferred", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "bytes32" }, { "indexed": true, "name": "owner", "type": "address" }], "name": "Dropped", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "bytes32" }, { "indexed": true, "name": "owner", "type": "address" }, { "indexed": true, "name": "key", "type": "string" }, { "indexed": false, "name": "plainKey", "type": "string" }], "name": "DataChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "string" }, { "indexed": true, "name": "reverse", "type": "address" }], "name": "ReverseProposed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "string" }, { "indexed": true, "name": "reverse", "type": "address" }], "name": "ReverseConfirmed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "name", "type": "string" }, { "indexed": true, "name": "reverse", "type": "address" }], "name": "ReverseRemoved", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "old", "type": "address" }, { "indexed": true, "name": "current", "type": "address" }], "name": "NewOwner", "type": "event" }];
-	var RegistryExtras = [{ name: 'lookup', method: 'get', args: [function (n) {
-			return api.util.sha3(n.toLowerCase());
-		}, null] }, { name: 'lookupAddress', method: 'getAddress', args: [function (n) {
-			return api.util.sha3(n.toLowerCase());
-		}, null] }, { name: 'lookupUint', method: 'getUint', args: [function (n) {
-			return api.util.sha3(n.toLowerCase());
-		}, null] }, { name: 'lookupOwner', method: 'getOwner', args: [function (n) {
-			return api.util.sha3(n.toLowerCase());
-		}] }];
-	var GitHubHintABI = [{ "constant": false, "inputs": [{ "name": "_content", "type": "bytes32" }, { "name": "_url", "type": "string" }], "name": "hintURL", "outputs": [], "type": "function" }, { "constant": false, "inputs": [{ "name": "_content", "type": "bytes32" }, { "name": "_accountSlashRepo", "type": "string" }, { "name": "_commit", "type": "bytes20" }], "name": "hint", "outputs": [], "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "bytes32" }], "name": "entries", "outputs": [{ "name": "accountSlashRepo", "type": "string" }, { "name": "commit", "type": "bytes20" }, { "name": "owner", "type": "address" }], "type": "function" }, { "constant": false, "inputs": [{ "name": "_content", "type": "bytes32" }], "name": "unhint", "outputs": [], "type": "function" }];
-	var OperationsABI = [{ "constant": false, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_newOwner", "type": "address" }], "name": "resetClientOwner", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_release", "type": "bytes32" }], "name": "isLatest", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_txid", "type": "bytes32" }], "name": "rejectTransaction", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_newOwner", "type": "address" }], "name": "setOwner", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_number", "type": "uint32" }, { "name": "_name", "type": "bytes32" }, { "name": "_hard", "type": "bool" }, { "name": "_spec", "type": "bytes32" }], "name": "proposeFork", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_client", "type": "bytes32" }], "name": "removeClient", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_release", "type": "bytes32" }], "name": "release", "outputs": [{ "name": "o_forkBlock", "type": "uint32" }, { "name": "o_track", "type": "uint8" }, { "name": "o_semver", "type": "uint24" }, { "name": "o_critical", "type": "bool" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_checksum", "type": "bytes32" }], "name": "build", "outputs": [{ "name": "o_release", "type": "bytes32" }, { "name": "o_platform", "type": "bytes32" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [], "name": "rejectFork", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "bytes32" }], "name": "client", "outputs": [{ "name": "owner", "type": "address" }, { "name": "required", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_newOwner", "type": "address" }], "name": "setClientOwner", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "uint32" }], "name": "fork", "outputs": [{ "name": "name", "type": "bytes32" }, { "name": "spec", "type": "bytes32" }, { "name": "hard", "type": "bool" }, { "name": "ratified", "type": "bool" }, { "name": "requiredCount", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_release", "type": "bytes32" }, { "name": "_platform", "type": "bytes32" }, { "name": "_checksum", "type": "bytes32" }], "name": "addChecksum", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_txid", "type": "bytes32" }], "name": "confirmTransaction", "outputs": [{ "name": "txSuccess", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "bytes32" }], "name": "proxy", "outputs": [{ "name": "requiredCount", "type": "uint256" }, { "name": "to", "type": "address" }, { "name": "data", "type": "bytes" }, { "name": "value", "type": "uint256" }, { "name": "gas", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_owner", "type": "address" }], "name": "addClient", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "clientOwner", "outputs": [{ "name": "", "type": "bytes32" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_txid", "type": "bytes32" }, { "name": "_to", "type": "address" }, { "name": "_data", "type": "bytes" }, { "name": "_value", "type": "uint256" }, { "name": "_gas", "type": "uint256" }], "name": "proposeTransaction", "outputs": [{ "name": "txSuccess", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [], "name": "grandOwner", "outputs": [{ "name": "", "type": "address" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_release", "type": "bytes32" }, { "name": "_forkBlock", "type": "uint32" }, { "name": "_track", "type": "uint8" }, { "name": "_semver", "type": "uint24" }, { "name": "_critical", "type": "bool" }], "name": "addRelease", "outputs": [], "payable": false, "type": "function" }, { "constant": false, "inputs": [], "name": "acceptFork", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [], "name": "clientsRequired", "outputs": [{ "name": "", "type": "uint32" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_release", "type": "bytes32" }], "name": "track", "outputs": [{ "name": "", "type": "uint8" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_r", "type": "bool" }], "name": "setClientRequired", "outputs": [], "payable": false, "type": "function" }, { "constant": true, "inputs": [], "name": "latestFork", "outputs": [{ "name": "", "type": "uint32" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_track", "type": "uint8" }], "name": "latestInTrack", "outputs": [{ "name": "", "type": "bytes32" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_client", "type": "bytes32" }, { "name": "_release", "type": "bytes32" }, { "name": "_platform", "type": "bytes32" }], "name": "checksum", "outputs": [{ "name": "", "type": "bytes32" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [], "name": "proposedFork", "outputs": [{ "name": "", "type": "uint32" }], "payable": false, "type": "function" }, { "inputs": [], "payable": false, "type": "constructor" }, { "payable": true, "type": "fallback" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "from", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }, { "indexed": false, "name": "data", "type": "bytes" }], "name": "Received", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "txid", "type": "bytes32" }, { "indexed": true, "name": "to", "type": "address" }, { "indexed": false, "name": "data", "type": "bytes" }, { "indexed": false, "name": "value", "type": "uint256" }, { "indexed": false, "name": "gas", "type": "uint256" }], "name": "TransactionProposed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "txid", "type": "bytes32" }], "name": "TransactionConfirmed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "txid", "type": "bytes32" }], "name": "TransactionRejected", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "txid", "type": "bytes32" }, { "indexed": false, "name": "success", "type": "bool" }], "name": "TransactionRelayed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "number", "type": "uint32" }, { "indexed": true, "name": "name", "type": "bytes32" }, { "indexed": false, "name": "spec", "type": "bytes32" }, { "indexed": false, "name": "hard", "type": "bool" }], "name": "ForkProposed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "number", "type": "uint32" }], "name": "ForkAcceptedBy", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "number", "type": "uint32" }], "name": "ForkRejectedBy", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "forkNumber", "type": "uint32" }], "name": "ForkRejected", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "forkNumber", "type": "uint32" }], "name": "ForkRatified", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "forkBlock", "type": "uint32" }, { "indexed": false, "name": "release", "type": "bytes32" }, { "indexed": false, "name": "track", "type": "uint8" }, { "indexed": false, "name": "semver", "type": "uint24" }, { "indexed": true, "name": "critical", "type": "bool" }], "name": "ReleaseAdded", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "release", "type": "bytes32" }, { "indexed": true, "name": "platform", "type": "bytes32" }, { "indexed": false, "name": "checksum", "type": "bytes32" }], "name": "ChecksumAdded", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": false, "name": "owner", "type": "address" }], "name": "ClientAdded", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }], "name": "ClientRemoved", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": true, "name": "old", "type": "address" }, { "indexed": true, "name": "now", "type": "address" }], "name": "ClientOwnerChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "client", "type": "bytes32" }, { "indexed": false, "name": "now", "type": "bool" }], "name": "ClientRequiredChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "name": "old", "type": "address" }, { "indexed": false, "name": "now", "type": "address" }], "name": "OwnerChanged", "type": "event" }];
-	var TokenABI = [{ "constant": false, "inputs": [{ "name": "_spender", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "approve", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "transferFrom", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_owner", "type": "address" }], "name": "balanceOf", "outputs": [{ "name": "balance", "type": "uint256" }], "payable": false, "type": "function" }, { "constant": false, "inputs": [{ "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" }], "name": "transfer", "outputs": [{ "name": "success", "type": "bool" }], "payable": false, "type": "function" }, { "constant": true, "inputs": [{ "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" }], "name": "allowance", "outputs": [{ "name": "remaining", "type": "uint256" }], "payable": false, "type": "function" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "from", "type": "address" }, { "indexed": true, "name": "to", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "name": "owner", "type": "address" }, { "indexed": true, "name": "spender", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" }], "name": "Approval", "type": "event" }];
-	return {
-		registry: RegistryABI,
-		registryExtras: RegistryExtras,
-		githubhint: GitHubHintABI,
-		operations: OperationsABI,
-		erc20token: TokenABI
-	};
-}
-
-/***/ }),
-/* 259 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_RESULT__;/*! bignumber.js v4.0.2 https://github.com/MikeMcl/bignumber.js/LICENCE */
-
-;(function (globalObj) {
-    'use strict';
-
-    /*
-      bignumber.js v4.0.2
-      A JavaScript library for arbitrary-precision arithmetic.
-      https://github.com/MikeMcl/bignumber.js
-      Copyright (c) 2017 Michael Mclaughlin <M8ch88l@gmail.com>
-      MIT Expat Licence
-    */
-
-
-    var BigNumber,
-        isNumeric = /^-?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i,
-        mathceil = Math.ceil,
-        mathfloor = Math.floor,
-        notBool = ' not a boolean or binary digit',
-        roundingMode = 'rounding mode',
-        tooManyDigits = 'number type has more than 15 significant digits',
-        ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$_',
-        BASE = 1e14,
-        LOG_BASE = 14,
-        MAX_SAFE_INTEGER = 0x1fffffffffffff,         // 2^53 - 1
-        // MAX_INT32 = 0x7fffffff,                   // 2^31 - 1
-        POWS_TEN = [1, 10, 100, 1e3, 1e4, 1e5, 1e6, 1e7, 1e8, 1e9, 1e10, 1e11, 1e12, 1e13],
-        SQRT_BASE = 1e7,
-
-        /*
-         * The limit on the value of DECIMAL_PLACES, TO_EXP_NEG, TO_EXP_POS, MIN_EXP, MAX_EXP, and
-         * the arguments to toExponential, toFixed, toFormat, and toPrecision, beyond which an
-         * exception is thrown (if ERRORS is true).
-         */
-        MAX = 1E9;                                   // 0 to MAX_INT32
-
-
-    /*
-     * Create and return a BigNumber constructor.
-     */
-    function constructorFactory(config) {
-        var div, parseNumeric,
-
-            // id tracks the caller function, so its name can be included in error messages.
-            id = 0,
-            P = BigNumber.prototype,
-            ONE = new BigNumber(1),
-
-
-            /********************************* EDITABLE DEFAULTS **********************************/
-
-
-            /*
-             * The default values below must be integers within the inclusive ranges stated.
-             * The values can also be changed at run-time using BigNumber.config.
-             */
-
-            // The maximum number of decimal places for operations involving division.
-            DECIMAL_PLACES = 20,                     // 0 to MAX
-
-            /*
-             * The rounding mode used when rounding to the above decimal places, and when using
-             * toExponential, toFixed, toFormat and toPrecision, and round (default value).
-             * UP         0 Away from zero.
-             * DOWN       1 Towards zero.
-             * CEIL       2 Towards +Infinity.
-             * FLOOR      3 Towards -Infinity.
-             * HALF_UP    4 Towards nearest neighbour. If equidistant, up.
-             * HALF_DOWN  5 Towards nearest neighbour. If equidistant, down.
-             * HALF_EVEN  6 Towards nearest neighbour. If equidistant, towards even neighbour.
-             * HALF_CEIL  7 Towards nearest neighbour. If equidistant, towards +Infinity.
-             * HALF_FLOOR 8 Towards nearest neighbour. If equidistant, towards -Infinity.
-             */
-            ROUNDING_MODE = 4,                       // 0 to 8
-
-            // EXPONENTIAL_AT : [TO_EXP_NEG , TO_EXP_POS]
-
-            // The exponent value at and beneath which toString returns exponential notation.
-            // Number type: -7
-            TO_EXP_NEG = -7,                         // 0 to -MAX
-
-            // The exponent value at and above which toString returns exponential notation.
-            // Number type: 21
-            TO_EXP_POS = 21,                         // 0 to MAX
-
-            // RANGE : [MIN_EXP, MAX_EXP]
-
-            // The minimum exponent value, beneath which underflow to zero occurs.
-            // Number type: -324  (5e-324)
-            MIN_EXP = -1e7,                          // -1 to -MAX
-
-            // The maximum exponent value, above which overflow to Infinity occurs.
-            // Number type:  308  (1.7976931348623157e+308)
-            // For MAX_EXP > 1e7, e.g. new BigNumber('1e100000000').plus(1) may be slow.
-            MAX_EXP = 1e7,                           // 1 to MAX
-
-            // Whether BigNumber Errors are ever thrown.
-            ERRORS = true,                           // true or false
-
-            // Change to intValidatorNoErrors if ERRORS is false.
-            isValidInt = intValidatorWithErrors,     // intValidatorWithErrors/intValidatorNoErrors
-
-            // Whether to use cryptographically-secure random number generation, if available.
-            CRYPTO = false,                          // true or false
-
-            /*
-             * The modulo mode used when calculating the modulus: a mod n.
-             * The quotient (q = a / n) is calculated according to the corresponding rounding mode.
-             * The remainder (r) is calculated as: r = a - n * q.
-             *
-             * UP        0 The remainder is positive if the dividend is negative, else is negative.
-             * DOWN      1 The remainder has the same sign as the dividend.
-             *             This modulo mode is commonly known as 'truncated division' and is
-             *             equivalent to (a % n) in JavaScript.
-             * FLOOR     3 The remainder has the same sign as the divisor (Python %).
-             * HALF_EVEN 6 This modulo mode implements the IEEE 754 remainder function.
-             * EUCLID    9 Euclidian division. q = sign(n) * floor(a / abs(n)).
-             *             The remainder is always positive.
-             *
-             * The truncated division, floored division, Euclidian division and IEEE 754 remainder
-             * modes are commonly used for the modulus operation.
-             * Although the other rounding modes can also be used, they may not give useful results.
-             */
-            MODULO_MODE = 1,                         // 0 to 9
-
-            // The maximum number of significant digits of the result of the toPower operation.
-            // If POW_PRECISION is 0, there will be unlimited significant digits.
-            POW_PRECISION = 0,                       // 0 to MAX
-
-            // The format specification used by the BigNumber.prototype.toFormat method.
-            FORMAT = {
-                decimalSeparator: '.',
-                groupSeparator: ',',
-                groupSize: 3,
-                secondaryGroupSize: 0,
-                fractionGroupSeparator: '\xA0',      // non-breaking space
-                fractionGroupSize: 0
-            };
-
-
-        /******************************************************************************************/
-
-
-        // CONSTRUCTOR
-
-
-        /*
-         * The BigNumber constructor and exported function.
-         * Create and return a new instance of a BigNumber object.
-         *
-         * n {number|string|BigNumber} A numeric value.
-         * [b] {number} The base of n. Integer, 2 to 64 inclusive.
-         */
-        function BigNumber( n, b ) {
-            var c, e, i, num, len, str,
-                x = this;
-
-            // Enable constructor usage without new.
-            if ( !( x instanceof BigNumber ) ) {
-
-                // 'BigNumber() constructor call without new: {n}'
-                if (ERRORS) raise( 26, 'constructor call without new', n );
-                return new BigNumber( n, b );
-            }
-
-            // 'new BigNumber() base not an integer: {b}'
-            // 'new BigNumber() base out of range: {b}'
-            if ( b == null || !isValidInt( b, 2, 64, id, 'base' ) ) {
-
-                // Duplicate.
-                if ( n instanceof BigNumber ) {
-                    x.s = n.s;
-                    x.e = n.e;
-                    x.c = ( n = n.c ) ? n.slice() : n;
-                    id = 0;
-                    return;
-                }
-
-                if ( ( num = typeof n == 'number' ) && n * 0 == 0 ) {
-                    x.s = 1 / n < 0 ? ( n = -n, -1 ) : 1;
-
-                    // Fast path for integers.
-                    if ( n === ~~n ) {
-                        for ( e = 0, i = n; i >= 10; i /= 10, e++ );
-                        x.e = e;
-                        x.c = [n];
-                        id = 0;
-                        return;
-                    }
-
-                    str = n + '';
-                } else {
-                    if ( !isNumeric.test( str = n + '' ) ) return parseNumeric( x, str, num );
-                    x.s = str.charCodeAt(0) === 45 ? ( str = str.slice(1), -1 ) : 1;
-                }
-            } else {
-                b = b | 0;
-                str = n + '';
-
-                // Ensure return value is rounded to DECIMAL_PLACES as with other bases.
-                // Allow exponential notation to be used with base 10 argument.
-                if ( b == 10 ) {
-                    x = new BigNumber( n instanceof BigNumber ? n : str );
-                    return round( x, DECIMAL_PLACES + x.e + 1, ROUNDING_MODE );
-                }
-
-                // Avoid potential interpretation of Infinity and NaN as base 44+ values.
-                // Any number in exponential form will fail due to the [Ee][+-].
-                if ( ( num = typeof n == 'number' ) && n * 0 != 0 ||
-                  !( new RegExp( '^-?' + ( c = '[' + ALPHABET.slice( 0, b ) + ']+' ) +
-                    '(?:\\.' + c + ')?$',b < 37 ? 'i' : '' ) ).test(str) ) {
-                    return parseNumeric( x, str, num, b );
-                }
-
-                if (num) {
-                    x.s = 1 / n < 0 ? ( str = str.slice(1), -1 ) : 1;
-
-                    if ( ERRORS && str.replace( /^0\.0*|\./, '' ).length > 15 ) {
-
-                        // 'new BigNumber() number type has more than 15 significant digits: {n}'
-                        raise( id, tooManyDigits, n );
-                    }
-
-                    // Prevent later check for length on converted number.
-                    num = false;
-                } else {
-                    x.s = str.charCodeAt(0) === 45 ? ( str = str.slice(1), -1 ) : 1;
-                }
-
-                str = convertBase( str, 10, b, x.s );
-            }
-
-            // Decimal point?
-            if ( ( e = str.indexOf('.') ) > -1 ) str = str.replace( '.', '' );
-
-            // Exponential form?
-            if ( ( i = str.search( /e/i ) ) > 0 ) {
-
-                // Determine exponent.
-                if ( e < 0 ) e = i;
-                e += +str.slice( i + 1 );
-                str = str.substring( 0, i );
-            } else if ( e < 0 ) {
-
-                // Integer.
-                e = str.length;
-            }
-
-            // Determine leading zeros.
-            for ( i = 0; str.charCodeAt(i) === 48; i++ );
-
-            // Determine trailing zeros.
-            for ( len = str.length; str.charCodeAt(--len) === 48; );
-            str = str.slice( i, len + 1 );
-
-            if (str) {
-                len = str.length;
-
-                // Disallow numbers with over 15 significant digits if number type.
-                // 'new BigNumber() number type has more than 15 significant digits: {n}'
-                if ( num && ERRORS && len > 15 && ( n > MAX_SAFE_INTEGER || n !== mathfloor(n) ) ) {
-                    raise( id, tooManyDigits, x.s * n );
-                }
-
-                e = e - i - 1;
-
-                 // Overflow?
-                if ( e > MAX_EXP ) {
-
-                    // Infinity.
-                    x.c = x.e = null;
-
-                // Underflow?
-                } else if ( e < MIN_EXP ) {
-
-                    // Zero.
-                    x.c = [ x.e = 0 ];
-                } else {
-                    x.e = e;
-                    x.c = [];
-
-                    // Transform base
-
-                    // e is the base 10 exponent.
-                    // i is where to slice str to get the first element of the coefficient array.
-                    i = ( e + 1 ) % LOG_BASE;
-                    if ( e < 0 ) i += LOG_BASE;
-
-                    if ( i < len ) {
-                        if (i) x.c.push( +str.slice( 0, i ) );
-
-                        for ( len -= LOG_BASE; i < len; ) {
-                            x.c.push( +str.slice( i, i += LOG_BASE ) );
-                        }
-
-                        str = str.slice(i);
-                        i = LOG_BASE - str.length;
-                    } else {
-                        i -= len;
-                    }
-
-                    for ( ; i--; str += '0' );
-                    x.c.push( +str );
-                }
-            } else {
-
-                // Zero.
-                x.c = [ x.e = 0 ];
-            }
-
-            id = 0;
-        }
-
-
-        // CONSTRUCTOR PROPERTIES
-
-
-        BigNumber.another = constructorFactory;
-
-        BigNumber.ROUND_UP = 0;
-        BigNumber.ROUND_DOWN = 1;
-        BigNumber.ROUND_CEIL = 2;
-        BigNumber.ROUND_FLOOR = 3;
-        BigNumber.ROUND_HALF_UP = 4;
-        BigNumber.ROUND_HALF_DOWN = 5;
-        BigNumber.ROUND_HALF_EVEN = 6;
-        BigNumber.ROUND_HALF_CEIL = 7;
-        BigNumber.ROUND_HALF_FLOOR = 8;
-        BigNumber.EUCLID = 9;
-
-
-        /*
-         * Configure infrequently-changing library-wide settings.
-         *
-         * Accept an object or an argument list, with one or many of the following properties or
-         * parameters respectively:
-         *
-         *   DECIMAL_PLACES  {number}  Integer, 0 to MAX inclusive
-         *   ROUNDING_MODE   {number}  Integer, 0 to 8 inclusive
-         *   EXPONENTIAL_AT  {number|number[]}  Integer, -MAX to MAX inclusive or
-         *                                      [integer -MAX to 0 incl., 0 to MAX incl.]
-         *   RANGE           {number|number[]}  Non-zero integer, -MAX to MAX inclusive or
-         *                                      [integer -MAX to -1 incl., integer 1 to MAX incl.]
-         *   ERRORS          {boolean|number}   true, false, 1 or 0
-         *   CRYPTO          {boolean|number}   true, false, 1 or 0
-         *   MODULO_MODE     {number}           0 to 9 inclusive
-         *   POW_PRECISION   {number}           0 to MAX inclusive
-         *   FORMAT          {object}           See BigNumber.prototype.toFormat
-         *      decimalSeparator       {string}
-         *      groupSeparator         {string}
-         *      groupSize              {number}
-         *      secondaryGroupSize     {number}
-         *      fractionGroupSeparator {string}
-         *      fractionGroupSize      {number}
-         *
-         * (The values assigned to the above FORMAT object properties are not checked for validity.)
-         *
-         * E.g.
-         * BigNumber.config(20, 4) is equivalent to
-         * BigNumber.config({ DECIMAL_PLACES : 20, ROUNDING_MODE : 4 })
-         *
-         * Ignore properties/parameters set to null or undefined.
-         * Return an object with the properties current values.
-         */
-        BigNumber.config = BigNumber.set = function () {
-            var v, p,
-                i = 0,
-                r = {},
-                a = arguments,
-                o = a[0],
-                has = o && typeof o == 'object'
-                  ? function () { if ( o.hasOwnProperty(p) ) return ( v = o[p] ) != null; }
-                  : function () { if ( a.length > i ) return ( v = a[i++] ) != null; };
-
-            // DECIMAL_PLACES {number} Integer, 0 to MAX inclusive.
-            // 'config() DECIMAL_PLACES not an integer: {v}'
-            // 'config() DECIMAL_PLACES out of range: {v}'
-            if ( has( p = 'DECIMAL_PLACES' ) && isValidInt( v, 0, MAX, 2, p ) ) {
-                DECIMAL_PLACES = v | 0;
-            }
-            r[p] = DECIMAL_PLACES;
-
-            // ROUNDING_MODE {number} Integer, 0 to 8 inclusive.
-            // 'config() ROUNDING_MODE not an integer: {v}'
-            // 'config() ROUNDING_MODE out of range: {v}'
-            if ( has( p = 'ROUNDING_MODE' ) && isValidInt( v, 0, 8, 2, p ) ) {
-                ROUNDING_MODE = v | 0;
-            }
-            r[p] = ROUNDING_MODE;
-
-            // EXPONENTIAL_AT {number|number[]}
-            // Integer, -MAX to MAX inclusive or [integer -MAX to 0 inclusive, 0 to MAX inclusive].
-            // 'config() EXPONENTIAL_AT not an integer: {v}'
-            // 'config() EXPONENTIAL_AT out of range: {v}'
-            if ( has( p = 'EXPONENTIAL_AT' ) ) {
-
-                if ( isArray(v) ) {
-                    if ( isValidInt( v[0], -MAX, 0, 2, p ) && isValidInt( v[1], 0, MAX, 2, p ) ) {
-                        TO_EXP_NEG = v[0] | 0;
-                        TO_EXP_POS = v[1] | 0;
-                    }
-                } else if ( isValidInt( v, -MAX, MAX, 2, p ) ) {
-                    TO_EXP_NEG = -( TO_EXP_POS = ( v < 0 ? -v : v ) | 0 );
-                }
-            }
-            r[p] = [ TO_EXP_NEG, TO_EXP_POS ];
-
-            // RANGE {number|number[]} Non-zero integer, -MAX to MAX inclusive or
-            // [integer -MAX to -1 inclusive, integer 1 to MAX inclusive].
-            // 'config() RANGE not an integer: {v}'
-            // 'config() RANGE cannot be zero: {v}'
-            // 'config() RANGE out of range: {v}'
-            if ( has( p = 'RANGE' ) ) {
-
-                if ( isArray(v) ) {
-                    if ( isValidInt( v[0], -MAX, -1, 2, p ) && isValidInt( v[1], 1, MAX, 2, p ) ) {
-                        MIN_EXP = v[0] | 0;
-                        MAX_EXP = v[1] | 0;
-                    }
-                } else if ( isValidInt( v, -MAX, MAX, 2, p ) ) {
-                    if ( v | 0 ) MIN_EXP = -( MAX_EXP = ( v < 0 ? -v : v ) | 0 );
-                    else if (ERRORS) raise( 2, p + ' cannot be zero', v );
-                }
-            }
-            r[p] = [ MIN_EXP, MAX_EXP ];
-
-            // ERRORS {boolean|number} true, false, 1 or 0.
-            // 'config() ERRORS not a boolean or binary digit: {v}'
-            if ( has( p = 'ERRORS' ) ) {
-
-                if ( v === !!v || v === 1 || v === 0 ) {
-                    id = 0;
-                    isValidInt = ( ERRORS = !!v ) ? intValidatorWithErrors : intValidatorNoErrors;
-                } else if (ERRORS) {
-                    raise( 2, p + notBool, v );
-                }
-            }
-            r[p] = ERRORS;
-
-            // CRYPTO {boolean|number} true, false, 1 or 0.
-            // 'config() CRYPTO not a boolean or binary digit: {v}'
-            // 'config() crypto unavailable: {crypto}'
-            if ( has( p = 'CRYPTO' ) ) {
-
-                if ( v === true || v === false || v === 1 || v === 0 ) {
-                    if (v) {
-                        v = typeof crypto == 'undefined';
-                        if ( !v && crypto && (crypto.getRandomValues || crypto.randomBytes)) {
-                            CRYPTO = true;
-                        } else if (ERRORS) {
-                            raise( 2, 'crypto unavailable', v ? void 0 : crypto );
-                        } else {
-                            CRYPTO = false;
-                        }
-                    } else {
-                        CRYPTO = false;
-                    }
-                } else if (ERRORS) {
-                    raise( 2, p + notBool, v );
-                }
-            }
-            r[p] = CRYPTO;
-
-            // MODULO_MODE {number} Integer, 0 to 9 inclusive.
-            // 'config() MODULO_MODE not an integer: {v}'
-            // 'config() MODULO_MODE out of range: {v}'
-            if ( has( p = 'MODULO_MODE' ) && isValidInt( v, 0, 9, 2, p ) ) {
-                MODULO_MODE = v | 0;
-            }
-            r[p] = MODULO_MODE;
-
-            // POW_PRECISION {number} Integer, 0 to MAX inclusive.
-            // 'config() POW_PRECISION not an integer: {v}'
-            // 'config() POW_PRECISION out of range: {v}'
-            if ( has( p = 'POW_PRECISION' ) && isValidInt( v, 0, MAX, 2, p ) ) {
-                POW_PRECISION = v | 0;
-            }
-            r[p] = POW_PRECISION;
-
-            // FORMAT {object}
-            // 'config() FORMAT not an object: {v}'
-            if ( has( p = 'FORMAT' ) ) {
-
-                if ( typeof v == 'object' ) {
-                    FORMAT = v;
-                } else if (ERRORS) {
-                    raise( 2, p + ' not an object', v );
-                }
-            }
-            r[p] = FORMAT;
-
-            return r;
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the maximum of the arguments.
-         *
-         * arguments {number|string|BigNumber}
-         */
-        BigNumber.max = function () { return maxOrMin( arguments, P.lt ); };
-
-
-        /*
-         * Return a new BigNumber whose value is the minimum of the arguments.
-         *
-         * arguments {number|string|BigNumber}
-         */
-        BigNumber.min = function () { return maxOrMin( arguments, P.gt ); };
-
-
-        /*
-         * Return a new BigNumber with a random value equal to or greater than 0 and less than 1,
-         * and with dp, or DECIMAL_PLACES if dp is omitted, decimal places (or less if trailing
-         * zeros are produced).
-         *
-         * [dp] {number} Decimal places. Integer, 0 to MAX inclusive.
-         *
-         * 'random() decimal places not an integer: {dp}'
-         * 'random() decimal places out of range: {dp}'
-         * 'random() crypto unavailable: {crypto}'
-         */
-        BigNumber.random = (function () {
-            var pow2_53 = 0x20000000000000;
-
-            // Return a 53 bit integer n, where 0 <= n < 9007199254740992.
-            // Check if Math.random() produces more than 32 bits of randomness.
-            // If it does, assume at least 53 bits are produced, otherwise assume at least 30 bits.
-            // 0x40000000 is 2^30, 0x800000 is 2^23, 0x1fffff is 2^21 - 1.
-            var random53bitInt = (Math.random() * pow2_53) & 0x1fffff
-              ? function () { return mathfloor( Math.random() * pow2_53 ); }
-              : function () { return ((Math.random() * 0x40000000 | 0) * 0x800000) +
-                  (Math.random() * 0x800000 | 0); };
-
-            return function (dp) {
-                var a, b, e, k, v,
-                    i = 0,
-                    c = [],
-                    rand = new BigNumber(ONE);
-
-                dp = dp == null || !isValidInt( dp, 0, MAX, 14 ) ? DECIMAL_PLACES : dp | 0;
-                k = mathceil( dp / LOG_BASE );
-
-                if (CRYPTO) {
-
-                    // Browsers supporting crypto.getRandomValues.
-                    if (crypto.getRandomValues) {
-
-                        a = crypto.getRandomValues( new Uint32Array( k *= 2 ) );
-
-                        for ( ; i < k; ) {
-
-                            // 53 bits:
-                            // ((Math.pow(2, 32) - 1) * Math.pow(2, 21)).toString(2)
-                            // 11111 11111111 11111111 11111111 11100000 00000000 00000000
-                            // ((Math.pow(2, 32) - 1) >>> 11).toString(2)
-                            //                                     11111 11111111 11111111
-                            // 0x20000 is 2^21.
-                            v = a[i] * 0x20000 + (a[i + 1] >>> 11);
-
-                            // Rejection sampling:
-                            // 0 <= v < 9007199254740992
-                            // Probability that v >= 9e15, is
-                            // 7199254740992 / 9007199254740992 ~= 0.0008, i.e. 1 in 1251
-                            if ( v >= 9e15 ) {
-                                b = crypto.getRandomValues( new Uint32Array(2) );
-                                a[i] = b[0];
-                                a[i + 1] = b[1];
-                            } else {
-
-                                // 0 <= v <= 8999999999999999
-                                // 0 <= (v % 1e14) <= 99999999999999
-                                c.push( v % 1e14 );
-                                i += 2;
-                            }
-                        }
-                        i = k / 2;
-
-                    // Node.js supporting crypto.randomBytes.
-                    } else if (crypto.randomBytes) {
-
-                        // buffer
-                        a = crypto.randomBytes( k *= 7 );
-
-                        for ( ; i < k; ) {
-
-                            // 0x1000000000000 is 2^48, 0x10000000000 is 2^40
-                            // 0x100000000 is 2^32, 0x1000000 is 2^24
-                            // 11111 11111111 11111111 11111111 11111111 11111111 11111111
-                            // 0 <= v < 9007199254740992
-                            v = ( ( a[i] & 31 ) * 0x1000000000000 ) + ( a[i + 1] * 0x10000000000 ) +
-                                  ( a[i + 2] * 0x100000000 ) + ( a[i + 3] * 0x1000000 ) +
-                                  ( a[i + 4] << 16 ) + ( a[i + 5] << 8 ) + a[i + 6];
-
-                            if ( v >= 9e15 ) {
-                                crypto.randomBytes(7).copy( a, i );
-                            } else {
-
-                                // 0 <= (v % 1e14) <= 99999999999999
-                                c.push( v % 1e14 );
-                                i += 7;
-                            }
-                        }
-                        i = k / 7;
-                    } else {
-                        CRYPTO = false;
-                        if (ERRORS) raise( 14, 'crypto unavailable', crypto );
-                    }
-                }
-
-                // Use Math.random.
-                if (!CRYPTO) {
-
-                    for ( ; i < k; ) {
-                        v = random53bitInt();
-                        if ( v < 9e15 ) c[i++] = v % 1e14;
-                    }
-                }
-
-                k = c[--i];
-                dp %= LOG_BASE;
-
-                // Convert trailing digits to zeros according to dp.
-                if ( k && dp ) {
-                    v = POWS_TEN[LOG_BASE - dp];
-                    c[i] = mathfloor( k / v ) * v;
-                }
-
-                // Remove trailing elements which are zero.
-                for ( ; c[i] === 0; c.pop(), i-- );
-
-                // Zero?
-                if ( i < 0 ) {
-                    c = [ e = 0 ];
-                } else {
-
-                    // Remove leading elements which are zero and adjust exponent accordingly.
-                    for ( e = -1 ; c[0] === 0; c.splice(0, 1), e -= LOG_BASE);
-
-                    // Count the digits of the first element of c to determine leading zeros, and...
-                    for ( i = 1, v = c[0]; v >= 10; v /= 10, i++);
-
-                    // adjust the exponent accordingly.
-                    if ( i < LOG_BASE ) e -= LOG_BASE - i;
-                }
-
-                rand.e = e;
-                rand.c = c;
-                return rand;
-            };
-        })();
-
-
-        // PRIVATE FUNCTIONS
-
-
-        // Convert a numeric string of baseIn to a numeric string of baseOut.
-        function convertBase( str, baseOut, baseIn, sign ) {
-            var d, e, k, r, x, xc, y,
-                i = str.indexOf( '.' ),
-                dp = DECIMAL_PLACES,
-                rm = ROUNDING_MODE;
-
-            if ( baseIn < 37 ) str = str.toLowerCase();
-
-            // Non-integer.
-            if ( i >= 0 ) {
-                k = POW_PRECISION;
-
-                // Unlimited precision.
-                POW_PRECISION = 0;
-                str = str.replace( '.', '' );
-                y = new BigNumber(baseIn);
-                x = y.pow( str.length - i );
-                POW_PRECISION = k;
-
-                // Convert str as if an integer, then restore the fraction part by dividing the
-                // result by its base raised to a power.
-                y.c = toBaseOut( toFixedPoint( coeffToString( x.c ), x.e ), 10, baseOut );
-                y.e = y.c.length;
-            }
-
-            // Convert the number as integer.
-            xc = toBaseOut( str, baseIn, baseOut );
-            e = k = xc.length;
-
-            // Remove trailing zeros.
-            for ( ; xc[--k] == 0; xc.pop() );
-            if ( !xc[0] ) return '0';
-
-            if ( i < 0 ) {
-                --e;
-            } else {
-                x.c = xc;
-                x.e = e;
-
-                // sign is needed for correct rounding.
-                x.s = sign;
-                x = div( x, y, dp, rm, baseOut );
-                xc = x.c;
-                r = x.r;
-                e = x.e;
-            }
-
-            d = e + dp + 1;
-
-            // The rounding digit, i.e. the digit to the right of the digit that may be rounded up.
-            i = xc[d];
-            k = baseOut / 2;
-            r = r || d < 0 || xc[d + 1] != null;
-
-            r = rm < 4 ? ( i != null || r ) && ( rm == 0 || rm == ( x.s < 0 ? 3 : 2 ) )
-                       : i > k || i == k &&( rm == 4 || r || rm == 6 && xc[d - 1] & 1 ||
-                         rm == ( x.s < 0 ? 8 : 7 ) );
-
-            if ( d < 1 || !xc[0] ) {
-
-                // 1^-dp or 0.
-                str = r ? toFixedPoint( '1', -dp ) : '0';
-            } else {
-                xc.length = d;
-
-                if (r) {
-
-                    // Rounding up may mean the previous digit has to be rounded up and so on.
-                    for ( --baseOut; ++xc[--d] > baseOut; ) {
-                        xc[d] = 0;
-
-                        if ( !d ) {
-                            ++e;
-                            xc = [1].concat(xc);
-                        }
-                    }
-                }
-
-                // Determine trailing zeros.
-                for ( k = xc.length; !xc[--k]; );
-
-                // E.g. [4, 11, 15] becomes 4bf.
-                for ( i = 0, str = ''; i <= k; str += ALPHABET.charAt( xc[i++] ) );
-                str = toFixedPoint( str, e );
-            }
-
-            // The caller will add the sign.
-            return str;
-        }
-
-
-        // Perform division in the specified base. Called by div and convertBase.
-        div = (function () {
-
-            // Assume non-zero x and k.
-            function multiply( x, k, base ) {
-                var m, temp, xlo, xhi,
-                    carry = 0,
-                    i = x.length,
-                    klo = k % SQRT_BASE,
-                    khi = k / SQRT_BASE | 0;
-
-                for ( x = x.slice(); i--; ) {
-                    xlo = x[i] % SQRT_BASE;
-                    xhi = x[i] / SQRT_BASE | 0;
-                    m = khi * xlo + xhi * klo;
-                    temp = klo * xlo + ( ( m % SQRT_BASE ) * SQRT_BASE ) + carry;
-                    carry = ( temp / base | 0 ) + ( m / SQRT_BASE | 0 ) + khi * xhi;
-                    x[i] = temp % base;
-                }
-
-                if (carry) x = [carry].concat(x);
-
-                return x;
-            }
-
-            function compare( a, b, aL, bL ) {
-                var i, cmp;
-
-                if ( aL != bL ) {
-                    cmp = aL > bL ? 1 : -1;
-                } else {
-
-                    for ( i = cmp = 0; i < aL; i++ ) {
-
-                        if ( a[i] != b[i] ) {
-                            cmp = a[i] > b[i] ? 1 : -1;
-                            break;
-                        }
-                    }
-                }
-                return cmp;
-            }
-
-            function subtract( a, b, aL, base ) {
-                var i = 0;
-
-                // Subtract b from a.
-                for ( ; aL--; ) {
-                    a[aL] -= i;
-                    i = a[aL] < b[aL] ? 1 : 0;
-                    a[aL] = i * base + a[aL] - b[aL];
-                }
-
-                // Remove leading zeros.
-                for ( ; !a[0] && a.length > 1; a.splice(0, 1) );
-            }
-
-            // x: dividend, y: divisor.
-            return function ( x, y, dp, rm, base ) {
-                var cmp, e, i, more, n, prod, prodL, q, qc, rem, remL, rem0, xi, xL, yc0,
-                    yL, yz,
-                    s = x.s == y.s ? 1 : -1,
-                    xc = x.c,
-                    yc = y.c;
-
-                // Either NaN, Infinity or 0?
-                if ( !xc || !xc[0] || !yc || !yc[0] ) {
-
-                    return new BigNumber(
-
-                      // Return NaN if either NaN, or both Infinity or 0.
-                      !x.s || !y.s || ( xc ? yc && xc[0] == yc[0] : !yc ) ? NaN :
-
-                        // Return ±0 if x is ±0 or y is ±Infinity, or return ±Infinity as y is ±0.
-                        xc && xc[0] == 0 || !yc ? s * 0 : s / 0
-                    );
-                }
-
-                q = new BigNumber(s);
-                qc = q.c = [];
-                e = x.e - y.e;
-                s = dp + e + 1;
-
-                if ( !base ) {
-                    base = BASE;
-                    e = bitFloor( x.e / LOG_BASE ) - bitFloor( y.e / LOG_BASE );
-                    s = s / LOG_BASE | 0;
-                }
-
-                // Result exponent may be one less then the current value of e.
-                // The coefficients of the BigNumbers from convertBase may have trailing zeros.
-                for ( i = 0; yc[i] == ( xc[i] || 0 ); i++ );
-                if ( yc[i] > ( xc[i] || 0 ) ) e--;
-
-                if ( s < 0 ) {
-                    qc.push(1);
-                    more = true;
-                } else {
-                    xL = xc.length;
-                    yL = yc.length;
-                    i = 0;
-                    s += 2;
-
-                    // Normalise xc and yc so highest order digit of yc is >= base / 2.
-
-                    n = mathfloor( base / ( yc[0] + 1 ) );
-
-                    // Not necessary, but to handle odd bases where yc[0] == ( base / 2 ) - 1.
-                    // if ( n > 1 || n++ == 1 && yc[0] < base / 2 ) {
-                    if ( n > 1 ) {
-                        yc = multiply( yc, n, base );
-                        xc = multiply( xc, n, base );
-                        yL = yc.length;
-                        xL = xc.length;
-                    }
-
-                    xi = yL;
-                    rem = xc.slice( 0, yL );
-                    remL = rem.length;
-
-                    // Add zeros to make remainder as long as divisor.
-                    for ( ; remL < yL; rem[remL++] = 0 );
-                    yz = yc.slice();
-                    yz = [0].concat(yz);
-                    yc0 = yc[0];
-                    if ( yc[1] >= base / 2 ) yc0++;
-                    // Not necessary, but to prevent trial digit n > base, when using base 3.
-                    // else if ( base == 3 && yc0 == 1 ) yc0 = 1 + 1e-15;
-
-                    do {
-                        n = 0;
-
-                        // Compare divisor and remainder.
-                        cmp = compare( yc, rem, yL, remL );
-
-                        // If divisor < remainder.
-                        if ( cmp < 0 ) {
-
-                            // Calculate trial digit, n.
-
-                            rem0 = rem[0];
-                            if ( yL != remL ) rem0 = rem0 * base + ( rem[1] || 0 );
-
-                            // n is how many times the divisor goes into the current remainder.
-                            n = mathfloor( rem0 / yc0 );
-
-                            //  Algorithm:
-                            //  1. product = divisor * trial digit (n)
-                            //  2. if product > remainder: product -= divisor, n--
-                            //  3. remainder -= product
-                            //  4. if product was < remainder at 2:
-                            //    5. compare new remainder and divisor
-                            //    6. If remainder > divisor: remainder -= divisor, n++
-
-                            if ( n > 1 ) {
-
-                                // n may be > base only when base is 3.
-                                if (n >= base) n = base - 1;
-
-                                // product = divisor * trial digit.
-                                prod = multiply( yc, n, base );
-                                prodL = prod.length;
-                                remL = rem.length;
-
-                                // Compare product and remainder.
-                                // If product > remainder.
-                                // Trial digit n too high.
-                                // n is 1 too high about 5% of the time, and is not known to have
-                                // ever been more than 1 too high.
-                                while ( compare( prod, rem, prodL, remL ) == 1 ) {
-                                    n--;
-
-                                    // Subtract divisor from product.
-                                    subtract( prod, yL < prodL ? yz : yc, prodL, base );
-                                    prodL = prod.length;
-                                    cmp = 1;
-                                }
-                            } else {
-
-                                // n is 0 or 1, cmp is -1.
-                                // If n is 0, there is no need to compare yc and rem again below,
-                                // so change cmp to 1 to avoid it.
-                                // If n is 1, leave cmp as -1, so yc and rem are compared again.
-                                if ( n == 0 ) {
-
-                                    // divisor < remainder, so n must be at least 1.
-                                    cmp = n = 1;
-                                }
-
-                                // product = divisor
-                                prod = yc.slice();
-                                prodL = prod.length;
-                            }
-
-                            if ( prodL < remL ) prod = [0].concat(prod);
-
-                            // Subtract product from remainder.
-                            subtract( rem, prod, remL, base );
-                            remL = rem.length;
-
-                             // If product was < remainder.
-                            if ( cmp == -1 ) {
-
-                                // Compare divisor and new remainder.
-                                // If divisor < new remainder, subtract divisor from remainder.
-                                // Trial digit n too low.
-                                // n is 1 too low about 5% of the time, and very rarely 2 too low.
-                                while ( compare( yc, rem, yL, remL ) < 1 ) {
-                                    n++;
-
-                                    // Subtract divisor from remainder.
-                                    subtract( rem, yL < remL ? yz : yc, remL, base );
-                                    remL = rem.length;
-                                }
-                            }
-                        } else if ( cmp === 0 ) {
-                            n++;
-                            rem = [0];
-                        } // else cmp === 1 and n will be 0
-
-                        // Add the next digit, n, to the result array.
-                        qc[i++] = n;
-
-                        // Update the remainder.
-                        if ( rem[0] ) {
-                            rem[remL++] = xc[xi] || 0;
-                        } else {
-                            rem = [ xc[xi] ];
-                            remL = 1;
-                        }
-                    } while ( ( xi++ < xL || rem[0] != null ) && s-- );
-
-                    more = rem[0] != null;
-
-                    // Leading zero?
-                    if ( !qc[0] ) qc.splice(0, 1);
-                }
-
-                if ( base == BASE ) {
-
-                    // To calculate q.e, first get the number of digits of qc[0].
-                    for ( i = 1, s = qc[0]; s >= 10; s /= 10, i++ );
-                    round( q, dp + ( q.e = i + e * LOG_BASE - 1 ) + 1, rm, more );
-
-                // Caller is convertBase.
-                } else {
-                    q.e = e;
-                    q.r = +more;
-                }
-
-                return q;
-            };
-        })();
-
-
-        /*
-         * Return a string representing the value of BigNumber n in fixed-point or exponential
-         * notation rounded to the specified decimal places or significant digits.
-         *
-         * n is a BigNumber.
-         * i is the index of the last digit required (i.e. the digit that may be rounded up).
-         * rm is the rounding mode.
-         * caller is caller id: toExponential 19, toFixed 20, toFormat 21, toPrecision 24.
-         */
-        function format( n, i, rm, caller ) {
-            var c0, e, ne, len, str;
-
-            rm = rm != null && isValidInt( rm, 0, 8, caller, roundingMode )
-              ? rm | 0 : ROUNDING_MODE;
-
-            if ( !n.c ) return n.toString();
-            c0 = n.c[0];
-            ne = n.e;
-
-            if ( i == null ) {
-                str = coeffToString( n.c );
-                str = caller == 19 || caller == 24 && ne <= TO_EXP_NEG
-                  ? toExponential( str, ne )
-                  : toFixedPoint( str, ne );
-            } else {
-                n = round( new BigNumber(n), i, rm );
-
-                // n.e may have changed if the value was rounded up.
-                e = n.e;
-
-                str = coeffToString( n.c );
-                len = str.length;
-
-                // toPrecision returns exponential notation if the number of significant digits
-                // specified is less than the number of digits necessary to represent the integer
-                // part of the value in fixed-point notation.
-
-                // Exponential notation.
-                if ( caller == 19 || caller == 24 && ( i <= e || e <= TO_EXP_NEG ) ) {
-
-                    // Append zeros?
-                    for ( ; len < i; str += '0', len++ );
-                    str = toExponential( str, e );
-
-                // Fixed-point notation.
-                } else {
-                    i -= ne;
-                    str = toFixedPoint( str, e );
-
-                    // Append zeros?
-                    if ( e + 1 > len ) {
-                        if ( --i > 0 ) for ( str += '.'; i--; str += '0' );
-                    } else {
-                        i += e - len;
-                        if ( i > 0 ) {
-                            if ( e + 1 == len ) str += '.';
-                            for ( ; i--; str += '0' );
-                        }
-                    }
-                }
-            }
-
-            return n.s < 0 && c0 ? '-' + str : str;
-        }
-
-
-        // Handle BigNumber.max and BigNumber.min.
-        function maxOrMin( args, method ) {
-            var m, n,
-                i = 0;
-
-            if ( isArray( args[0] ) ) args = args[0];
-            m = new BigNumber( args[0] );
-
-            for ( ; ++i < args.length; ) {
-                n = new BigNumber( args[i] );
-
-                // If any number is NaN, return NaN.
-                if ( !n.s ) {
-                    m = n;
-                    break;
-                } else if ( method.call( m, n ) ) {
-                    m = n;
-                }
-            }
-
-            return m;
-        }
-
-
-        /*
-         * Return true if n is an integer in range, otherwise throw.
-         * Use for argument validation when ERRORS is true.
-         */
-        function intValidatorWithErrors( n, min, max, caller, name ) {
-            if ( n < min || n > max || n != truncate(n) ) {
-                raise( caller, ( name || 'decimal places' ) +
-                  ( n < min || n > max ? ' out of range' : ' not an integer' ), n );
-            }
-
-            return true;
-        }
-
-
-        /*
-         * Strip trailing zeros, calculate base 10 exponent and check against MIN_EXP and MAX_EXP.
-         * Called by minus, plus and times.
-         */
-        function normalise( n, c, e ) {
-            var i = 1,
-                j = c.length;
-
-             // Remove trailing zeros.
-            for ( ; !c[--j]; c.pop() );
-
-            // Calculate the base 10 exponent. First get the number of digits of c[0].
-            for ( j = c[0]; j >= 10; j /= 10, i++ );
-
-            // Overflow?
-            if ( ( e = i + e * LOG_BASE - 1 ) > MAX_EXP ) {
-
-                // Infinity.
-                n.c = n.e = null;
-
-            // Underflow?
-            } else if ( e < MIN_EXP ) {
-
-                // Zero.
-                n.c = [ n.e = 0 ];
-            } else {
-                n.e = e;
-                n.c = c;
-            }
-
-            return n;
-        }
-
-
-        // Handle values that fail the validity test in BigNumber.
-        parseNumeric = (function () {
-            var basePrefix = /^(-?)0([xbo])(?=\w[\w.]*$)/i,
-                dotAfter = /^([^.]+)\.$/,
-                dotBefore = /^\.([^.]+)$/,
-                isInfinityOrNaN = /^-?(Infinity|NaN)$/,
-                whitespaceOrPlus = /^\s*\+(?=[\w.])|^\s+|\s+$/g;
-
-            return function ( x, str, num, b ) {
-                var base,
-                    s = num ? str : str.replace( whitespaceOrPlus, '' );
-
-                // No exception on ±Infinity or NaN.
-                if ( isInfinityOrNaN.test(s) ) {
-                    x.s = isNaN(s) ? null : s < 0 ? -1 : 1;
-                } else {
-                    if ( !num ) {
-
-                        // basePrefix = /^(-?)0([xbo])(?=\w[\w.]*$)/i
-                        s = s.replace( basePrefix, function ( m, p1, p2 ) {
-                            base = ( p2 = p2.toLowerCase() ) == 'x' ? 16 : p2 == 'b' ? 2 : 8;
-                            return !b || b == base ? p1 : m;
-                        });
-
-                        if (b) {
-                            base = b;
-
-                            // E.g. '1.' to '1', '.1' to '0.1'
-                            s = s.replace( dotAfter, '$1' ).replace( dotBefore, '0.$1' );
-                        }
-
-                        if ( str != s ) return new BigNumber( s, base );
-                    }
-
-                    // 'new BigNumber() not a number: {n}'
-                    // 'new BigNumber() not a base {b} number: {n}'
-                    if (ERRORS) raise( id, 'not a' + ( b ? ' base ' + b : '' ) + ' number', str );
-                    x.s = null;
-                }
-
-                x.c = x.e = null;
-                id = 0;
-            }
-        })();
-
-
-        // Throw a BigNumber Error.
-        function raise( caller, msg, val ) {
-            var error = new Error( [
-                'new BigNumber',     // 0
-                'cmp',               // 1
-                'config',            // 2
-                'div',               // 3
-                'divToInt',          // 4
-                'eq',                // 5
-                'gt',                // 6
-                'gte',               // 7
-                'lt',                // 8
-                'lte',               // 9
-                'minus',             // 10
-                'mod',               // 11
-                'plus',              // 12
-                'precision',         // 13
-                'random',            // 14
-                'round',             // 15
-                'shift',             // 16
-                'times',             // 17
-                'toDigits',          // 18
-                'toExponential',     // 19
-                'toFixed',           // 20
-                'toFormat',          // 21
-                'toFraction',        // 22
-                'pow',               // 23
-                'toPrecision',       // 24
-                'toString',          // 25
-                'BigNumber'          // 26
-            ][caller] + '() ' + msg + ': ' + val );
-
-            error.name = 'BigNumber Error';
-            id = 0;
-            throw error;
-        }
-
-
-        /*
-         * Round x to sd significant digits using rounding mode rm. Check for over/under-flow.
-         * If r is truthy, it is known that there are more digits after the rounding digit.
-         */
-        function round( x, sd, rm, r ) {
-            var d, i, j, k, n, ni, rd,
-                xc = x.c,
-                pows10 = POWS_TEN;
-
-            // if x is not Infinity or NaN...
-            if (xc) {
-
-                // rd is the rounding digit, i.e. the digit after the digit that may be rounded up.
-                // n is a base 1e14 number, the value of the element of array x.c containing rd.
-                // ni is the index of n within x.c.
-                // d is the number of digits of n.
-                // i is the index of rd within n including leading zeros.
-                // j is the actual index of rd within n (if < 0, rd is a leading zero).
-                out: {
-
-                    // Get the number of digits of the first element of xc.
-                    for ( d = 1, k = xc[0]; k >= 10; k /= 10, d++ );
-                    i = sd - d;
-
-                    // If the rounding digit is in the first element of xc...
-                    if ( i < 0 ) {
-                        i += LOG_BASE;
-                        j = sd;
-                        n = xc[ ni = 0 ];
-
-                        // Get the rounding digit at index j of n.
-                        rd = n / pows10[ d - j - 1 ] % 10 | 0;
-                    } else {
-                        ni = mathceil( ( i + 1 ) / LOG_BASE );
-
-                        if ( ni >= xc.length ) {
-
-                            if (r) {
-
-                                // Needed by sqrt.
-                                for ( ; xc.length <= ni; xc.push(0) );
-                                n = rd = 0;
-                                d = 1;
-                                i %= LOG_BASE;
-                                j = i - LOG_BASE + 1;
-                            } else {
-                                break out;
-                            }
-                        } else {
-                            n = k = xc[ni];
-
-                            // Get the number of digits of n.
-                            for ( d = 1; k >= 10; k /= 10, d++ );
-
-                            // Get the index of rd within n.
-                            i %= LOG_BASE;
-
-                            // Get the index of rd within n, adjusted for leading zeros.
-                            // The number of leading zeros of n is given by LOG_BASE - d.
-                            j = i - LOG_BASE + d;
-
-                            // Get the rounding digit at index j of n.
-                            rd = j < 0 ? 0 : n / pows10[ d - j - 1 ] % 10 | 0;
-                        }
-                    }
-
-                    r = r || sd < 0 ||
-
-                    // Are there any non-zero digits after the rounding digit?
-                    // The expression  n % pows10[ d - j - 1 ]  returns all digits of n to the right
-                    // of the digit at j, e.g. if n is 908714 and j is 2, the expression gives 714.
-                      xc[ni + 1] != null || ( j < 0 ? n : n % pows10[ d - j - 1 ] );
-
-                    r = rm < 4
-                      ? ( rd || r ) && ( rm == 0 || rm == ( x.s < 0 ? 3 : 2 ) )
-                      : rd > 5 || rd == 5 && ( rm == 4 || r || rm == 6 &&
-
-                        // Check whether the digit to the left of the rounding digit is odd.
-                        ( ( i > 0 ? j > 0 ? n / pows10[ d - j ] : 0 : xc[ni - 1] ) % 10 ) & 1 ||
-                          rm == ( x.s < 0 ? 8 : 7 ) );
-
-                    if ( sd < 1 || !xc[0] ) {
-                        xc.length = 0;
-
-                        if (r) {
-
-                            // Convert sd to decimal places.
-                            sd -= x.e + 1;
-
-                            // 1, 0.1, 0.01, 0.001, 0.0001 etc.
-                            xc[0] = pows10[ ( LOG_BASE - sd % LOG_BASE ) % LOG_BASE ];
-                            x.e = -sd || 0;
-                        } else {
-
-                            // Zero.
-                            xc[0] = x.e = 0;
-                        }
-
-                        return x;
-                    }
-
-                    // Remove excess digits.
-                    if ( i == 0 ) {
-                        xc.length = ni;
-                        k = 1;
-                        ni--;
-                    } else {
-                        xc.length = ni + 1;
-                        k = pows10[ LOG_BASE - i ];
-
-                        // E.g. 56700 becomes 56000 if 7 is the rounding digit.
-                        // j > 0 means i > number of leading zeros of n.
-                        xc[ni] = j > 0 ? mathfloor( n / pows10[ d - j ] % pows10[j] ) * k : 0;
-                    }
-
-                    // Round up?
-                    if (r) {
-
-                        for ( ; ; ) {
-
-                            // If the digit to be rounded up is in the first element of xc...
-                            if ( ni == 0 ) {
-
-                                // i will be the length of xc[0] before k is added.
-                                for ( i = 1, j = xc[0]; j >= 10; j /= 10, i++ );
-                                j = xc[0] += k;
-                                for ( k = 1; j >= 10; j /= 10, k++ );
-
-                                // if i != k the length has increased.
-                                if ( i != k ) {
-                                    x.e++;
-                                    if ( xc[0] == BASE ) xc[0] = 1;
-                                }
-
-                                break;
-                            } else {
-                                xc[ni] += k;
-                                if ( xc[ni] != BASE ) break;
-                                xc[ni--] = 0;
-                                k = 1;
-                            }
-                        }
-                    }
-
-                    // Remove trailing zeros.
-                    for ( i = xc.length; xc[--i] === 0; xc.pop() );
-                }
-
-                // Overflow? Infinity.
-                if ( x.e > MAX_EXP ) {
-                    x.c = x.e = null;
-
-                // Underflow? Zero.
-                } else if ( x.e < MIN_EXP ) {
-                    x.c = [ x.e = 0 ];
-                }
-            }
-
-            return x;
-        }
-
-
-        // PROTOTYPE/INSTANCE METHODS
-
-
-        /*
-         * Return a new BigNumber whose value is the absolute value of this BigNumber.
-         */
-        P.absoluteValue = P.abs = function () {
-            var x = new BigNumber(this);
-            if ( x.s < 0 ) x.s = 1;
-            return x;
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber rounded to a whole
-         * number in the direction of Infinity.
-         */
-        P.ceil = function () {
-            return round( new BigNumber(this), this.e + 1, 2 );
-        };
-
-
-        /*
-         * Return
-         * 1 if the value of this BigNumber is greater than the value of BigNumber(y, b),
-         * -1 if the value of this BigNumber is less than the value of BigNumber(y, b),
-         * 0 if they have the same value,
-         * or null if the value of either is NaN.
-         */
-        P.comparedTo = P.cmp = function ( y, b ) {
-            id = 1;
-            return compare( this, new BigNumber( y, b ) );
-        };
-
-
-        /*
-         * Return the number of decimal places of the value of this BigNumber, or null if the value
-         * of this BigNumber is ±Infinity or NaN.
-         */
-        P.decimalPlaces = P.dp = function () {
-            var n, v,
-                c = this.c;
-
-            if ( !c ) return null;
-            n = ( ( v = c.length - 1 ) - bitFloor( this.e / LOG_BASE ) ) * LOG_BASE;
-
-            // Subtract the number of trailing zeros of the last number.
-            if ( v = c[v] ) for ( ; v % 10 == 0; v /= 10, n-- );
-            if ( n < 0 ) n = 0;
-
-            return n;
-        };
-
-
-        /*
-         *  n / 0 = I
-         *  n / N = N
-         *  n / I = 0
-         *  0 / n = 0
-         *  0 / 0 = N
-         *  0 / N = N
-         *  0 / I = 0
-         *  N / n = N
-         *  N / 0 = N
-         *  N / N = N
-         *  N / I = N
-         *  I / n = I
-         *  I / 0 = I
-         *  I / N = N
-         *  I / I = N
-         *
-         * Return a new BigNumber whose value is the value of this BigNumber divided by the value of
-         * BigNumber(y, b), rounded according to DECIMAL_PLACES and ROUNDING_MODE.
-         */
-        P.dividedBy = P.div = function ( y, b ) {
-            id = 3;
-            return div( this, new BigNumber( y, b ), DECIMAL_PLACES, ROUNDING_MODE );
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the integer part of dividing the value of this
-         * BigNumber by the value of BigNumber(y, b).
-         */
-        P.dividedToIntegerBy = P.divToInt = function ( y, b ) {
-            id = 4;
-            return div( this, new BigNumber( y, b ), 0, 1 );
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is equal to the value of BigNumber(y, b),
-         * otherwise returns false.
-         */
-        P.equals = P.eq = function ( y, b ) {
-            id = 5;
-            return compare( this, new BigNumber( y, b ) ) === 0;
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber rounded to a whole
-         * number in the direction of -Infinity.
-         */
-        P.floor = function () {
-            return round( new BigNumber(this), this.e + 1, 3 );
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is greater than the value of BigNumber(y, b),
-         * otherwise returns false.
-         */
-        P.greaterThan = P.gt = function ( y, b ) {
-            id = 6;
-            return compare( this, new BigNumber( y, b ) ) > 0;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is greater than or equal to the value of
-         * BigNumber(y, b), otherwise returns false.
-         */
-        P.greaterThanOrEqualTo = P.gte = function ( y, b ) {
-            id = 7;
-            return ( b = compare( this, new BigNumber( y, b ) ) ) === 1 || b === 0;
-
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is a finite number, otherwise returns false.
-         */
-        P.isFinite = function () {
-            return !!this.c;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is an integer, otherwise return false.
-         */
-        P.isInteger = P.isInt = function () {
-            return !!this.c && bitFloor( this.e / LOG_BASE ) > this.c.length - 2;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is NaN, otherwise returns false.
-         */
-        P.isNaN = function () {
-            return !this.s;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is negative, otherwise returns false.
-         */
-        P.isNegative = P.isNeg = function () {
-            return this.s < 0;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is 0 or -0, otherwise returns false.
-         */
-        P.isZero = function () {
-            return !!this.c && this.c[0] == 0;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is less than the value of BigNumber(y, b),
-         * otherwise returns false.
-         */
-        P.lessThan = P.lt = function ( y, b ) {
-            id = 8;
-            return compare( this, new BigNumber( y, b ) ) < 0;
-        };
-
-
-        /*
-         * Return true if the value of this BigNumber is less than or equal to the value of
-         * BigNumber(y, b), otherwise returns false.
-         */
-        P.lessThanOrEqualTo = P.lte = function ( y, b ) {
-            id = 9;
-            return ( b = compare( this, new BigNumber( y, b ) ) ) === -1 || b === 0;
-        };
-
-
-        /*
-         *  n - 0 = n
-         *  n - N = N
-         *  n - I = -I
-         *  0 - n = -n
-         *  0 - 0 = 0
-         *  0 - N = N
-         *  0 - I = -I
-         *  N - n = N
-         *  N - 0 = N
-         *  N - N = N
-         *  N - I = N
-         *  I - n = I
-         *  I - 0 = I
-         *  I - N = N
-         *  I - I = N
-         *
-         * Return a new BigNumber whose value is the value of this BigNumber minus the value of
-         * BigNumber(y, b).
-         */
-        P.minus = P.sub = function ( y, b ) {
-            var i, j, t, xLTy,
-                x = this,
-                a = x.s;
-
-            id = 10;
-            y = new BigNumber( y, b );
-            b = y.s;
-
-            // Either NaN?
-            if ( !a || !b ) return new BigNumber(NaN);
-
-            // Signs differ?
-            if ( a != b ) {
-                y.s = -b;
-                return x.plus(y);
-            }
-
-            var xe = x.e / LOG_BASE,
-                ye = y.e / LOG_BASE,
-                xc = x.c,
-                yc = y.c;
-
-            if ( !xe || !ye ) {
-
-                // Either Infinity?
-                if ( !xc || !yc ) return xc ? ( y.s = -b, y ) : new BigNumber( yc ? x : NaN );
-
-                // Either zero?
-                if ( !xc[0] || !yc[0] ) {
-
-                    // Return y if y is non-zero, x if x is non-zero, or zero if both are zero.
-                    return yc[0] ? ( y.s = -b, y ) : new BigNumber( xc[0] ? x :
-
-                      // IEEE 754 (2008) 6.3: n - n = -0 when rounding to -Infinity
-                      ROUNDING_MODE == 3 ? -0 : 0 );
-                }
-            }
-
-            xe = bitFloor(xe);
-            ye = bitFloor(ye);
-            xc = xc.slice();
-
-            // Determine which is the bigger number.
-            if ( a = xe - ye ) {
-
-                if ( xLTy = a < 0 ) {
-                    a = -a;
-                    t = xc;
-                } else {
-                    ye = xe;
-                    t = yc;
-                }
-
-                t.reverse();
-
-                // Prepend zeros to equalise exponents.
-                for ( b = a; b--; t.push(0) );
-                t.reverse();
-            } else {
-
-                // Exponents equal. Check digit by digit.
-                j = ( xLTy = ( a = xc.length ) < ( b = yc.length ) ) ? a : b;
-
-                for ( a = b = 0; b < j; b++ ) {
-
-                    if ( xc[b] != yc[b] ) {
-                        xLTy = xc[b] < yc[b];
-                        break;
-                    }
-                }
-            }
-
-            // x < y? Point xc to the array of the bigger number.
-            if (xLTy) t = xc, xc = yc, yc = t, y.s = -y.s;
-
-            b = ( j = yc.length ) - ( i = xc.length );
-
-            // Append zeros to xc if shorter.
-            // No need to add zeros to yc if shorter as subtract only needs to start at yc.length.
-            if ( b > 0 ) for ( ; b--; xc[i++] = 0 );
-            b = BASE - 1;
-
-            // Subtract yc from xc.
-            for ( ; j > a; ) {
-
-                if ( xc[--j] < yc[j] ) {
-                    for ( i = j; i && !xc[--i]; xc[i] = b );
-                    --xc[i];
-                    xc[j] += BASE;
-                }
-
-                xc[j] -= yc[j];
-            }
-
-            // Remove leading zeros and adjust exponent accordingly.
-            for ( ; xc[0] == 0; xc.splice(0, 1), --ye );
-
-            // Zero?
-            if ( !xc[0] ) {
-
-                // Following IEEE 754 (2008) 6.3,
-                // n - n = +0  but  n - n = -0  when rounding towards -Infinity.
-                y.s = ROUNDING_MODE == 3 ? -1 : 1;
-                y.c = [ y.e = 0 ];
-                return y;
-            }
-
-            // No need to check for Infinity as +x - +y != Infinity && -x - -y != Infinity
-            // for finite x and y.
-            return normalise( y, xc, ye );
-        };
-
-
-        /*
-         *   n % 0 =  N
-         *   n % N =  N
-         *   n % I =  n
-         *   0 % n =  0
-         *  -0 % n = -0
-         *   0 % 0 =  N
-         *   0 % N =  N
-         *   0 % I =  0
-         *   N % n =  N
-         *   N % 0 =  N
-         *   N % N =  N
-         *   N % I =  N
-         *   I % n =  N
-         *   I % 0 =  N
-         *   I % N =  N
-         *   I % I =  N
-         *
-         * Return a new BigNumber whose value is the value of this BigNumber modulo the value of
-         * BigNumber(y, b). The result depends on the value of MODULO_MODE.
-         */
-        P.modulo = P.mod = function ( y, b ) {
-            var q, s,
-                x = this;
-
-            id = 11;
-            y = new BigNumber( y, b );
-
-            // Return NaN if x is Infinity or NaN, or y is NaN or zero.
-            if ( !x.c || !y.s || y.c && !y.c[0] ) {
-                return new BigNumber(NaN);
-
-            // Return x if y is Infinity or x is zero.
-            } else if ( !y.c || x.c && !x.c[0] ) {
-                return new BigNumber(x);
-            }
-
-            if ( MODULO_MODE == 9 ) {
-
-                // Euclidian division: q = sign(y) * floor(x / abs(y))
-                // r = x - qy    where  0 <= r < abs(y)
-                s = y.s;
-                y.s = 1;
-                q = div( x, y, 0, 3 );
-                y.s = s;
-                q.s *= s;
-            } else {
-                q = div( x, y, 0, MODULO_MODE );
-            }
-
-            return x.minus( q.times(y) );
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber negated,
-         * i.e. multiplied by -1.
-         */
-        P.negated = P.neg = function () {
-            var x = new BigNumber(this);
-            x.s = -x.s || null;
-            return x;
-        };
-
-
-        /*
-         *  n + 0 = n
-         *  n + N = N
-         *  n + I = I
-         *  0 + n = n
-         *  0 + 0 = 0
-         *  0 + N = N
-         *  0 + I = I
-         *  N + n = N
-         *  N + 0 = N
-         *  N + N = N
-         *  N + I = N
-         *  I + n = I
-         *  I + 0 = I
-         *  I + N = N
-         *  I + I = I
-         *
-         * Return a new BigNumber whose value is the value of this BigNumber plus the value of
-         * BigNumber(y, b).
-         */
-        P.plus = P.add = function ( y, b ) {
-            var t,
-                x = this,
-                a = x.s;
-
-            id = 12;
-            y = new BigNumber( y, b );
-            b = y.s;
-
-            // Either NaN?
-            if ( !a || !b ) return new BigNumber(NaN);
-
-            // Signs differ?
-             if ( a != b ) {
-                y.s = -b;
-                return x.minus(y);
-            }
-
-            var xe = x.e / LOG_BASE,
-                ye = y.e / LOG_BASE,
-                xc = x.c,
-                yc = y.c;
-
-            if ( !xe || !ye ) {
-
-                // Return ±Infinity if either ±Infinity.
-                if ( !xc || !yc ) return new BigNumber( a / 0 );
-
-                // Either zero?
-                // Return y if y is non-zero, x if x is non-zero, or zero if both are zero.
-                if ( !xc[0] || !yc[0] ) return yc[0] ? y : new BigNumber( xc[0] ? x : a * 0 );
-            }
-
-            xe = bitFloor(xe);
-            ye = bitFloor(ye);
-            xc = xc.slice();
-
-            // Prepend zeros to equalise exponents. Faster to use reverse then do unshifts.
-            if ( a = xe - ye ) {
-                if ( a > 0 ) {
-                    ye = xe;
-                    t = yc;
-                } else {
-                    a = -a;
-                    t = xc;
-                }
-
-                t.reverse();
-                for ( ; a--; t.push(0) );
-                t.reverse();
-            }
-
-            a = xc.length;
-            b = yc.length;
-
-            // Point xc to the longer array, and b to the shorter length.
-            if ( a - b < 0 ) t = yc, yc = xc, xc = t, b = a;
-
-            // Only start adding at yc.length - 1 as the further digits of xc can be ignored.
-            for ( a = 0; b; ) {
-                a = ( xc[--b] = xc[b] + yc[b] + a ) / BASE | 0;
-                xc[b] = BASE === xc[b] ? 0 : xc[b] % BASE;
-            }
-
-            if (a) {
-                xc = [a].concat(xc);
-                ++ye;
-            }
-
-            // No need to check for zero, as +x + +y != 0 && -x + -y != 0
-            // ye = MAX_EXP + 1 possible
-            return normalise( y, xc, ye );
-        };
-
-
-        /*
-         * Return the number of significant digits of the value of this BigNumber.
-         *
-         * [z] {boolean|number} Whether to count integer-part trailing zeros: true, false, 1 or 0.
-         */
-        P.precision = P.sd = function (z) {
-            var n, v,
-                x = this,
-                c = x.c;
-
-            // 'precision() argument not a boolean or binary digit: {z}'
-            if ( z != null && z !== !!z && z !== 1 && z !== 0 ) {
-                if (ERRORS) raise( 13, 'argument' + notBool, z );
-                if ( z != !!z ) z = null;
-            }
-
-            if ( !c ) return null;
-            v = c.length - 1;
-            n = v * LOG_BASE + 1;
-
-            if ( v = c[v] ) {
-
-                // Subtract the number of trailing zeros of the last element.
-                for ( ; v % 10 == 0; v /= 10, n-- );
-
-                // Add the number of digits of the first element.
-                for ( v = c[0]; v >= 10; v /= 10, n++ );
-            }
-
-            if ( z && x.e + 1 > n ) n = x.e + 1;
-
-            return n;
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber rounded to a maximum of
-         * dp decimal places using rounding mode rm, or to 0 and ROUNDING_MODE respectively if
-         * omitted.
-         *
-         * [dp] {number} Decimal places. Integer, 0 to MAX inclusive.
-         * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
-         *
-         * 'round() decimal places out of range: {dp}'
-         * 'round() decimal places not an integer: {dp}'
-         * 'round() rounding mode not an integer: {rm}'
-         * 'round() rounding mode out of range: {rm}'
-         */
-        P.round = function ( dp, rm ) {
-            var n = new BigNumber(this);
-
-            if ( dp == null || isValidInt( dp, 0, MAX, 15 ) ) {
-                round( n, ~~dp + this.e + 1, rm == null ||
-                  !isValidInt( rm, 0, 8, 15, roundingMode ) ? ROUNDING_MODE : rm | 0 );
-            }
-
-            return n;
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber shifted by k places
-         * (powers of 10). Shift to the right if n > 0, and to the left if n < 0.
-         *
-         * k {number} Integer, -MAX_SAFE_INTEGER to MAX_SAFE_INTEGER inclusive.
-         *
-         * If k is out of range and ERRORS is false, the result will be ±0 if k < 0, or ±Infinity
-         * otherwise.
-         *
-         * 'shift() argument not an integer: {k}'
-         * 'shift() argument out of range: {k}'
-         */
-        P.shift = function (k) {
-            var n = this;
-            return isValidInt( k, -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER, 16, 'argument' )
-
-              // k < 1e+21, or truncate(k) will produce exponential notation.
-              ? n.times( '1e' + truncate(k) )
-              : new BigNumber( n.c && n.c[0] && ( k < -MAX_SAFE_INTEGER || k > MAX_SAFE_INTEGER )
-                ? n.s * ( k < 0 ? 0 : 1 / 0 )
-                : n );
-        };
-
-
-        /*
-         *  sqrt(-n) =  N
-         *  sqrt( N) =  N
-         *  sqrt(-I) =  N
-         *  sqrt( I) =  I
-         *  sqrt( 0) =  0
-         *  sqrt(-0) = -0
-         *
-         * Return a new BigNumber whose value is the square root of the value of this BigNumber,
-         * rounded according to DECIMAL_PLACES and ROUNDING_MODE.
-         */
-        P.squareRoot = P.sqrt = function () {
-            var m, n, r, rep, t,
-                x = this,
-                c = x.c,
-                s = x.s,
-                e = x.e,
-                dp = DECIMAL_PLACES + 4,
-                half = new BigNumber('0.5');
-
-            // Negative/NaN/Infinity/zero?
-            if ( s !== 1 || !c || !c[0] ) {
-                return new BigNumber( !s || s < 0 && ( !c || c[0] ) ? NaN : c ? x : 1 / 0 );
-            }
-
-            // Initial estimate.
-            s = Math.sqrt( +x );
-
-            // Math.sqrt underflow/overflow?
-            // Pass x to Math.sqrt as integer, then adjust the exponent of the result.
-            if ( s == 0 || s == 1 / 0 ) {
-                n = coeffToString(c);
-                if ( ( n.length + e ) % 2 == 0 ) n += '0';
-                s = Math.sqrt(n);
-                e = bitFloor( ( e + 1 ) / 2 ) - ( e < 0 || e % 2 );
-
-                if ( s == 1 / 0 ) {
-                    n = '1e' + e;
-                } else {
-                    n = s.toExponential();
-                    n = n.slice( 0, n.indexOf('e') + 1 ) + e;
-                }
-
-                r = new BigNumber(n);
-            } else {
-                r = new BigNumber( s + '' );
-            }
-
-            // Check for zero.
-            // r could be zero if MIN_EXP is changed after the this value was created.
-            // This would cause a division by zero (x/t) and hence Infinity below, which would cause
-            // coeffToString to throw.
-            if ( r.c[0] ) {
-                e = r.e;
-                s = e + dp;
-                if ( s < 3 ) s = 0;
-
-                // Newton-Raphson iteration.
-                for ( ; ; ) {
-                    t = r;
-                    r = half.times( t.plus( div( x, t, dp, 1 ) ) );
-
-                    if ( coeffToString( t.c   ).slice( 0, s ) === ( n =
-                         coeffToString( r.c ) ).slice( 0, s ) ) {
-
-                        // The exponent of r may here be one less than the final result exponent,
-                        // e.g 0.0009999 (e-4) --> 0.001 (e-3), so adjust s so the rounding digits
-                        // are indexed correctly.
-                        if ( r.e < e ) --s;
-                        n = n.slice( s - 3, s + 1 );
-
-                        // The 4th rounding digit may be in error by -1 so if the 4 rounding digits
-                        // are 9999 or 4999 (i.e. approaching a rounding boundary) continue the
-                        // iteration.
-                        if ( n == '9999' || !rep && n == '4999' ) {
-
-                            // On the first iteration only, check to see if rounding up gives the
-                            // exact result as the nines may infinitely repeat.
-                            if ( !rep ) {
-                                round( t, t.e + DECIMAL_PLACES + 2, 0 );
-
-                                if ( t.times(t).eq(x) ) {
-                                    r = t;
-                                    break;
-                                }
-                            }
-
-                            dp += 4;
-                            s += 4;
-                            rep = 1;
-                        } else {
-
-                            // If rounding digits are null, 0{0,4} or 50{0,3}, check for exact
-                            // result. If not, then there are further digits and m will be truthy.
-                            if ( !+n || !+n.slice(1) && n.charAt(0) == '5' ) {
-
-                                // Truncate to the first rounding digit.
-                                round( r, r.e + DECIMAL_PLACES + 2, 1 );
-                                m = !r.times(r).eq(x);
-                            }
-
-                            break;
-                        }
-                    }
-                }
-            }
-
-            return round( r, r.e + DECIMAL_PLACES + 1, ROUNDING_MODE, m );
-        };
-
-
-        /*
-         *  n * 0 = 0
-         *  n * N = N
-         *  n * I = I
-         *  0 * n = 0
-         *  0 * 0 = 0
-         *  0 * N = N
-         *  0 * I = N
-         *  N * n = N
-         *  N * 0 = N
-         *  N * N = N
-         *  N * I = N
-         *  I * n = I
-         *  I * 0 = N
-         *  I * N = N
-         *  I * I = I
-         *
-         * Return a new BigNumber whose value is the value of this BigNumber times the value of
-         * BigNumber(y, b).
-         */
-        P.times = P.mul = function ( y, b ) {
-            var c, e, i, j, k, m, xcL, xlo, xhi, ycL, ylo, yhi, zc,
-                base, sqrtBase,
-                x = this,
-                xc = x.c,
-                yc = ( id = 17, y = new BigNumber( y, b ) ).c;
-
-            // Either NaN, ±Infinity or ±0?
-            if ( !xc || !yc || !xc[0] || !yc[0] ) {
-
-                // Return NaN if either is NaN, or one is 0 and the other is Infinity.
-                if ( !x.s || !y.s || xc && !xc[0] && !yc || yc && !yc[0] && !xc ) {
-                    y.c = y.e = y.s = null;
-                } else {
-                    y.s *= x.s;
-
-                    // Return ±Infinity if either is ±Infinity.
-                    if ( !xc || !yc ) {
-                        y.c = y.e = null;
-
-                    // Return ±0 if either is ±0.
-                    } else {
-                        y.c = [0];
-                        y.e = 0;
-                    }
-                }
-
-                return y;
-            }
-
-            e = bitFloor( x.e / LOG_BASE ) + bitFloor( y.e / LOG_BASE );
-            y.s *= x.s;
-            xcL = xc.length;
-            ycL = yc.length;
-
-            // Ensure xc points to longer array and xcL to its length.
-            if ( xcL < ycL ) zc = xc, xc = yc, yc = zc, i = xcL, xcL = ycL, ycL = i;
-
-            // Initialise the result array with zeros.
-            for ( i = xcL + ycL, zc = []; i--; zc.push(0) );
-
-            base = BASE;
-            sqrtBase = SQRT_BASE;
-
-            for ( i = ycL; --i >= 0; ) {
-                c = 0;
-                ylo = yc[i] % sqrtBase;
-                yhi = yc[i] / sqrtBase | 0;
-
-                for ( k = xcL, j = i + k; j > i; ) {
-                    xlo = xc[--k] % sqrtBase;
-                    xhi = xc[k] / sqrtBase | 0;
-                    m = yhi * xlo + xhi * ylo;
-                    xlo = ylo * xlo + ( ( m % sqrtBase ) * sqrtBase ) + zc[j] + c;
-                    c = ( xlo / base | 0 ) + ( m / sqrtBase | 0 ) + yhi * xhi;
-                    zc[j--] = xlo % base;
-                }
-
-                zc[j] = c;
-            }
-
-            if (c) {
-                ++e;
-            } else {
-                zc.splice(0, 1);
-            }
-
-            return normalise( y, zc, e );
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber rounded to a maximum of
-         * sd significant digits using rounding mode rm, or ROUNDING_MODE if rm is omitted.
-         *
-         * [sd] {number} Significant digits. Integer, 1 to MAX inclusive.
-         * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
-         *
-         * 'toDigits() precision out of range: {sd}'
-         * 'toDigits() precision not an integer: {sd}'
-         * 'toDigits() rounding mode not an integer: {rm}'
-         * 'toDigits() rounding mode out of range: {rm}'
-         */
-        P.toDigits = function ( sd, rm ) {
-            var n = new BigNumber(this);
-            sd = sd == null || !isValidInt( sd, 1, MAX, 18, 'precision' ) ? null : sd | 0;
-            rm = rm == null || !isValidInt( rm, 0, 8, 18, roundingMode ) ? ROUNDING_MODE : rm | 0;
-            return sd ? round( n, sd, rm ) : n;
-        };
-
-
-        /*
-         * Return a string representing the value of this BigNumber in exponential notation and
-         * rounded using ROUNDING_MODE to dp fixed decimal places.
-         *
-         * [dp] {number} Decimal places. Integer, 0 to MAX inclusive.
-         * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
-         *
-         * 'toExponential() decimal places not an integer: {dp}'
-         * 'toExponential() decimal places out of range: {dp}'
-         * 'toExponential() rounding mode not an integer: {rm}'
-         * 'toExponential() rounding mode out of range: {rm}'
-         */
-        P.toExponential = function ( dp, rm ) {
-            return format( this,
-              dp != null && isValidInt( dp, 0, MAX, 19 ) ? ~~dp + 1 : null, rm, 19 );
-        };
-
-
-        /*
-         * Return a string representing the value of this BigNumber in fixed-point notation rounding
-         * to dp fixed decimal places using rounding mode rm, or ROUNDING_MODE if rm is omitted.
-         *
-         * Note: as with JavaScript's number type, (-0).toFixed(0) is '0',
-         * but e.g. (-0.00001).toFixed(0) is '-0'.
-         *
-         * [dp] {number} Decimal places. Integer, 0 to MAX inclusive.
-         * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
-         *
-         * 'toFixed() decimal places not an integer: {dp}'
-         * 'toFixed() decimal places out of range: {dp}'
-         * 'toFixed() rounding mode not an integer: {rm}'
-         * 'toFixed() rounding mode out of range: {rm}'
-         */
-        P.toFixed = function ( dp, rm ) {
-            return format( this, dp != null && isValidInt( dp, 0, MAX, 20 )
-              ? ~~dp + this.e + 1 : null, rm, 20 );
-        };
-
-
-        /*
-         * Return a string representing the value of this BigNumber in fixed-point notation rounded
-         * using rm or ROUNDING_MODE to dp decimal places, and formatted according to the properties
-         * of the FORMAT object (see BigNumber.config).
-         *
-         * FORMAT = {
-         *      decimalSeparator : '.',
-         *      groupSeparator : ',',
-         *      groupSize : 3,
-         *      secondaryGroupSize : 0,
-         *      fractionGroupSeparator : '\xA0',    // non-breaking space
-         *      fractionGroupSize : 0
-         * };
-         *
-         * [dp] {number} Decimal places. Integer, 0 to MAX inclusive.
-         * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
-         *
-         * 'toFormat() decimal places not an integer: {dp}'
-         * 'toFormat() decimal places out of range: {dp}'
-         * 'toFormat() rounding mode not an integer: {rm}'
-         * 'toFormat() rounding mode out of range: {rm}'
-         */
-        P.toFormat = function ( dp, rm ) {
-            var str = format( this, dp != null && isValidInt( dp, 0, MAX, 21 )
-              ? ~~dp + this.e + 1 : null, rm, 21 );
-
-            if ( this.c ) {
-                var i,
-                    arr = str.split('.'),
-                    g1 = +FORMAT.groupSize,
-                    g2 = +FORMAT.secondaryGroupSize,
-                    groupSeparator = FORMAT.groupSeparator,
-                    intPart = arr[0],
-                    fractionPart = arr[1],
-                    isNeg = this.s < 0,
-                    intDigits = isNeg ? intPart.slice(1) : intPart,
-                    len = intDigits.length;
-
-                if (g2) i = g1, g1 = g2, g2 = i, len -= i;
-
-                if ( g1 > 0 && len > 0 ) {
-                    i = len % g1 || g1;
-                    intPart = intDigits.substr( 0, i );
-
-                    for ( ; i < len; i += g1 ) {
-                        intPart += groupSeparator + intDigits.substr( i, g1 );
-                    }
-
-                    if ( g2 > 0 ) intPart += groupSeparator + intDigits.slice(i);
-                    if (isNeg) intPart = '-' + intPart;
-                }
-
-                str = fractionPart
-                  ? intPart + FORMAT.decimalSeparator + ( ( g2 = +FORMAT.fractionGroupSize )
-                    ? fractionPart.replace( new RegExp( '\\d{' + g2 + '}\\B', 'g' ),
-                      '$&' + FORMAT.fractionGroupSeparator )
-                    : fractionPart )
-                  : intPart;
-            }
-
-            return str;
-        };
-
-
-        /*
-         * Return a string array representing the value of this BigNumber as a simple fraction with
-         * an integer numerator and an integer denominator. The denominator will be a positive
-         * non-zero value less than or equal to the specified maximum denominator. If a maximum
-         * denominator is not specified, the denominator will be the lowest value necessary to
-         * represent the number exactly.
-         *
-         * [md] {number|string|BigNumber} Integer >= 1 and < Infinity. The maximum denominator.
-         *
-         * 'toFraction() max denominator not an integer: {md}'
-         * 'toFraction() max denominator out of range: {md}'
-         */
-        P.toFraction = function (md) {
-            var arr, d0, d2, e, exp, n, n0, q, s,
-                k = ERRORS,
-                x = this,
-                xc = x.c,
-                d = new BigNumber(ONE),
-                n1 = d0 = new BigNumber(ONE),
-                d1 = n0 = new BigNumber(ONE);
-
-            if ( md != null ) {
-                ERRORS = false;
-                n = new BigNumber(md);
-                ERRORS = k;
-
-                if ( !( k = n.isInt() ) || n.lt(ONE) ) {
-
-                    if (ERRORS) {
-                        raise( 22,
-                          'max denominator ' + ( k ? 'out of range' : 'not an integer' ), md );
-                    }
-
-                    // ERRORS is false:
-                    // If md is a finite non-integer >= 1, round it to an integer and use it.
-                    md = !k && n.c && round( n, n.e + 1, 1 ).gte(ONE) ? n : null;
-                }
-            }
-
-            if ( !xc ) return x.toString();
-            s = coeffToString(xc);
-
-            // Determine initial denominator.
-            // d is a power of 10 and the minimum max denominator that specifies the value exactly.
-            e = d.e = s.length - x.e - 1;
-            d.c[0] = POWS_TEN[ ( exp = e % LOG_BASE ) < 0 ? LOG_BASE + exp : exp ];
-            md = !md || n.cmp(d) > 0 ? ( e > 0 ? d : n1 ) : n;
-
-            exp = MAX_EXP;
-            MAX_EXP = 1 / 0;
-            n = new BigNumber(s);
-
-            // n0 = d1 = 0
-            n0.c[0] = 0;
-
-            for ( ; ; )  {
-                q = div( n, d, 0, 1 );
-                d2 = d0.plus( q.times(d1) );
-                if ( d2.cmp(md) == 1 ) break;
-                d0 = d1;
-                d1 = d2;
-                n1 = n0.plus( q.times( d2 = n1 ) );
-                n0 = d2;
-                d = n.minus( q.times( d2 = d ) );
-                n = d2;
-            }
-
-            d2 = div( md.minus(d0), d1, 0, 1 );
-            n0 = n0.plus( d2.times(n1) );
-            d0 = d0.plus( d2.times(d1) );
-            n0.s = n1.s = x.s;
-            e *= 2;
-
-            // Determine which fraction is closer to x, n0/d0 or n1/d1
-            arr = div( n1, d1, e, ROUNDING_MODE ).minus(x).abs().cmp(
-                  div( n0, d0, e, ROUNDING_MODE ).minus(x).abs() ) < 1
-                    ? [ n1.toString(), d1.toString() ]
-                    : [ n0.toString(), d0.toString() ];
-
-            MAX_EXP = exp;
-            return arr;
-        };
-
-
-        /*
-         * Return the value of this BigNumber converted to a number primitive.
-         */
-        P.toNumber = function () {
-            return +this;
-        };
-
-
-        /*
-         * Return a BigNumber whose value is the value of this BigNumber raised to the power n.
-         * If m is present, return the result modulo m.
-         * If n is negative round according to DECIMAL_PLACES and ROUNDING_MODE.
-         * If POW_PRECISION is non-zero and m is not present, round to POW_PRECISION using
-         * ROUNDING_MODE.
-         *
-         * The modular power operation works efficiently when x, n, and m are positive integers,
-         * otherwise it is equivalent to calculating x.toPower(n).modulo(m) (with POW_PRECISION 0).
-         *
-         * n {number} Integer, -MAX_SAFE_INTEGER to MAX_SAFE_INTEGER inclusive.
-         * [m] {number|string|BigNumber} The modulus.
-         *
-         * 'pow() exponent not an integer: {n}'
-         * 'pow() exponent out of range: {n}'
-         *
-         * Performs 54 loop iterations for n of 9007199254740991.
-         */
-        P.toPower = P.pow = function ( n, m ) {
-            var k, y, z,
-                i = mathfloor( n < 0 ? -n : +n ),
-                x = this;
-
-            if ( m != null ) {
-                id = 23;
-                m = new BigNumber(m);
-            }
-
-            // Pass ±Infinity to Math.pow if exponent is out of range.
-            if ( !isValidInt( n, -MAX_SAFE_INTEGER, MAX_SAFE_INTEGER, 23, 'exponent' ) &&
-              ( !isFinite(n) || i > MAX_SAFE_INTEGER && ( n /= 0 ) ||
-                parseFloat(n) != n && !( n = NaN ) ) || n == 0 ) {
-                k = Math.pow( +x, n );
-                return new BigNumber( m ? k % m : k );
-            }
-
-            if (m) {
-                if ( n > 1 && x.gt(ONE) && x.isInt() && m.gt(ONE) && m.isInt() ) {
-                    x = x.mod(m);
-                } else {
-                    z = m;
-
-                    // Nullify m so only a single mod operation is performed at the end.
-                    m = null;
-                }
-            } else if (POW_PRECISION) {
-
-                // Truncating each coefficient array to a length of k after each multiplication
-                // equates to truncating significant digits to POW_PRECISION + [28, 41],
-                // i.e. there will be a minimum of 28 guard digits retained.
-                // (Using + 1.5 would give [9, 21] guard digits.)
-                k = mathceil( POW_PRECISION / LOG_BASE + 2 );
-            }
-
-            y = new BigNumber(ONE);
-
-            for ( ; ; ) {
-                if ( i % 2 ) {
-                    y = y.times(x);
-                    if ( !y.c ) break;
-                    if (k) {
-                        if ( y.c.length > k ) y.c.length = k;
-                    } else if (m) {
-                        y = y.mod(m);
-                    }
-                }
-
-                i = mathfloor( i / 2 );
-                if ( !i ) break;
-                x = x.times(x);
-                if (k) {
-                    if ( x.c && x.c.length > k ) x.c.length = k;
-                } else if (m) {
-                    x = x.mod(m);
-                }
-            }
-
-            if (m) return y;
-            if ( n < 0 ) y = ONE.div(y);
-
-            return z ? y.mod(z) : k ? round( y, POW_PRECISION, ROUNDING_MODE ) : y;
-        };
-
-
-        /*
-         * Return a string representing the value of this BigNumber rounded to sd significant digits
-         * using rounding mode rm or ROUNDING_MODE. If sd is less than the number of digits
-         * necessary to represent the integer part of the value in fixed-point notation, then use
-         * exponential notation.
-         *
-         * [sd] {number} Significant digits. Integer, 1 to MAX inclusive.
-         * [rm] {number} Rounding mode. Integer, 0 to 8 inclusive.
-         *
-         * 'toPrecision() precision not an integer: {sd}'
-         * 'toPrecision() precision out of range: {sd}'
-         * 'toPrecision() rounding mode not an integer: {rm}'
-         * 'toPrecision() rounding mode out of range: {rm}'
-         */
-        P.toPrecision = function ( sd, rm ) {
-            return format( this, sd != null && isValidInt( sd, 1, MAX, 24, 'precision' )
-              ? sd | 0 : null, rm, 24 );
-        };
-
-
-        /*
-         * Return a string representing the value of this BigNumber in base b, or base 10 if b is
-         * omitted. If a base is specified, including base 10, round according to DECIMAL_PLACES and
-         * ROUNDING_MODE. If a base is not specified, and this BigNumber has a positive exponent
-         * that is equal to or greater than TO_EXP_POS, or a negative exponent equal to or less than
-         * TO_EXP_NEG, return exponential notation.
-         *
-         * [b] {number} Integer, 2 to 64 inclusive.
-         *
-         * 'toString() base not an integer: {b}'
-         * 'toString() base out of range: {b}'
-         */
-        P.toString = function (b) {
-            var str,
-                n = this,
-                s = n.s,
-                e = n.e;
-
-            // Infinity or NaN?
-            if ( e === null ) {
-
-                if (s) {
-                    str = 'Infinity';
-                    if ( s < 0 ) str = '-' + str;
-                } else {
-                    str = 'NaN';
-                }
-            } else {
-                str = coeffToString( n.c );
-
-                if ( b == null || !isValidInt( b, 2, 64, 25, 'base' ) ) {
-                    str = e <= TO_EXP_NEG || e >= TO_EXP_POS
-                      ? toExponential( str, e )
-                      : toFixedPoint( str, e );
-                } else {
-                    str = convertBase( toFixedPoint( str, e ), b | 0, 10, s );
-                }
-
-                if ( s < 0 && n.c[0] ) str = '-' + str;
-            }
-
-            return str;
-        };
-
-
-        /*
-         * Return a new BigNumber whose value is the value of this BigNumber truncated to a whole
-         * number.
-         */
-        P.truncated = P.trunc = function () {
-            return round( new BigNumber(this), this.e + 1, 1 );
-        };
-
-
-        /*
-         * Return as toString, but do not accept a base argument, and include the minus sign for
-         * negative zero.
-         */
-        P.valueOf = P.toJSON = function () {
-            var str,
-                n = this,
-                e = n.e;
-
-            if ( e === null ) return n.toString();
-
-            str = coeffToString( n.c );
-
-            str = e <= TO_EXP_NEG || e >= TO_EXP_POS
-                ? toExponential( str, e )
-                : toFixedPoint( str, e );
-
-            return n.s < 0 ? '-' + str : str;
-        };
-
-
-        P.isBigNumber = true;
-
-        if ( config != null ) BigNumber.config(config);
-
-        return BigNumber;
-    }
-
-
-    // PRIVATE HELPER FUNCTIONS
-
-
-    function bitFloor(n) {
-        var i = n | 0;
-        return n > 0 || n === i ? i : i - 1;
-    }
-
-
-    // Return a coefficient array as a string of base 10 digits.
-    function coeffToString(a) {
-        var s, z,
-            i = 1,
-            j = a.length,
-            r = a[0] + '';
-
-        for ( ; i < j; ) {
-            s = a[i++] + '';
-            z = LOG_BASE - s.length;
-            for ( ; z--; s = '0' + s );
-            r += s;
-        }
-
-        // Determine trailing zeros.
-        for ( j = r.length; r.charCodeAt(--j) === 48; );
-        return r.slice( 0, j + 1 || 1 );
-    }
-
-
-    // Compare the value of BigNumbers x and y.
-    function compare( x, y ) {
-        var a, b,
-            xc = x.c,
-            yc = y.c,
-            i = x.s,
-            j = y.s,
-            k = x.e,
-            l = y.e;
-
-        // Either NaN?
-        if ( !i || !j ) return null;
-
-        a = xc && !xc[0];
-        b = yc && !yc[0];
-
-        // Either zero?
-        if ( a || b ) return a ? b ? 0 : -j : i;
-
-        // Signs differ?
-        if ( i != j ) return i;
-
-        a = i < 0;
-        b = k == l;
-
-        // Either Infinity?
-        if ( !xc || !yc ) return b ? 0 : !xc ^ a ? 1 : -1;
-
-        // Compare exponents.
-        if ( !b ) return k > l ^ a ? 1 : -1;
-
-        j = ( k = xc.length ) < ( l = yc.length ) ? k : l;
-
-        // Compare digit by digit.
-        for ( i = 0; i < j; i++ ) if ( xc[i] != yc[i] ) return xc[i] > yc[i] ^ a ? 1 : -1;
-
-        // Compare lengths.
-        return k == l ? 0 : k > l ^ a ? 1 : -1;
-    }
-
-
-    /*
-     * Return true if n is a valid number in range, otherwise false.
-     * Use for argument validation when ERRORS is false.
-     * Note: parseInt('1e+1') == 1 but parseFloat('1e+1') == 10.
-     */
-    function intValidatorNoErrors( n, min, max ) {
-        return ( n = truncate(n) ) >= min && n <= max;
-    }
-
-
-    function isArray(obj) {
-        return Object.prototype.toString.call(obj) == '[object Array]';
-    }
-
-
-    /*
-     * Convert string of baseIn to an array of numbers of baseOut.
-     * Eg. convertBase('255', 10, 16) returns [15, 15].
-     * Eg. convertBase('ff', 16, 10) returns [2, 5, 5].
-     */
-    function toBaseOut( str, baseIn, baseOut ) {
-        var j,
-            arr = [0],
-            arrL,
-            i = 0,
-            len = str.length;
-
-        for ( ; i < len; ) {
-            for ( arrL = arr.length; arrL--; arr[arrL] *= baseIn );
-            arr[ j = 0 ] += ALPHABET.indexOf( str.charAt( i++ ) );
-
-            for ( ; j < arr.length; j++ ) {
-
-                if ( arr[j] > baseOut - 1 ) {
-                    if ( arr[j + 1] == null ) arr[j + 1] = 0;
-                    arr[j + 1] += arr[j] / baseOut | 0;
-                    arr[j] %= baseOut;
-                }
-            }
-        }
-
-        return arr.reverse();
-    }
-
-
-    function toExponential( str, e ) {
-        return ( str.length > 1 ? str.charAt(0) + '.' + str.slice(1) : str ) +
-          ( e < 0 ? 'e' : 'e+' ) + e;
-    }
-
-
-    function toFixedPoint( str, e ) {
-        var len, z;
-
-        // Negative exponent?
-        if ( e < 0 ) {
-
-            // Prepend zeros.
-            for ( z = '0.'; ++e; z += '0' );
-            str = z + str;
-
-        // Positive exponent
-        } else {
-            len = str.length;
-
-            // Append zeros.
-            if ( ++e > len ) {
-                for ( z = '0', e -= len; --e; z += '0' );
-                str += z;
-            } else if ( e < len ) {
-                str = str.slice( 0, e ) + '.' + str.slice(e);
-            }
-        }
-
-        return str;
-    }
-
-
-    function truncate(n) {
-        n = parseFloat(n);
-        return n < 0 ? mathceil(n) : mathfloor(n);
-    }
-
-
-    // EXPORT
-
-
-    BigNumber = constructorFactory();
-    BigNumber['default'] = BigNumber.BigNumber = BigNumber;
-
-
-    // AMD.
-    if ( true ) {
-        !(__WEBPACK_AMD_DEFINE_RESULT__ = function () { return BigNumber; }.call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-    // Node.js and other environments that support module.exports.
-    } else if ( typeof module != 'undefined' && module.exports ) {
-        module.exports = BigNumber;
-
-    // Browser.
-    } else {
-        if ( !globalObj ) globalObj = typeof self != 'undefined' ? self : Function('return this')();
-        globalObj.BigNumber = BigNumber;
-    }
-})(this);
-
-
-/***/ }),
-/* 260 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-exports.setDefaultTransformBondContext = setDefaultTransformBondContext;
-exports.isBond = isBond;
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var defaultContext = typeof parity === 'undefined' ? null : parity.api;
-
-function setDefaultTransformBondContext(c) {
-	defaultContext = c;
-}
-
-var subscripted = {};
-// Any names which should never be subscripted.
-var reservedNames = { toJSON: true, toString: true };
-
-var Bond = exports.Bond = function () {
-	function Bond() {
-		var mayBeNull = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-
-		_classCallCheck(this, Bond);
-
-		this.subscribers = [];
-		this.notifies = [];
-		this.thens = [];
-		this._ready = false;
-		this._value = null;
-		this.mayBeNull = mayBeNull;
-		//		return this.subscriptable();
-	}
-
-	_createClass(Bond, [{
-		key: 'toString',
-		value: function toString() {
-			//		console.log(`Converting Bond to string: ${JSON.stringify(this)}`)
-			var s = Symbol();
-			subscripted[s] = this;
-			return s;
-		}
-	}, {
-		key: 'subscriptable',
-		value: function subscriptable() {
-			var depth = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-
-			if (depth === 0) return this;
-			var r = new Proxy(this, {
-				get: function get(receiver, name) {
-					//				console.log(`subscriptable.get: ${JSON.stringify(receiver)}, ${JSON.stringify(name)}, ${JSON.stringify(receiver)}: ${typeof(name)}, ${typeof(receiver[name])}`);
-					if ((typeof name === 'string' || typeof name === 'number') && (reservedNames[name] || typeof receiver[name] !== 'undefined')) {
-						return receiver[name];
-					} else if ((typeof name === 'undefined' ? 'undefined' : _typeof(name)) === 'symbol') {
-						if (Bond.knowSymbol(name)) {
-							return receiver.sub(Bond.fromSymbol(name)).subscriptable(depth - 1);
-						} else {
-							//						console.warn(`Unknown symbol given`);
-							return null;
-						}
-					} else {
-						//					console.log(`Subscripting: ${JSON.stringify(name)}`)
-						return receiver.sub(name).subscriptable(depth - 1);
-					}
-				}
-			});
-			//		r.toString = Bond.prototype.toString.bind(this);
-			return r;
-		}
-	}, {
-		key: 'reset',
-		value: function reset() {
-			if (this._ready) {
-				this._ready = false;
-				this._value = null;
-				this.notifies.forEach(function (f) {
-					return f();
-				});
-			}
-		}
-	}, {
-		key: 'changed',
-		value: function changed(v) {
-			if (typeof v === 'undefined') {
-				console.error('Trigger called with undefined value');
-				return;
-			}
-			//		console.log(`maybe changed (${this._value} -> ${v})`);
-			if (!this.mayBeNull && v === null) {
-				this.reset();
-			} else if (!this._ready || JSON.stringify(v) !== JSON.stringify(this._value)) {
-				this.trigger(v);
-			}
-		}
-	}, {
-		key: 'trigger',
-		value: function trigger(v) {
-			var _this = this;
-
-			if (typeof v === 'undefined') {
-				console.error('Trigger called with undefined value');
-				return;
-			}
-			if (!this.mayBeNull && v === null) {
-				this.reset();
-			} else {
-				//			console.log(`firing (${JSON.stringify(v)})`);
-				this._ready = true;
-				this._value = v;
-				this.notifies.forEach(function (f) {
-					return f();
-				});
-				this.subscribers.forEach(function (f) {
-					return f(_this._value);
-				});
-				this.thens.forEach(function (f) {
-					return f(_this._value);
-				});
-				this.thens = [];
-			}
-		}
-	}, {
-		key: 'drop',
-		value: function drop() {}
-	}, {
-		key: 'notify',
-		value: function notify(f) {
-			this.notifies.push(f);
-			if (this._ready) {
-				f();
-			}
-		}
-	}, {
-		key: 'tie',
-		value: function tie(f) {
-			this.subscribers.push(f);
-			if (this._ready) {
-				f(this._value);
-			}
-			return this;
-		}
-	}, {
-		key: 'subscribe',
-		value: function subscribe(f) {
-			console.warn('Bond.subscribe is deprecated. Use Bond.tie instead.');
-			return this.tie(f);
-		}
-	}, {
-		key: 'ready',
-		value: function ready() {
-			return this._ready;
-		}
-	}, {
-		key: 'then',
-		value: function then(f) {
-			if (this._ready) {
-				f(this._value);
-			} else {
-				this.thens.push(f);
-			}
-			return this;
-		}
-	}, {
-		key: 'map',
-		value: function map(f) {
-			return new TransformBond(f, [this]);
-		}
-	}, {
-		key: 'sub',
-		value: function sub(name) {
-			return new TransformBond(function (r, n) {
-				return r[n];
-			}, [this, name]);
-		}
-
-		// Takes a Bond which evaluates to a = [a[0], a[1], ...]
-		// Returns Bond which evaluates to:
-		// null iff a.length === 0
-		// f(i, a[0])[0] iff f(i, a[0])[1] === true
-		// fold(f(0, a[0]), a.mid(1)) otherwise
-
-	}, {
-		key: 'reduce',
-		value: function reduce(accum, init) {
-			var nextItem = function nextItem(acc, rest) {
-				var next = rest.pop();
-				return Bond.promise([accum(acc, next)]).then(function (_ref) {
-					var _ref2 = _slicedToArray(_ref, 1),
-					    _ref2$ = _slicedToArray(_ref2[0], 2),
-					    v = _ref2$[0],
-					    i = _ref2$[1];
-
-					return i ? v : rest.length > 0 ? nextItem(v, rest) : null;
-				});
-			};
-			return this.map(function (a) {
-				return nextItem(init, a);
-			});
-		}
-	}], [{
-		key: 'knowSymbol',
-		value: function knowSymbol(name) {
-			return !!subscripted[name];
-		}
-	}, {
-		key: 'fromSymbol',
-		value: function fromSymbol(name) {
-			var sub = subscripted[name];
-			delete subscripted[name];
-			return sub;
-		}
-	}, {
-		key: 'all',
-		value: function all(list) {
-			return new TransformBond(function () {
-				for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-					args[_key] = arguments[_key];
-				}
-
-				return args;
-			}, list);
-		}
-	}, {
-		key: 'promise',
-		value: function promise(list) {
-			return new Promise(function (resolve, reject) {
-				var finished = 0;
-				var l = [];
-				l.length = list.length;
-
-				var done = function done(i, v) {
-					//				console.log(`done ${i} ${v}`);
-					l[i] = v;
-					finished++;
-					//				console.log(`finished ${finished}; l.length ${l.length}`);
-					if (finished === l.length) {
-						//					console.log(`resolving with ${l}`);
-						resolve(l);
-					}
-				};
-
-				list.forEach(function (v, i) {
-					if (v instanceof Bond) {
-						v.then(function (x) {
-							return done(i, x);
-						});
-					} else if (v instanceof Promise) {
-						v.then(function (x) {
-							return done(i, x);
-						}, reject);
-					} else {
-						done(i, v);
-					}
-				});
-			});
-		}
-	}]);
-
-	return Bond;
-}();
-
-function isReady(x) {
-	var deep = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
-	if ((typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x !== null) {
-		if (x instanceof Bond) return x._ready;else if (x instanceof Promise) return typeof x._value !== 'undefined';else if (deep && x.constructor === Array) return x.every(function (i) {
-			return isReady(i, false);
-		});else if (deep && x.constructor === Object) return Object.keys(x).every(function (k) {
-			return isReady(x[k], false);
-		});else return true;
-	} else return true;
-}
-
-function isBond(x) {
-	var deep = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
-	if ((typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x !== null) {
-		if (x instanceof Bond) return true;else if (x instanceof Promise) return false;else if (deep && x.constructor === Array) return x.some(function (i) {
-			return isBond(i, false);
-		});else if (deep && x.constructor === Object) return Object.keys(x).some(function (k) {
-			return isBond(x[k], false);
-		});else return false;
-	} else return false;
-}
-
-function mapped(x) {
-	var deep = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
-	if (!isReady(x, deep)) {
-		throw 'Internal error: Unready value being mapped';
-	}
-	//	console.log(`x info: ${x} ${typeof(x)} ${x.constructor.name} ${JSON.stringify(x)}; deep: ${deep}`);
-	if ((typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x !== null) {
-		if (x instanceof Bond) {
-			if (x._ready !== true) {
-				throw 'Internal error: Unready Bond being mapped';
-			}
-			if (typeof x._value === 'undefined') {
-				throw 'Internal error: Ready Bond with undefined value in mapped';
-			}
-			//			console.log(`Bond: ${JSON.stringify(x._value)}}`);
-			return x._value;
-		} else if (x instanceof Promise) {
-			if (typeof x._value === 'undefined') {
-				throw 'Internal error: Ready Promise has undefined value';
-			}
-			//			console.log(`Promise: ${JSON.stringify(x._value)}}`);
-			return x._value;
-		} else if (deep && x.constructor === Array && x.some(function (i) {
-			return i instanceof Bond || i instanceof Promise;
-		})) {
-			//			console.log(`Deep array...`);
-			var _o = x.slice().map(function (i) {
-				return mapped(i, false);
-			});
-			//			console.log(`...Deep array: ${JSON.stringify(o)}`);
-			return _o;
-		} else if (deep && x.constructor === Object && Object.keys(x).some(function (i) {
-			return x[i] instanceof Bond || x[i] instanceof Promise;
-		})) {
-			var o = {};
-			//			console.log(`Deep object...`);
-			Object.keys(x).forEach(function (k) {
-				o[k] = mapped(x[k], false);
-			});
-			//			console.log(`...Deep object: ${JSON.stringify(o)}`);
-			return o;
-		} else {
-			//			console.log(`Shallow object.`);
-			return x;
-		}
-	} else {
-		//		console.log(`Basic value.`);
-		return x;
-	}
-}
-
-function deepTie(x, poll) {
-	var deep = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-
-	if ((typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && x !== null) {
-		if (x instanceof Bond) {
-			x.notify(poll);
-			return true;
-		} else if (x instanceof Promise) {
-			x.then(function (v) {
-				x._value = v;poll();
-			});
-			return true;
-		} else if (deep && x.constructor === Array && x.findIndex(function (i) {
-			return i instanceof Bond || i instanceof Promise;
-		}) != -1) {
-			var r = false;
-			x.forEach(function (i) {
-				r = deepTie(i, poll, false) || r;
-			});
-			return r;
-		} else if (deep && x.constructor === Object && Object.keys(x).findIndex(function (i) {
-			return x[i] instanceof Bond || x[i] instanceof Promise;
-		}) != -1) {
-			var r = false;
-			Object.keys(x).forEach(function (k) {
-				r = deepTie(x[k], poll, false) || r;
-			});
-			return r;
-		} else {
-			return false;
-		}
-	} else {
-		return false;
-	}
-}
-
-var ReactiveBond = exports.ReactiveBond = function (_Bond) {
-	_inherits(ReactiveBond, _Bond);
-
-	function ReactiveBond(a, d) {
-		var execute = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function (args) {
-			return _this2.changed(args);
-		};
-		var mayBeNull = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-
-		_classCallCheck(this, ReactiveBond);
-
-		var _this2 = _possibleConstructorReturn(this, (ReactiveBond.__proto__ || Object.getPrototypeOf(ReactiveBond)).call(this, mayBeNull));
-
-		var poll = function poll() {
-			if (a.every(isReady)) {
-				//				console.log(`poll: All dependencies good...`);
-				var am = a.map(function (i) {
-					return mapped(i, true);
-				});
-				//				console.log(`poll: Mapped dependencies: ${JSON.stringify(am)}`);
-				execute.bind(_this2)(am);
-			} else {
-				//				console.log("poll: One or more dependencies undefined");
-				_this2.reset();
-			}
-		};
-
-		d.forEach(function (i) {
-			return i.notify(poll);
-		});
-		var nd = 0;
-		a.forEach(function (i) {
-			if (deepTie(i, poll)) nd++;
-		});
-		if (nd == 0 && d.length == 0) {
-			poll();
-		}
-		return _this2;
-	}
-
-	_createClass(ReactiveBond, [{
-		key: 'drop',
-		value: function drop() {
-			// TODO clear up all our dependency `notify`s.
-		}
-	}]);
-
-	return ReactiveBond;
-}(Bond);
-
-// Just a one-off.
-
-
-var ReactivePromise = exports.ReactivePromise = function (_ReactiveBond) {
-	_inherits(ReactivePromise, _ReactiveBond);
-
-	function ReactivePromise(a, d) {
-		var execute = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : function (args) {
-			return _this3.changed(args);
-		};
-
-		var _this3;
-
-		var mayBeNull = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-
-		_classCallCheck(this, ReactivePromise);
-
-		var done = false;
-		return _this3 = _possibleConstructorReturn(this, (ReactivePromise.__proto__ || Object.getPrototypeOf(ReactivePromise)).call(this, a, d, function (args) {
-			if (!done) {
-				done = true;
-				execute.bind(_this3)(args);
-			}
-		}, mayBeNull));
-	}
-
-	return ReactivePromise;
-}(ReactiveBond);
-
-/// f is function which returns a promise. a is a set of dependencies
-/// which must be passed to f as args. d are dependencies whose values are
-/// unneeded. any entries of a which are reactive promises then is it their
-/// underlying value which is passed.
-///
-/// we return a bond (an ongoing promise).
-
-
-var TransformBond = exports.TransformBond = function (_ReactiveBond2) {
-	_inherits(TransformBond, _ReactiveBond2);
-
-	function TransformBond(f) {
-		var a = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
-		var d = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-		var latched = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
-		var mayBeNull = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-		var context = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : defaultContext;
-
-		_classCallCheck(this, TransformBond);
-
-		return _possibleConstructorReturn(this, (TransformBond.__proto__ || Object.getPrototypeOf(TransformBond)).call(this, a, d, function (args) {
-			//			console.log(`Applying: ${JSON.stringify(args)}`);
-			var r = f.apply(context, args);
-			if (typeof r === 'undefined') {
-				console.warn('Transformation returned undefined: Applied ' + f + ' to ' + JSON.stringify(args) + '.');
-				this.reset();
-			} else if (r instanceof Promise) {
-				if (!latched) {
-					this.reset();
-				}
-				r.then(this.changed.bind(this));
-			} else {
-				this.changed(r);
-			}
-		}, mayBeNull, context));
-	}
-
-	return TransformBond;
-}(ReactiveBond);
-
-var TimeBond = exports.TimeBond = function (_Bond2) {
-	_inherits(TimeBond, _Bond2);
-
-	function TimeBond() {
-		_classCallCheck(this, TimeBond);
-
-		var _this5 = _possibleConstructorReturn(this, (TimeBond.__proto__ || Object.getPrototypeOf(TimeBond)).call(this));
-
-		var t = function () {
-			this.trigger(Date.now());
-		}.bind(_this5);
-		if (typeof window !== 'undefined') _this5.interval = window.setInterval(t, 1000);
-		t();
-		return _this5;
-	}
-
-	_createClass(TimeBond, [{
-		key: 'drop',
-		value: function drop() {
-			if (typeof window !== 'undefined') window.clearInterval(this.interval);
-		}
-	}]);
-
-	return TimeBond;
-}(Bond);
-
-/***/ }),
-/* 261 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /* WEBPACK VAR INJECTION */(function(Buffer) {module.exports = decodeTorrentFile
 module.exports.decode = decodeTorrentFile
 module.exports.encode = encodeTorrentFile
@@ -46754,7 +42590,7 @@ function ensure (bool, fieldName) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 262 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var closest = __webpack_require__(183)
@@ -46770,7 +42606,7 @@ module.exports = function (bytes) {
 
 
 /***/ }),
-/* 263 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46788,7 +42624,7 @@ module.exports = function (bytes) {
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(1);
   var warning = __webpack_require__(2);
-  var ReactPropTypesSecret = __webpack_require__(121);
+  var ReactPropTypesSecret = __webpack_require__(120);
   var loggedTypeFailures = {};
 }
 
@@ -46839,7 +42675,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 264 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46858,8 +42694,8 @@ var emptyFunction = __webpack_require__(17);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(121);
-var checkPropTypes = __webpack_require__(263);
+var ReactPropTypesSecret = __webpack_require__(120);
+var checkPropTypes = __webpack_require__(260);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -47359,7 +43195,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 265 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -47898,7 +43734,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(163)(module), __webpack_require__(13)))
 
 /***/ }),
-/* 266 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47989,7 +43825,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 267 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48081,7 +43917,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 268 */
+/* 265 */
 /***/ (function(module, exports) {
 
 var iterate = function (list) {
@@ -48106,7 +43942,7 @@ module.exports = iterate
 
 
 /***/ }),
-/* 269 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -48237,7 +44073,7 @@ RangeSliceStream.prototype.destroy = function (err) {
 
 
 /***/ }),
-/* 270 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48316,7 +44152,7 @@ var ARIADOMPropertyConfig = {
 module.exports = ARIADOMPropertyConfig;
 
 /***/ }),
-/* 271 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48345,7 +44181,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ }),
-/* 272 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48363,9 +44199,9 @@ module.exports = AutoFocusUtils;
 
 var EventPropagators = __webpack_require__(48);
 var ExecutionEnvironment = __webpack_require__(10);
-var FallbackCompositionState = __webpack_require__(278);
-var SyntheticCompositionEvent = __webpack_require__(321);
-var SyntheticInputEvent = __webpack_require__(324);
+var FallbackCompositionState = __webpack_require__(275);
+var SyntheticCompositionEvent = __webpack_require__(318);
+var SyntheticInputEvent = __webpack_require__(321);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -48735,7 +44571,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ }),
-/* 273 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48751,12 +44587,12 @@ module.exports = BeforeInputEventPlugin;
 
 
 
-var CSSProperty = __webpack_require__(124);
+var CSSProperty = __webpack_require__(123);
 var ExecutionEnvironment = __webpack_require__(10);
 var ReactInstrumentation = __webpack_require__(16);
 
 var camelizeStyleName = __webpack_require__(215);
-var dangerousStyleValue = __webpack_require__(331);
+var dangerousStyleValue = __webpack_require__(328);
 var hyphenateStyleName = __webpack_require__(222);
 var memoizeStringOnly = __webpack_require__(225);
 var warning = __webpack_require__(2);
@@ -48950,7 +44786,7 @@ module.exports = CSSPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 274 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48975,7 +44811,7 @@ var SyntheticEvent = __webpack_require__(22);
 
 var getEventTarget = __webpack_require__(92);
 var isEventSupported = __webpack_require__(93);
-var isTextInputElement = __webpack_require__(142);
+var isTextInputElement = __webpack_require__(141);
 
 var eventTypes = {
   change: {
@@ -49301,7 +45137,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ }),
-/* 275 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49355,7 +45191,7 @@ module.exports = Danger;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 276 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49386,7 +45222,7 @@ var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'Tap
 module.exports = DefaultEventPluginOrder;
 
 /***/ }),
-/* 277 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49491,7 +45327,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ }),
-/* 278 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49511,7 +45347,7 @@ var _assign = __webpack_require__(7);
 
 var PooledClass = __webpack_require__(29);
 
-var getTextContentAccessor = __webpack_require__(140);
+var getTextContentAccessor = __webpack_require__(139);
 
 /**
  * This helper class stores information about text content of a target node,
@@ -49591,7 +45427,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ }),
-/* 279 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49832,7 +45668,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ }),
-/* 280 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49850,10 +45686,10 @@ module.exports = HTMLDOMPropertyConfig;
 
 var ReactReconciler = __webpack_require__(39);
 
-var instantiateReactComponent = __webpack_require__(141);
+var instantiateReactComponent = __webpack_require__(140);
 var KeyEscapeUtils = __webpack_require__(84);
 var shouldUpdateReactComponent = __webpack_require__(94);
-var traverseAllChildren = __webpack_require__(144);
+var traverseAllChildren = __webpack_require__(143);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -49992,7 +45828,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 281 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50009,7 +45845,7 @@ module.exports = ReactChildReconciler;
 
 
 var DOMChildrenOperations = __webpack_require__(81);
-var ReactDOMIDOperations = __webpack_require__(288);
+var ReactDOMIDOperations = __webpack_require__(285);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -50027,7 +45863,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 /***/ }),
-/* 282 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50052,11 +45888,11 @@ var ReactCurrentOwner = __webpack_require__(21);
 var ReactErrorUtils = __webpack_require__(87);
 var ReactInstanceMap = __webpack_require__(49);
 var ReactInstrumentation = __webpack_require__(16);
-var ReactNodeTypes = __webpack_require__(134);
+var ReactNodeTypes = __webpack_require__(133);
 var ReactReconciler = __webpack_require__(39);
 
 if (process.env.NODE_ENV !== 'production') {
-  var checkReactTypeSpec = __webpack_require__(330);
+  var checkReactTypeSpec = __webpack_require__(327);
 }
 
 var emptyObject = __webpack_require__(45);
@@ -50935,7 +46771,7 @@ module.exports = ReactCompositeComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 283 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50954,15 +46790,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDefaultInjection = __webpack_require__(300);
-var ReactMount = __webpack_require__(133);
+var ReactDefaultInjection = __webpack_require__(297);
+var ReactMount = __webpack_require__(132);
 var ReactReconciler = __webpack_require__(39);
 var ReactUpdates = __webpack_require__(20);
-var ReactVersion = __webpack_require__(315);
+var ReactVersion = __webpack_require__(312);
 
-var findDOMNode = __webpack_require__(332);
-var getHostComponentFromComposite = __webpack_require__(139);
-var renderSubtreeIntoContainer = __webpack_require__(339);
+var findDOMNode = __webpack_require__(329);
+var getHostComponentFromComposite = __webpack_require__(138);
+var renderSubtreeIntoContainer = __webpack_require__(336);
 var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
@@ -51039,9 +46875,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var ReactInstrumentation = __webpack_require__(16);
-  var ReactDOMUnknownPropertyHook = __webpack_require__(297);
-  var ReactDOMNullInputValuePropHook = __webpack_require__(291);
-  var ReactDOMInvalidARIAHook = __webpack_require__(290);
+  var ReactDOMUnknownPropertyHook = __webpack_require__(294);
+  var ReactDOMNullInputValuePropHook = __webpack_require__(288);
+  var ReactDOMInvalidARIAHook = __webpack_require__(287);
 
   ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
   ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -51052,7 +46888,7 @@ module.exports = ReactDOM;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 284 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51073,24 +46909,24 @@ module.exports = ReactDOM;
 var _prodInvariant = __webpack_require__(5),
     _assign = __webpack_require__(7);
 
-var AutoFocusUtils = __webpack_require__(271);
-var CSSPropertyOperations = __webpack_require__(273);
+var AutoFocusUtils = __webpack_require__(268);
+var CSSPropertyOperations = __webpack_require__(270);
 var DOMLazyTree = __webpack_require__(38);
 var DOMNamespaces = __webpack_require__(82);
 var DOMProperty = __webpack_require__(26);
-var DOMPropertyOperations = __webpack_require__(126);
+var DOMPropertyOperations = __webpack_require__(125);
 var EventPluginHub = __webpack_require__(47);
 var EventPluginRegistry = __webpack_require__(61);
 var ReactBrowserEventEmitter = __webpack_require__(62);
-var ReactDOMComponentFlags = __webpack_require__(127);
+var ReactDOMComponentFlags = __webpack_require__(126);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMInput = __webpack_require__(289);
-var ReactDOMOption = __webpack_require__(292);
-var ReactDOMSelect = __webpack_require__(128);
-var ReactDOMTextarea = __webpack_require__(295);
+var ReactDOMInput = __webpack_require__(286);
+var ReactDOMOption = __webpack_require__(289);
+var ReactDOMSelect = __webpack_require__(127);
+var ReactDOMTextarea = __webpack_require__(292);
 var ReactInstrumentation = __webpack_require__(16);
-var ReactMultiChild = __webpack_require__(308);
-var ReactServerRenderingTransaction = __webpack_require__(313);
+var ReactMultiChild = __webpack_require__(305);
+var ReactServerRenderingTransaction = __webpack_require__(310);
 
 var emptyFunction = __webpack_require__(17);
 var escapeTextContentForBrowser = __webpack_require__(65);
@@ -52059,7 +47895,7 @@ module.exports = ReactDOMComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 285 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52098,7 +47934,7 @@ module.exports = ReactDOMContainerInfo;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 286 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52163,7 +47999,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ }),
-/* 287 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52187,7 +48023,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ }),
-/* 288 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52226,7 +48062,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ }),
-/* 289 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52245,7 +48081,7 @@ module.exports = ReactDOMIDOperations;
 var _prodInvariant = __webpack_require__(5),
     _assign = __webpack_require__(7);
 
-var DOMPropertyOperations = __webpack_require__(126);
+var DOMPropertyOperations = __webpack_require__(125);
 var LinkedValueUtils = __webpack_require__(85);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(20);
@@ -52517,7 +48353,7 @@ module.exports = ReactDOMInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 290 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52616,7 +48452,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 291 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52665,7 +48501,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 292 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52685,7 +48521,7 @@ var _assign = __webpack_require__(7);
 
 var React = __webpack_require__(40);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMSelect = __webpack_require__(128);
+var ReactDOMSelect = __webpack_require__(127);
 
 var warning = __webpack_require__(2);
 var didWarnInvalidOptionChildren = false;
@@ -52794,7 +48630,7 @@ module.exports = ReactDOMOption;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 293 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52812,8 +48648,8 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(10);
 
-var getNodeForCharacterOffset = __webpack_require__(336);
-var getTextContentAccessor = __webpack_require__(140);
+var getNodeForCharacterOffset = __webpack_require__(333);
+var getTextContentAccessor = __webpack_require__(139);
 
 /**
  * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -53011,7 +48847,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ }),
-/* 294 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53181,7 +49017,7 @@ module.exports = ReactDOMTextComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 295 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53347,7 +49183,7 @@ module.exports = ReactDOMTextarea;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 296 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53489,7 +49325,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 297 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53607,7 +49443,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 298 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53624,8 +49460,8 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactInvalidSetStateWarningHook = __webpack_require__(306);
-var ReactHostOperationHistoryHook = __webpack_require__(304);
+var ReactInvalidSetStateWarningHook = __webpack_require__(303);
+var ReactHostOperationHistoryHook = __webpack_require__(301);
 var ReactComponentTreeHook = __webpack_require__(15);
 var ExecutionEnvironment = __webpack_require__(10);
 
@@ -53972,7 +49808,7 @@ module.exports = ReactDebugTool;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 299 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54045,7 +49881,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ }),
-/* 300 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54061,25 +49897,25 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(270);
-var BeforeInputEventPlugin = __webpack_require__(272);
-var ChangeEventPlugin = __webpack_require__(274);
-var DefaultEventPluginOrder = __webpack_require__(276);
-var EnterLeaveEventPlugin = __webpack_require__(277);
-var HTMLDOMPropertyConfig = __webpack_require__(279);
-var ReactComponentBrowserEnvironment = __webpack_require__(281);
-var ReactDOMComponent = __webpack_require__(284);
+var ARIADOMPropertyConfig = __webpack_require__(267);
+var BeforeInputEventPlugin = __webpack_require__(269);
+var ChangeEventPlugin = __webpack_require__(271);
+var DefaultEventPluginOrder = __webpack_require__(273);
+var EnterLeaveEventPlugin = __webpack_require__(274);
+var HTMLDOMPropertyConfig = __webpack_require__(276);
+var ReactComponentBrowserEnvironment = __webpack_require__(278);
+var ReactDOMComponent = __webpack_require__(281);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMEmptyComponent = __webpack_require__(286);
-var ReactDOMTreeTraversal = __webpack_require__(296);
-var ReactDOMTextComponent = __webpack_require__(294);
-var ReactDefaultBatchingStrategy = __webpack_require__(299);
-var ReactEventListener = __webpack_require__(303);
-var ReactInjection = __webpack_require__(305);
-var ReactReconcileTransaction = __webpack_require__(311);
-var SVGDOMPropertyConfig = __webpack_require__(316);
-var SelectEventPlugin = __webpack_require__(317);
-var SimpleEventPlugin = __webpack_require__(318);
+var ReactDOMEmptyComponent = __webpack_require__(283);
+var ReactDOMTreeTraversal = __webpack_require__(293);
+var ReactDOMTextComponent = __webpack_require__(291);
+var ReactDefaultBatchingStrategy = __webpack_require__(296);
+var ReactEventListener = __webpack_require__(300);
+var ReactInjection = __webpack_require__(302);
+var ReactReconcileTransaction = __webpack_require__(308);
+var SVGDOMPropertyConfig = __webpack_require__(313);
+var SelectEventPlugin = __webpack_require__(314);
+var SimpleEventPlugin = __webpack_require__(315);
 
 var alreadyInjected = false;
 
@@ -54136,7 +49972,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 301 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54161,7 +49997,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 302 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54199,7 +50035,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ }),
-/* 303 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54359,7 +50195,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ }),
-/* 304 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54398,7 +50234,7 @@ var ReactHostOperationHistoryHook = {
 module.exports = ReactHostOperationHistoryHook;
 
 /***/ }),
-/* 305 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54418,9 +50254,9 @@ var DOMProperty = __webpack_require__(26);
 var EventPluginHub = __webpack_require__(47);
 var EventPluginUtils = __webpack_require__(83);
 var ReactComponentEnvironment = __webpack_require__(86);
-var ReactEmptyComponent = __webpack_require__(129);
+var ReactEmptyComponent = __webpack_require__(128);
 var ReactBrowserEventEmitter = __webpack_require__(62);
-var ReactHostComponent = __webpack_require__(131);
+var ReactHostComponent = __webpack_require__(130);
 var ReactUpdates = __webpack_require__(20);
 
 var ReactInjection = {
@@ -54437,7 +50273,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ }),
-/* 306 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54480,7 +50316,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 307 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54496,7 +50332,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 
 
 
-var adler32 = __webpack_require__(329);
+var adler32 = __webpack_require__(326);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -54535,7 +50371,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ }),
-/* 308 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54559,10 +50395,10 @@ var ReactInstrumentation = __webpack_require__(16);
 
 var ReactCurrentOwner = __webpack_require__(21);
 var ReactReconciler = __webpack_require__(39);
-var ReactChildReconciler = __webpack_require__(280);
+var ReactChildReconciler = __webpack_require__(277);
 
 var emptyFunction = __webpack_require__(17);
-var flattenChildren = __webpack_require__(333);
+var flattenChildren = __webpack_require__(330);
 var invariant = __webpack_require__(1);
 
 /**
@@ -54991,7 +50827,7 @@ module.exports = ReactMultiChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 309 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55091,7 +50927,7 @@ module.exports = ReactOwner;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 310 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55122,7 +50958,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 311 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55140,10 +50976,10 @@ module.exports = ReactPropTypeLocationNames;
 
 var _assign = __webpack_require__(7);
 
-var CallbackQueue = __webpack_require__(125);
+var CallbackQueue = __webpack_require__(124);
 var PooledClass = __webpack_require__(29);
 var ReactBrowserEventEmitter = __webpack_require__(62);
-var ReactInputSelection = __webpack_require__(132);
+var ReactInputSelection = __webpack_require__(131);
 var ReactInstrumentation = __webpack_require__(16);
 var Transaction = __webpack_require__(64);
 var ReactUpdateQueue = __webpack_require__(88);
@@ -55306,7 +51142,7 @@ module.exports = ReactReconcileTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 312 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55323,7 +51159,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ReactOwner = __webpack_require__(309);
+var ReactOwner = __webpack_require__(306);
 
 var ReactRef = {};
 
@@ -55400,7 +51236,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ }),
-/* 313 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55421,7 +51257,7 @@ var _assign = __webpack_require__(7);
 var PooledClass = __webpack_require__(29);
 var Transaction = __webpack_require__(64);
 var ReactInstrumentation = __webpack_require__(16);
-var ReactServerUpdateQueue = __webpack_require__(314);
+var ReactServerUpdateQueue = __webpack_require__(311);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -55496,7 +51332,7 @@ module.exports = ReactServerRenderingTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 314 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55641,7 +51477,7 @@ module.exports = ReactServerUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 315 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55660,7 +51496,7 @@ module.exports = ReactServerUpdateQueue;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 316 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55967,7 +51803,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ }),
-/* 317 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55986,11 +51822,11 @@ module.exports = SVGDOMPropertyConfig;
 var EventPropagators = __webpack_require__(48);
 var ExecutionEnvironment = __webpack_require__(10);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactInputSelection = __webpack_require__(132);
+var ReactInputSelection = __webpack_require__(131);
 var SyntheticEvent = __webpack_require__(22);
 
 var getActiveElement = __webpack_require__(113);
-var isTextInputElement = __webpack_require__(142);
+var isTextInputElement = __webpack_require__(141);
 var shallowEqual = __webpack_require__(77);
 
 var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
@@ -56163,7 +51999,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ }),
-/* 318 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56185,17 +52021,17 @@ var _prodInvariant = __webpack_require__(5);
 var EventListener = __webpack_require__(111);
 var EventPropagators = __webpack_require__(48);
 var ReactDOMComponentTree = __webpack_require__(8);
-var SyntheticAnimationEvent = __webpack_require__(319);
-var SyntheticClipboardEvent = __webpack_require__(320);
+var SyntheticAnimationEvent = __webpack_require__(316);
+var SyntheticClipboardEvent = __webpack_require__(317);
 var SyntheticEvent = __webpack_require__(22);
-var SyntheticFocusEvent = __webpack_require__(323);
-var SyntheticKeyboardEvent = __webpack_require__(325);
+var SyntheticFocusEvent = __webpack_require__(320);
+var SyntheticKeyboardEvent = __webpack_require__(322);
 var SyntheticMouseEvent = __webpack_require__(63);
-var SyntheticDragEvent = __webpack_require__(322);
-var SyntheticTouchEvent = __webpack_require__(326);
-var SyntheticTransitionEvent = __webpack_require__(327);
+var SyntheticDragEvent = __webpack_require__(319);
+var SyntheticTouchEvent = __webpack_require__(323);
+var SyntheticTransitionEvent = __webpack_require__(324);
 var SyntheticUIEvent = __webpack_require__(50);
-var SyntheticWheelEvent = __webpack_require__(328);
+var SyntheticWheelEvent = __webpack_require__(325);
 
 var emptyFunction = __webpack_require__(17);
 var getEventCharCode = __webpack_require__(90);
@@ -56397,7 +52233,7 @@ module.exports = SimpleEventPlugin;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 319 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56441,7 +52277,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ }),
-/* 320 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56484,7 +52320,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ }),
-/* 321 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56525,7 +52361,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ }),
-/* 322 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56566,7 +52402,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ }),
-/* 323 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56607,7 +52443,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ }),
-/* 324 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56649,7 +52485,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ }),
-/* 325 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56668,7 +52504,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(50);
 
 var getEventCharCode = __webpack_require__(90);
-var getEventKey = __webpack_require__(334);
+var getEventKey = __webpack_require__(331);
 var getEventModifierState = __webpack_require__(91);
 
 /**
@@ -56738,7 +52574,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ }),
-/* 326 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56788,7 +52624,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ }),
-/* 327 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56832,7 +52668,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ }),
-/* 328 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56891,7 +52727,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ }),
-/* 329 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56940,7 +52776,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ }),
-/* 330 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56958,8 +52794,8 @@ module.exports = adler32;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactPropTypeLocationNames = __webpack_require__(310);
-var ReactPropTypesSecret = __webpack_require__(135);
+var ReactPropTypeLocationNames = __webpack_require__(307);
+var ReactPropTypesSecret = __webpack_require__(134);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -57033,7 +52869,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 331 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57049,7 +52885,7 @@ module.exports = checkReactTypeSpec;
 
 
 
-var CSSProperty = __webpack_require__(124);
+var CSSProperty = __webpack_require__(123);
 var warning = __webpack_require__(2);
 
 var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -57118,7 +52954,7 @@ module.exports = dangerousStyleValue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 332 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57140,7 +52976,7 @@ var ReactCurrentOwner = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstanceMap = __webpack_require__(49);
 
-var getHostComponentFromComposite = __webpack_require__(139);
+var getHostComponentFromComposite = __webpack_require__(138);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -57184,7 +53020,7 @@ module.exports = findDOMNode;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 333 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57202,7 +53038,7 @@ module.exports = findDOMNode;
 
 
 var KeyEscapeUtils = __webpack_require__(84);
-var traverseAllChildren = __webpack_require__(144);
+var traverseAllChildren = __webpack_require__(143);
 var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
@@ -57266,7 +53102,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 334 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57373,7 +53209,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ }),
-/* 335 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57419,7 +53255,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 336 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57498,7 +53334,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ }),
-/* 337 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57604,7 +53440,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ }),
-/* 338 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57635,7 +53471,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ }),
-/* 339 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57651,12 +53487,12 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var ReactMount = __webpack_require__(133);
+var ReactMount = __webpack_require__(132);
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ }),
-/* 340 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57720,7 +53556,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 341 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57838,7 +53674,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 342 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57854,11 +53690,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(341);
+var PooledClass = __webpack_require__(338);
 var ReactElement = __webpack_require__(30);
 
 var emptyFunction = __webpack_require__(17);
-var traverseAllChildren = __webpack_require__(352);
+var traverseAllChildren = __webpack_require__(349);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -58034,7 +53870,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 343 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58055,7 +53891,7 @@ var _prodInvariant = __webpack_require__(31),
 
 var ReactComponent = __webpack_require__(96);
 var ReactElement = __webpack_require__(30);
-var ReactPropTypeLocationNames = __webpack_require__(147);
+var ReactPropTypeLocationNames = __webpack_require__(146);
 var ReactNoopUpdateQueue = __webpack_require__(97);
 
 var emptyObject = __webpack_require__(45);
@@ -58763,7 +54599,7 @@ module.exports = ReactClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 344 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58788,7 +54624,7 @@ var ReactElement = __webpack_require__(30);
  */
 var createDOMFactory = ReactElement.createFactory;
 if (process.env.NODE_ENV !== 'production') {
-  var ReactElementValidator = __webpack_require__(146);
+  var ReactElementValidator = __webpack_require__(145);
   createDOMFactory = ReactElementValidator.createFactory;
 }
 
@@ -58939,7 +54775,7 @@ module.exports = ReactDOMFactories;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 345 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58958,12 +54794,12 @@ module.exports = ReactDOMFactories;
 var _require = __webpack_require__(30),
     isValidElement = _require.isValidElement;
 
-var factory = __webpack_require__(120);
+var factory = __webpack_require__(119);
 
 module.exports = factory(isValidElement);
 
 /***/ }),
-/* 346 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58985,7 +54821,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 347 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59032,7 +54868,7 @@ ReactPureComponent.prototype.isPureReactComponent = true;
 module.exports = ReactPureComponent;
 
 /***/ }),
-/* 348 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59051,7 +54887,7 @@ module.exports = ReactPureComponent;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 349 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59069,8 +54905,8 @@ module.exports = '15.5.4';
 
 var _prodInvariant = __webpack_require__(31);
 
-var ReactPropTypeLocationNames = __webpack_require__(147);
-var ReactPropTypesSecret = __webpack_require__(346);
+var ReactPropTypeLocationNames = __webpack_require__(146);
+var ReactPropTypesSecret = __webpack_require__(343);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -59144,7 +54980,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 350 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59170,7 +55006,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 351 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59214,7 +55050,7 @@ module.exports = onlyChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 352 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59233,11 +55069,11 @@ module.exports = onlyChild;
 var _prodInvariant = __webpack_require__(31);
 
 var ReactCurrentOwner = __webpack_require__(21);
-var REACT_ELEMENT_TYPE = __webpack_require__(145);
+var REACT_ELEMENT_TYPE = __webpack_require__(144);
 
-var getIteratorFn = __webpack_require__(148);
+var getIteratorFn = __webpack_require__(147);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(340);
+var KeyEscapeUtils = __webpack_require__(337);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -59396,7 +55232,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 353 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59408,7 +55244,7 @@ module.exports = traverseAllChildren;
 
 module.exports = PassThrough;
 
-var Transform = __webpack_require__(150);
+var Transform = __webpack_require__(149);
 
 /*<replacement>*/
 var util = __webpack_require__(44);
@@ -59428,7 +55264,7 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 };
 
 /***/ }),
-/* 354 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59498,7 +55334,7 @@ BufferList.prototype.concat = function (n) {
 };
 
 /***/ }),
-/* 355 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports.render = render
@@ -59509,8 +55345,8 @@ var debug = __webpack_require__(14)('render-media')
 var isAscii = __webpack_require__(237)
 var MediaElementWrapper = __webpack_require__(115)
 var path = __webpack_require__(37)
-var streamToBlobURL = __webpack_require__(156)
-var videostream = __webpack_require__(379)
+var streamToBlobURL = __webpack_require__(155)
+var videostream = __webpack_require__(376)
 
 var VIDEOSTREAM_EXTS = [
   '.m4a',
@@ -59854,7 +55690,7 @@ function parseOpts (opts) {
 
 
 /***/ }),
-/* 356 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {module.exports = function (tasks, limit, cb) {
@@ -59923,7 +55759,7 @@ function parseOpts (opts) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 357 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {(function () {
@@ -60461,7 +56297,7 @@ function parseOpts (opts) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 358 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -60654,7 +56490,7 @@ function parseOpts (opts) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13), __webpack_require__(0)))
 
 /***/ }),
-/* 359 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/* global WebSocket */
@@ -60666,7 +56502,7 @@ var debug = __webpack_require__(14)('simple-websocket')
 var inherits = __webpack_require__(6)
 var randombytes = __webpack_require__(46)
 var stream = __webpack_require__(12)
-var ws = __webpack_require__(426) // websockets in node - will be empty object in browser
+var ws = __webpack_require__(423) // websockets in node - will be empty object in browser
 
 var _WebSocket = typeof ws !== 'function' ? WebSocket : ws
 
@@ -60924,12 +56760,12 @@ Socket.prototype._debug = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 360 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(Buffer, global, process) {var capability = __webpack_require__(155)
+/* WEBPACK VAR INJECTION */(function(Buffer, global, process) {var capability = __webpack_require__(154)
 var inherits = __webpack_require__(6)
-var response = __webpack_require__(361)
+var response = __webpack_require__(358)
 var stream = __webpack_require__(12)
 var toArrayBuffer = __webpack_require__(158)
 
@@ -61237,10 +57073,10 @@ var unsafeHeaders = [
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer, __webpack_require__(13), __webpack_require__(0)))
 
 /***/ }),
-/* 361 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(process, Buffer, global) {var capability = __webpack_require__(155)
+/* WEBPACK VAR INJECTION */(function(process, Buffer, global) {var capability = __webpack_require__(154)
 var inherits = __webpack_require__(6)
 var stream = __webpack_require__(12)
 
@@ -61426,7 +57262,7 @@ IncomingMessage.prototype._onXHRProgress = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(3).Buffer, __webpack_require__(13)))
 
 /***/ }),
-/* 362 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {var once = __webpack_require__(28)
@@ -61447,7 +57283,7 @@ module.exports = function getBuffer (stream, length, cb) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 363 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -61473,7 +57309,7 @@ if(false) {
 }
 
 /***/ }),
-/* 364 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -61499,7 +57335,7 @@ if(false) {
 }
 
 /***/ }),
-/* 365 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -61525,7 +57361,7 @@ if(false) {
 }
 
 /***/ }),
-/* 366 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -61551,7 +57387,7 @@ if(false) {
 }
 
 /***/ }),
-/* 367 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*                                                                              
@@ -61576,14 +57412,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-var base32 = __webpack_require__(368);
+var base32 = __webpack_require__(365);
 
 exports.encode = base32.encode;
 exports.decode = base32.decode;
 
 
 /***/ }),
-/* 368 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61719,7 +57555,7 @@ exports.decode = function(encoded) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 369 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -61772,24 +57608,24 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(358);
+__webpack_require__(355);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 370 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {module.exports = Discovery
 
 var debug = __webpack_require__(14)('torrent-discovery')
-var DHT = __webpack_require__(427) // empty object in browser
+var DHT = __webpack_require__(424) // empty object in browser
 var EventEmitter = __webpack_require__(19).EventEmitter
 var extend = __webpack_require__(25)
 var inherits = __webpack_require__(6)
 var parallel = __webpack_require__(51)
-var Tracker = __webpack_require__(177)
+var Tracker = __webpack_require__(176)
 
 inherits(Discovery, EventEmitter)
 
@@ -61983,7 +57819,7 @@ Discovery.prototype._dhtAnnounce = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 371 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {module.exports = Piece
@@ -62093,7 +57929,7 @@ Piece.prototype.init = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 372 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/**
@@ -62125,7 +57961,7 @@ module.exports = function typedarrayToBuffer (arr) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 373 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {var UINT_32_MAX = 0xffffffff
@@ -62164,7 +58000,7 @@ exports.decode.bytes = 8
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 374 */
+/* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62187,7 +58023,7 @@ module.exports = {
 
 
 /***/ }),
-/* 375 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var bencode = __webpack_require__(55)
@@ -62434,7 +58270,7 @@ module.exports = function (metadata) {
 
 
 /***/ }),
-/* 376 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/utf8js v2.1.2 by @mathias */
@@ -62684,7 +58520,7 @@ module.exports = function (metadata) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(163)(module), __webpack_require__(13)))
 
 /***/ }),
-/* 377 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -62758,15 +58594,15 @@ function config (name) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13)))
 
 /***/ }),
-/* 378 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(Buffer) {var bs = __webpack_require__(176)
+/* WEBPACK VAR INJECTION */(function(Buffer) {var bs = __webpack_require__(175)
 var EventEmitter = __webpack_require__(19).EventEmitter
 var inherits = __webpack_require__(6)
 var mp4 = __webpack_require__(255)
 var Box = __webpack_require__(59)
-var RangeSliceStream = __webpack_require__(269)
+var RangeSliceStream = __webpack_require__(266)
 
 module.exports = MP4Remuxer
 
@@ -63236,13 +59072,13 @@ MP4Remuxer.prototype._generateMoof = function (track, firstSample, lastSample) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3).Buffer))
 
 /***/ }),
-/* 379 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var MediaElementWrapper = __webpack_require__(115)
-var pump = __webpack_require__(122)
+var pump = __webpack_require__(121)
 
-var MP4Remuxer = __webpack_require__(378)
+var MP4Remuxer = __webpack_require__(375)
 
 module.exports = VideoStream
 
@@ -63365,10 +59201,10 @@ VideoStream.prototype.destroy = function () {
 
 
 /***/ }),
-/* 380 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Web3 = __webpack_require__(391);
+var Web3 = __webpack_require__(388);
 
 // dont override global variable
 if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
@@ -63379,7 +59215,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 381 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63411,7 +59247,7 @@ module.exports = SolidityTypeAddress;
 
 
 /***/ }),
-/* 382 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63443,7 +59279,7 @@ module.exports = SolidityTypeBool;
 
 
 /***/ }),
-/* 383 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63478,7 +59314,7 @@ module.exports = SolidityTypeBytes;
 
 
 /***/ }),
-/* 384 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63504,7 +59340,7 @@ module.exports = SolidityTypeDynamicBytes;
 
 
 /***/ }),
-/* 385 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63542,7 +59378,7 @@ module.exports = SolidityTypeInt;
 
 
 /***/ }),
-/* 386 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63580,7 +59416,7 @@ module.exports = SolidityTypeReal;
 
 
 /***/ }),
-/* 387 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63606,7 +59442,7 @@ module.exports = SolidityTypeString;
 
 
 /***/ }),
-/* 388 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63644,7 +59480,7 @@ module.exports = SolidityTypeUInt;
 
 
 /***/ }),
-/* 389 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var f = __webpack_require__(18);
@@ -63682,7 +59518,7 @@ module.exports = SolidityTypeUReal;
 
 
 /***/ }),
-/* 390 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63698,7 +59534,7 @@ if (typeof XMLHttpRequest === 'undefined') {
 
 
 /***/ }),
-/* 391 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -63728,23 +59564,23 @@ if (typeof XMLHttpRequest === 'undefined') {
  * @date 2014
  */
 
-var RequestManager = __webpack_require__(406);
+var RequestManager = __webpack_require__(403);
 var Iban = __webpack_require__(72);
-var Eth = __webpack_require__(400);
-var DB = __webpack_require__(399);
-var Shh = __webpack_require__(403);
-var Net = __webpack_require__(401);
-var Personal = __webpack_require__(402);
-var Swarm = __webpack_require__(404);
-var Settings = __webpack_require__(407);
+var Eth = __webpack_require__(397);
+var DB = __webpack_require__(396);
+var Shh = __webpack_require__(400);
+var Net = __webpack_require__(398);
+var Personal = __webpack_require__(399);
+var Swarm = __webpack_require__(401);
+var Settings = __webpack_require__(404);
 var version = __webpack_require__(244);
 var utils = __webpack_require__(11);
 var sha3 = __webpack_require__(53);
-var extend = __webpack_require__(395);
-var Batch = __webpack_require__(393);
+var extend = __webpack_require__(392);
+var Batch = __webpack_require__(390);
 var Property = __webpack_require__(43);
-var HttpProvider = __webpack_require__(397);
-var IpcProvider = __webpack_require__(398);
+var HttpProvider = __webpack_require__(394);
+var IpcProvider = __webpack_require__(395);
 var BigNumber = __webpack_require__(54);
 
 
@@ -63856,7 +59692,7 @@ module.exports = Web3;
 
 
 /***/ }),
-/* 392 */
+/* 389 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -63950,7 +59786,7 @@ module.exports = AllSolidityEvents;
 
 
 /***/ }),
-/* 393 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -64022,7 +59858,7 @@ module.exports = Batch;
 
 
 /***/ }),
-/* 394 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -64050,8 +59886,8 @@ module.exports = Batch;
 var utils = __webpack_require__(11);
 var coder = __webpack_require__(102);
 var SolidityEvent = __webpack_require__(161);
-var SolidityFunction = __webpack_require__(396);
-var AllEvents = __webpack_require__(392);
+var SolidityFunction = __webpack_require__(393);
+var AllEvents = __webpack_require__(389);
 
 /**
  * Should be called to encode constructor params
@@ -64338,7 +60174,7 @@ module.exports = ContractFactory;
 
 
 /***/ }),
-/* 395 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var formatters = __webpack_require__(24);
@@ -64392,7 +60228,7 @@ module.exports = extend;
 
 
 /***/ }),
-/* 396 */
+/* 393 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -64678,7 +60514,7 @@ module.exports = SolidityFunction;
 
 
 /***/ }),
-/* 397 */
+/* 394 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -64715,10 +60551,10 @@ if (typeof window !== 'undefined' && window.XMLHttpRequest) {
     XMLHttpRequest = window.XMLHttpRequest; // jshint ignore: line
 // node
 } else {
-    XMLHttpRequest = __webpack_require__(390).XMLHttpRequest; // jshint ignore: line
+    XMLHttpRequest = __webpack_require__(387).XMLHttpRequest; // jshint ignore: line
 }
 
-var XHR2 = __webpack_require__(418); // jshint ignore: line
+var XHR2 = __webpack_require__(415); // jshint ignore: line
 
 /**
  * HttpProvider should be used to send rpc calls over http
@@ -64837,7 +60673,7 @@ module.exports = HttpProvider;
 
 
 /***/ }),
-/* 398 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65051,7 +60887,7 @@ module.exports = IpcProvider;
 
 
 /***/ }),
-/* 399 */
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -65123,7 +60959,7 @@ module.exports = DB;
 
 
 /***/ }),
-/* 400 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65157,13 +60993,13 @@ var utils = __webpack_require__(11);
 var Method = __webpack_require__(32);
 var Property = __webpack_require__(43);
 var c = __webpack_require__(70);
-var Contract = __webpack_require__(394);
+var Contract = __webpack_require__(391);
 var watches = __webpack_require__(73);
 var Filter = __webpack_require__(71);
-var IsSyncing = __webpack_require__(408);
-var namereg = __webpack_require__(405);
+var IsSyncing = __webpack_require__(405);
+var namereg = __webpack_require__(402);
 var Iban = __webpack_require__(72);
-var transfer = __webpack_require__(409);
+var transfer = __webpack_require__(406);
 
 var blockCall = function (args) {
     return (utils.isString(args[0]) && args[0].indexOf('0x') === 0) ? "eth_getBlockByHash" : "eth_getBlockByNumber";
@@ -65484,7 +61320,7 @@ module.exports = Eth;
 
 
 /***/ }),
-/* 401 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -65542,7 +61378,7 @@ module.exports = Net;
 
 
 /***/ }),
-/* 402 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65664,7 +61500,7 @@ module.exports = Personal;
 
 
 /***/ }),
-/* 403 */
+/* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -65756,7 +61592,7 @@ module.exports = Shh;
 
 
 /***/ }),
-/* 404 */
+/* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -65908,7 +61744,7 @@ module.exports = Swarm;
 
 
 /***/ }),
-/* 405 */
+/* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -65953,7 +61789,7 @@ module.exports = {
 
 
 /***/ }),
-/* 406 */
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -66224,7 +62060,7 @@ module.exports = RequestManager;
 
 
 /***/ }),
-/* 407 */
+/* 404 */
 /***/ (function(module, exports) {
 
 
@@ -66239,7 +62075,7 @@ module.exports = Settings;
 
 
 /***/ }),
-/* 408 */
+/* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -66338,7 +62174,7 @@ module.exports = IsSyncing;
 
 
 /***/ }),
-/* 409 */
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -66436,7 +62272,7 @@ module.exports = transfer;
 
 
 /***/ }),
-/* 410 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {/* global FileList */
@@ -66444,24 +62280,24 @@ module.exports = transfer;
 module.exports = WebTorrent
 
 var Buffer = __webpack_require__(27).Buffer
-var concat = __webpack_require__(153)
+var concat = __webpack_require__(152)
 var createTorrent = __webpack_require__(184)
 var debug = __webpack_require__(14)('webtorrent')
-var DHT = __webpack_require__(429) // browser exclude
+var DHT = __webpack_require__(426) // browser exclude
 var EventEmitter = __webpack_require__(19).EventEmitter
 var extend = __webpack_require__(25)
 var inherits = __webpack_require__(6)
-var loadIPSet = __webpack_require__(430) // browser exclude
+var loadIPSet = __webpack_require__(427) // browser exclude
 var parallel = __webpack_require__(51)
-var parseTorrent = __webpack_require__(119)
+var parseTorrent = __webpack_require__(118)
 var path = __webpack_require__(37)
 var Peer = __webpack_require__(99)
 var randombytes = __webpack_require__(46)
 var speedometer = __webpack_require__(100)
-var zeroFill = __webpack_require__(419)
+var zeroFill = __webpack_require__(416)
 
-var TCPPool = __webpack_require__(428) // browser exclude
-var Torrent = __webpack_require__(415)
+var TCPPool = __webpack_require__(425) // browser exclude
+var Torrent = __webpack_require__(412)
 
 /**
  * WebTorrent version.
@@ -66921,7 +62757,7 @@ function isFileList (obj) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(13), __webpack_require__(0)))
 
 /***/ }),
-/* 411 */
+/* 408 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = FileStream
@@ -67027,21 +62863,21 @@ FileStream.prototype._destroy = function (err, onclose) {
 
 
 /***/ }),
-/* 412 */
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {module.exports = File
 
 var eos = __webpack_require__(110)
 var EventEmitter = __webpack_require__(19).EventEmitter
-var FileStream = __webpack_require__(411)
+var FileStream = __webpack_require__(408)
 var inherits = __webpack_require__(6)
 var path = __webpack_require__(37)
-var render = __webpack_require__(355)
+var render = __webpack_require__(352)
 var stream = __webpack_require__(12)
-var streamToBlob = __webpack_require__(157)
-var streamToBlobURL = __webpack_require__(156)
-var streamToBuffer = __webpack_require__(362)
+var streamToBlob = __webpack_require__(156)
+var streamToBlobURL = __webpack_require__(155)
+var streamToBuffer = __webpack_require__(359)
 
 inherits(File, EventEmitter)
 
@@ -67157,14 +62993,14 @@ File.prototype._destroy = function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 413 */
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayRemove = __webpack_require__(159)
 var debug = __webpack_require__(14)('webtorrent:peer')
 var Wire = __webpack_require__(104)
 
-var WebConn = __webpack_require__(416)
+var WebConn = __webpack_require__(413)
 
 var CONNECT_TIMEOUT_TCP = 5000
 var CONNECT_TIMEOUT_WEBRTC = 25000
@@ -67408,7 +63244,7 @@ function noop () {}
 
 
 /***/ }),
-/* 414 */
+/* 411 */
 /***/ (function(module, exports) {
 
 module.exports = RarityMap
@@ -67535,18 +63371,18 @@ function trueFn () {
 
 
 /***/ }),
-/* 415 */
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process, global) {/* global URL, Blob */
 
 module.exports = Torrent
 
-var addrToIPPort = __webpack_require__(167)
+var addrToIPPort = __webpack_require__(166)
 var BitField = __webpack_require__(56)
 var ChunkStoreWriteStream = __webpack_require__(182)
 var debug = __webpack_require__(14)('webtorrent:torrent')
-var Discovery = __webpack_require__(370)
+var Discovery = __webpack_require__(367)
 var EventEmitter = __webpack_require__(19).EventEmitter
 var extend = __webpack_require__(25)
 var extendMutable = __webpack_require__(164)
@@ -67556,25 +63392,25 @@ var get = __webpack_require__(98)
 var ImmediateChunkStore = __webpack_require__(236)
 var inherits = __webpack_require__(6)
 var MultiStream = __webpack_require__(117)
-var net = __webpack_require__(432) // browser exclude
-var os = __webpack_require__(433) // browser exclude
+var net = __webpack_require__(429) // browser exclude
+var os = __webpack_require__(430) // browser exclude
 var parallel = __webpack_require__(51)
-var parallelLimit = __webpack_require__(356)
-var parseTorrent = __webpack_require__(119)
+var parallelLimit = __webpack_require__(353)
+var parseTorrent = __webpack_require__(118)
 var path = __webpack_require__(37)
-var Piece = __webpack_require__(371)
-var pump = __webpack_require__(122)
-var randomIterate = __webpack_require__(268)
+var Piece = __webpack_require__(368)
+var pump = __webpack_require__(121)
+var randomIterate = __webpack_require__(265)
 var sha1 = __webpack_require__(52)
 var speedometer = __webpack_require__(100)
 var uniq = __webpack_require__(69)
-var utMetadata = __webpack_require__(375)
-var utPex = __webpack_require__(434) // browser exclude
+var utMetadata = __webpack_require__(372)
+var utPex = __webpack_require__(431) // browser exclude
 
-var File = __webpack_require__(412)
-var Peer = __webpack_require__(413)
-var RarityMap = __webpack_require__(414)
-var Server = __webpack_require__(431) // browser exclude
+var File = __webpack_require__(409)
+var Peer = __webpack_require__(410)
+var RarityMap = __webpack_require__(411)
+var Server = __webpack_require__(428) // browser exclude
 
 var MAX_BLOCK_LENGTH = 128 * 1024
 var PIECE_TIMEOUT = 30000
@@ -69290,7 +65126,7 @@ function noop () {}
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(13)))
 
 /***/ }),
-/* 416 */
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = WebConn
@@ -69493,7 +65329,7 @@ WebConn.prototype.destroy = function () {
 
 
 /***/ }),
-/* 417 */
+/* 414 */
 /***/ (function(module, exports) {
 
 // Returns a wrapper function that returns a wrapped callback
@@ -69532,14 +65368,14 @@ function wrappy (fn, cb) {
 
 
 /***/ }),
-/* 418 */
+/* 415 */
 /***/ (function(module, exports) {
 
 module.exports = XMLHttpRequest;
 
 
 /***/ }),
-/* 419 */
+/* 416 */
 /***/ (function(module, exports) {
 
 /**
@@ -69561,6 +65397,24 @@ module.exports = function zeroFill (width, number, pad) {
   return number + ''
 }
 
+
+/***/ }),
+/* 417 */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+/* 418 */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+/* 419 */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 /* 420 */
@@ -69633,30 +65487,6 @@ module.exports = function zeroFill (width, number, pad) {
 /***/ (function(module, exports) {
 
 /* (ignored) */
-
-/***/ }),
-/* 432 */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-/* 433 */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-/* 434 */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-/* 435 */
-/***/ (function(module, exports) {
-
-module.exports=function(){function r(r){for(var t=0;t<l.length;t++)l[t]=0;for(var t=0;t<r.length;t++)l[t%4]=(l[t%4]<<5)-l[t%4]+r.charCodeAt(t)}function t(){var r=l[0]^l[0]<<11;return l[0]=l[1],l[1]=l[2],l[2]=l[3],l[3]=l[3]^l[3]>>19^r^r>>8,(l[3]>>>0)/(1<<31>>>0)}function e(){var r=Math.floor(360*t()),e=60*t()+40+"%",o=25*(t()+t()+t()+t())+"%",n="hsl("+r+","+e+","+o+")";return n}function o(r){for(var e=r,o=r,n=Math.ceil(e/2),a=e-n,l=[],f=0;o>f;f++){for(var h=[],c=0;n>c;c++)h[c]=Math.floor(2.3*t());var i=h.slice(0,a);i.reverse(),h=h.concat(i);for(var v=0;v<h.length;v++)l.push(h[v])}return l}function n(r,t,e,o,n){var a=document.createElement("canvas"),l=Math.sqrt(r.length);a.width=a.height=l*e;var f=a.getContext("2d");f.fillStyle=o,f.fillRect(0,0,a.width,a.height),f.fillStyle=t;for(var h=0;h<r.length;h++){var c=Math.floor(h/l),i=h%l;f.fillStyle=1==r[h]?t:n,r[h]&&f.fillRect(i*e,c*e,e,e)}return a}function a(t){t=t||{};var a=t.size||8,l=t.scale||4,f=t.seed||Math.floor(Math.random()*Math.pow(10,16)).toString(16);r(f);var h=t.color||e(),c=t.bgcolor||e(),i=t.spotcolor||e(),v=o(a),u=n(v,h,l,c,i);return u}var l=Array(4);return a}();
 
 /***/ })
 /******/ ]);
